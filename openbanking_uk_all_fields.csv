@@ -1,0 +1,937 @@
+API Section,Object,Field,Type,Description
+AccountsAPI,OBReferredDocumentInformation,Code,ExternalDocumentType1Code,
+AccountsAPI,OBReferredDocumentInformation,Issuer,string,dentification of the issuer of the reference document type.
+AccountsAPI,OBReferredDocumentInformation,Number,string,Identification of the type specified for the referred document line.
+AccountsAPI,OBReferredDocumentInformation,RelatedDate,string,Date associated with the referred document line.
+AccountsAPI,OBReferredDocumentInformation,LineDetails,array,Set of elements used to provide the content of the referred document line.
+AccountsAPI,OBRemittanceInformation2,Structured,array,
+AccountsAPI,OBRemittanceInformation2,Unstructured,array,"Information supplied to enable the matching/reconciliation of an entry with the items that the payment is intended to settle, such as commercial invoices in an accounts' receivable system, in an unstructured form."
+AccountsAPI,OBRemittanceInformationStructured,ReferredDocumentInformation,array,
+AccountsAPI,OBRemittanceInformationStructured,ReferredDocumentAmount,integer,Provides details on the amounts of the referred document.
+AccountsAPI,OBRemittanceInformationStructured,CreditorReferenceInformation,object,Reference information provided by the creditor to allow the identification of the underlying documents.
+AccountsAPI,OBRemittanceInformationStructured,Invoicer,Identification_3,
+AccountsAPI,OBRemittanceInformationStructured,Invoicee,Identification_4,
+AccountsAPI,OBRemittanceInformationStructured,TaxRemittance,string,Provides remittance information about a payment made for tax-related purposes.
+AccountsAPI,OBRemittanceInformationStructured,AdditionalRemittanceInformation,array,"Additional information, in free text form, to complement the structured remittance information."
+AccountsAPI,OBUltimateCreditor1,Name,string,Name by which a party is known and which is usually used to identify that party.
+AccountsAPI,OBUltimateCreditor1,Identification,string,Identification assigned by an institution.
+AccountsAPI,OBUltimateCreditor1,LEI,LEI,
+AccountsAPI,OBUltimateCreditor1,SchemeName,OBInternalAccountIdentification4Code,
+AccountsAPI,OBUltimateCreditor1,PostalAddress,OBPostalAddress7,
+AccountsAPI,OBUltimateDebtor1,Name,string,Name by which a party is known and which is usually used to identify that party.
+AccountsAPI,OBUltimateDebtor1,Identification,string,Identification assigned by an institution.
+AccountsAPI,OBUltimateDebtor1,LEI,LEI,
+AccountsAPI,OBUltimateDebtor1,SchemeName,OBInternalAccountIdentification4Code,
+AccountsAPI,OBUltimateDebtor1,PostalAddress,OBPostalAddress7,
+AccountsAPI,OBFrequency6,Type,,
+AccountsAPI,OBFrequency6,CountPerPeriod,integer,Number of instructions to be created and processed during the specified period. Specifies a frequency in terms of a count per period within a specified frequency type. Note: should not be used alongside `PointInTime`
+AccountsAPI,OBFrequency6,PointInTime,PointInTime,
+AccountsAPI,OBProxy1,Identification,string,Identification used to indicate the account identification under another specified name.
+AccountsAPI,OBProxy1,Code,ExternalProxyAccountType1Code,
+AccountsAPI,OBProxy1,Type,string,Type of the proxy identification.
+AccountsAPI,Links,Self,string,
+AccountsAPI,Links,First,string,
+AccountsAPI,Links,Prev,string,
+AccountsAPI,Links,Next,string,
+AccountsAPI,Links,Last,string,
+AccountsAPI,Meta,TotalPages,integer,
+AccountsAPI,Meta,FirstAvailableDateTime,ISODateTime,
+AccountsAPI,Meta,LastAvailableDateTime,ISODateTime,
+AccountsAPI,OBAccount6,AccountId,AccountId,
+AccountsAPI,OBAccount6,Status,OBInternalAccountStatus1Code,
+AccountsAPI,OBAccount6,StatusUpdateDateTime,StatusUpdateDateTime,
+AccountsAPI,OBAccount6,Currency,ActiveOrHistoricCurrencyCode_0,
+AccountsAPI,OBAccount6,AccountCategory,OBInternalAccountType1Code,
+AccountsAPI,OBAccount6,AccountTypeCode,OBExternalAccountSubType1Code,
+AccountsAPI,OBAccount6,Description,Description_0,
+AccountsAPI,OBAccount6,Nickname,Nickname,
+AccountsAPI,OBAccount6,OpeningDate,OpeningDate,
+AccountsAPI,OBAccount6,MaturityDate,MaturityDate,
+AccountsAPI,OBAccount6,SwitchStatus,OBInternalSwitchStatusCode,
+AccountsAPI,OBAccount6,Account,array,
+AccountsAPI,OBAccount6,StatementFrequencyAndFormat,StatementFrequencyAndFormat,
+AccountsAPI,OBAccount6,Servicer,OBBranchAndFinancialInstitutionIdentification5_0,
+AccountsAPI,OBAccount6Basic,AccountId,AccountId,
+AccountsAPI,OBAccount6Basic,Status,OBInternalAccountStatus1Code,
+AccountsAPI,OBAccount6Basic,StatusUpdateDateTime,StatusUpdateDateTime,
+AccountsAPI,OBAccount6Basic,Currency,ActiveOrHistoricCurrencyCode_0,
+AccountsAPI,OBAccount6Basic,AccountCategory,OBInternalAccountType1Code,
+AccountsAPI,OBAccount6Basic,AccountTypeCode,OBExternalAccountSubType1Code,
+AccountsAPI,OBAccount6Basic,Description,Description_0,
+AccountsAPI,OBAccount6Basic,Nickname,Nickname,
+AccountsAPI,OBAccount6Basic,OpeningDate,OpeningDate,
+AccountsAPI,OBAccount6Basic,MaturityDate,MaturityDate,
+AccountsAPI,OBAccount6Basic,SwitchStatus,OBInternalSwitchStatusCode,
+AccountsAPI,OBAccount6Detail,AccountId,AccountId,
+AccountsAPI,OBAccount6Detail,Status,OBInternalAccountStatus1Code,
+AccountsAPI,OBAccount6Detail,StatusUpdateDateTime,StatusUpdateDateTime,
+AccountsAPI,OBAccount6Detail,Currency,ActiveOrHistoricCurrencyCode_0,
+AccountsAPI,OBAccount6Detail,AccountCategory,OBInternalAccountType1Code,
+AccountsAPI,OBAccount6Detail,AccountTypeCode,OBExternalAccountSubType1Code,
+AccountsAPI,OBAccount6Detail,Description,Description_0,
+AccountsAPI,OBAccount6Detail,Nickname,Nickname,
+AccountsAPI,OBAccount6Detail,OpeningDate,OpeningDate,
+AccountsAPI,OBAccount6Detail,MaturityDate,MaturityDate,
+AccountsAPI,OBAccount6Detail,SwitchStatus,OBInternalSwitchStatusCode,
+AccountsAPI,OBAccount6Detail,Account,array,
+AccountsAPI,OBAccount6Detail,StatementFrequencyAndFormat,StatementFrequencyAndFormat,
+AccountsAPI,OBAccount6Detail,Servicer,OBBranchAndFinancialInstitutionIdentification5_0,
+AccountsAPI,OBActiveOrHistoricCurrencyAndAmount_0,Amount,OBActiveCurrencyAndAmount_SimpleType,
+AccountsAPI,OBActiveOrHistoricCurrencyAndAmount_0,Currency,ActiveOrHistoricCurrencyCode_1,
+AccountsAPI,OBActiveOrHistoricCurrencyAndAmount_1,Amount,OBActiveCurrencyAndAmount_SimpleType,
+AccountsAPI,OBActiveOrHistoricCurrencyAndAmount_1,Currency,ActiveOrHistoricCurrencyCode_1,
+AccountsAPI,OBActiveOrHistoricCurrencyAndAmount_10,Amount,OBActiveCurrencyAndAmount_SimpleType,
+AccountsAPI,OBActiveOrHistoricCurrencyAndAmount_10,Currency,ActiveOrHistoricCurrencyCode_1,
+AccountsAPI,OBActiveOrHistoricCurrencyAndAmount_11,Amount,OBActiveCurrencyAndAmount_SimpleType,
+AccountsAPI,OBActiveOrHistoricCurrencyAndAmount_11,Currency,ActiveOrHistoricCurrencyCode_1,
+AccountsAPI,OBActiveOrHistoricCurrencyAndAmount_2,Amount,OBActiveCurrencyAndAmount_SimpleType,
+AccountsAPI,OBActiveOrHistoricCurrencyAndAmount_2,Currency,ActiveOrHistoricCurrencyCode_1,
+AccountsAPI,OBActiveOrHistoricCurrencyAndAmount_3,Amount,OBActiveCurrencyAndAmount_SimpleType,
+AccountsAPI,OBActiveOrHistoricCurrencyAndAmount_3,Currency,ActiveOrHistoricCurrencyCode_1,
+AccountsAPI,OBActiveOrHistoricCurrencyAndAmount_4,Amount,OBActiveCurrencyAndAmount_SimpleType,
+AccountsAPI,OBActiveOrHistoricCurrencyAndAmount_4,Currency,ActiveOrHistoricCurrencyCode_1,
+AccountsAPI,OBActiveOrHistoricCurrencyAndAmount_5,Amount,OBActiveCurrencyAndAmount_SimpleType,
+AccountsAPI,OBActiveOrHistoricCurrencyAndAmount_5,Currency,ActiveOrHistoricCurrencyCode_1,
+AccountsAPI,OBActiveOrHistoricCurrencyAndAmount_6,Amount,OBActiveCurrencyAndAmount_SimpleType,
+AccountsAPI,OBActiveOrHistoricCurrencyAndAmount_6,Currency,ActiveOrHistoricCurrencyCode_1,
+AccountsAPI,OBActiveOrHistoricCurrencyAndAmount_7,Amount,OBActiveCurrencyAndAmount_SimpleType,
+AccountsAPI,OBActiveOrHistoricCurrencyAndAmount_7,Currency,ActiveOrHistoricCurrencyCode_1,
+AccountsAPI,OBActiveOrHistoricCurrencyAndAmount_8,Amount,OBActiveCurrencyAndAmount_SimpleType,
+AccountsAPI,OBActiveOrHistoricCurrencyAndAmount_8,Currency,ActiveOrHistoricCurrencyCode_1,
+AccountsAPI,OBActiveOrHistoricCurrencyAndAmount_8,SubType,OBExternalBalanceSubType1Code,
+AccountsAPI,OBActiveOrHistoricCurrencyAndAmount_9,Amount,OBActiveCurrencyAndAmount_SimpleType,
+AccountsAPI,OBActiveOrHistoricCurrencyAndAmount_9,Currency,ActiveOrHistoricCurrencyCode_1,
+AccountsAPI,OBBCAData1,ProductDetails,object,
+AccountsAPI,OBBCAData1,CreditInterest,object,Details about the interest that may be payable to the BCA account holders
+AccountsAPI,OBBCAData1,Overdraft,object,Borrowing details
+AccountsAPI,OBBCAData1,OtherFeesCharges,array,Contains details of fees and charges which are not associated with either Overdraft or features/benefits
+AccountsAPI,OBBankTransactionCodeStructure1,Code,string,Specifies the family within a domain.
+AccountsAPI,OBBankTransactionCodeStructure1,SubCode,string,Specifies the sub-product family within a specific family.
+AccountsAPI,OBBeneficiary5,AccountId,AccountId,
+AccountsAPI,OBBeneficiary5,BeneficiaryId,BeneficiaryId,
+AccountsAPI,OBBeneficiary5,BeneficiaryType,OBInternalBeneficiaryType1Code,
+AccountsAPI,OBBeneficiary5,Reference,Reference,
+AccountsAPI,OBBeneficiary5,SupplementaryData,OBSupplementaryData1,
+AccountsAPI,OBBeneficiary5,CreditorAgent,OBBranchAndFinancialInstitutionIdentification6_0,
+AccountsAPI,OBBeneficiary5,CreditorAccount,OBCashAccount5_0,
+AccountsAPI,OBBeneficiary5Basic,AccountId,AccountId,
+AccountsAPI,OBBeneficiary5Basic,BeneficiaryId,BeneficiaryId,
+AccountsAPI,OBBeneficiary5Basic,BeneficiaryType,OBInternalBeneficiaryType1Code,
+AccountsAPI,OBBeneficiary5Basic,Reference,Reference,
+AccountsAPI,OBBeneficiary5Basic,SupplementaryData,OBSupplementaryData1,
+AccountsAPI,OBBeneficiary5Detail,AccountId,AccountId,
+AccountsAPI,OBBeneficiary5Detail,BeneficiaryId,BeneficiaryId,
+AccountsAPI,OBBeneficiary5Detail,BeneficiaryType,OBInternalBeneficiaryType1Code,
+AccountsAPI,OBBeneficiary5Detail,Reference,Reference,
+AccountsAPI,OBBeneficiary5Detail,SupplementaryData,OBSupplementaryData1,
+AccountsAPI,OBBeneficiary5Detail,CreditorAgent,OBBranchAndFinancialInstitutionIdentification6_0,
+AccountsAPI,OBBeneficiary5Detail,CreditorAccount,OBCashAccount5_0,
+AccountsAPI,OBBranchAndFinancialInstitutionIdentification5_0,SchemeName,OBInternalFinancialInstitutionIdentification4Code,
+AccountsAPI,OBBranchAndFinancialInstitutionIdentification5_0,Identification,Identification_1,
+AccountsAPI,OBBranchAndFinancialInstitutionIdentification5_0,Name,Name_1,
+AccountsAPI,OBBranchAndFinancialInstitutionIdentification5_1,SchemeName,OBInternalFinancialInstitutionIdentification4Code,
+AccountsAPI,OBBranchAndFinancialInstitutionIdentification5_1,Identification,Identification_1,
+AccountsAPI,OBBranchAndFinancialInstitutionIdentification5_1,Name,Name_1,
+AccountsAPI,OBBranchAndFinancialInstitutionIdentification5_1,PostalAddress,OBPostalAddress7,
+AccountsAPI,OBBranchAndFinancialInstitutionIdentification5_1,LEI,LEI,
+AccountsAPI,OBBranchAndFinancialInstitutionIdentification6_0,SchemeName,OBInternalFinancialInstitutionIdentification4Code,
+AccountsAPI,OBBranchAndFinancialInstitutionIdentification6_0,Identification,Identification_1,
+AccountsAPI,OBBranchAndFinancialInstitutionIdentification6_0,Name,Name_1,
+AccountsAPI,OBBranchAndFinancialInstitutionIdentification6_0,PostalAddress,OBPostalAddress7,
+AccountsAPI,OBBranchAndFinancialInstitutionIdentification6_0,LEI,LEI,
+AccountsAPI,OBBranchAndFinancialInstitutionIdentification6_1,SchemeName,OBInternalFinancialInstitutionIdentification4Code,
+AccountsAPI,OBBranchAndFinancialInstitutionIdentification6_1,Identification,Identification_2,
+AccountsAPI,OBBranchAndFinancialInstitutionIdentification6_1,Name,Name_1,
+AccountsAPI,OBBranchAndFinancialInstitutionIdentification6_1,LEI,LEI,
+AccountsAPI,OBBranchAndFinancialInstitutionIdentification6_1,PostalAddress,OBPostalAddress7,
+AccountsAPI,OBBranchAndFinancialInstitutionIdentification6_2,SchemeName,OBInternalFinancialInstitutionIdentification4Code,
+AccountsAPI,OBBranchAndFinancialInstitutionIdentification6_2,Identification,Identification_2,
+AccountsAPI,OBBranchAndFinancialInstitutionIdentification6_2,Name,Name_1,
+AccountsAPI,OBBranchAndFinancialInstitutionIdentification6_2,LEI,LEI,
+AccountsAPI,OBBranchAndFinancialInstitutionIdentification6_2,PostalAddress,OBPostalAddress7,
+AccountsAPI,OBCashAccount5_0,SchemeName,OBInternalAccountIdentification4Code,
+AccountsAPI,OBCashAccount5_0,Identification,Identification_0,
+AccountsAPI,OBCashAccount5_0,Name,Name_0,
+AccountsAPI,OBCashAccount5_0,SecondaryIdentification,SecondaryIdentification,
+AccountsAPI,OBCashAccount5_0,Proxy,OBProxy1,
+AccountsAPI,OBCashAccount5_1,SchemeName,OBInternalAccountIdentification4Code,
+AccountsAPI,OBCashAccount5_1,Identification,string,Beneficiary account identification.
+AccountsAPI,OBCashAccount5_1,Name,Name_0,
+AccountsAPI,OBCashAccount5_1,SecondaryIdentification,SecondaryIdentification,
+AccountsAPI,OBCashAccount5_1,Proxy,OBProxy1,
+AccountsAPI,OBCashAccount6_0,SchemeName,OBInternalAccountIdentification4Code,
+AccountsAPI,OBCashAccount6_0,Identification,Identification_0,
+AccountsAPI,OBCashAccount6_0,Name,Name_0,
+AccountsAPI,OBCashAccount6_0,SecondaryIdentification,SecondaryIdentification,
+AccountsAPI,OBCashAccount6_0,Proxy,OBProxy1,
+AccountsAPI,OBCashAccount6_1,SchemeName,OBInternalAccountIdentification4Code,
+AccountsAPI,OBCashAccount6_1,Identification,Identification_0,
+AccountsAPI,OBCashAccount6_1,Name,Name_0,
+AccountsAPI,OBCashAccount6_1,SecondaryIdentification,SecondaryIdentification,
+AccountsAPI,OBCashAccount6_1,Proxy,OBProxy1,
+AccountsAPI,OBCurrencyExchange5,SourceCurrency,string,Currency from which an amount is to be converted in a currency conversion.
+AccountsAPI,OBCurrencyExchange5,TargetCurrency,string,Currency into which an amount is to be converted in a currency conversion.
+AccountsAPI,OBCurrencyExchange5,UnitCurrency,string,"Currency in which the rate of exchange is expressed in a currency exchange. In the example 1GBP = xxxCUR, the unit currency is GBP."
+AccountsAPI,OBCurrencyExchange5,ExchangeRate,number,"Factor used to convert an amount from one currency into another. This reflects the price at which one currency was bought with another currency.
+Usage: ExchangeRate expresses the ratio between UnitCurrency and QuotedCurrency (ExchangeRate = UnitCurrency/QuotedCurrency)."
+AccountsAPI,OBCurrencyExchange5,ContractIdentification,string,Unique identification to unambiguously identify the foreign exchange contract.
+AccountsAPI,OBCurrencyExchange5,QuotationDate,string,"Date and time at which an exchange rate is quoted. All dates in the JSON payloads are represented in ISO 8601 date-time format. 
+All date-time fields in responses must include the timezone. An example is below:
+2017-04-05T10:43:07+00:00"
+AccountsAPI,OBCurrencyExchange5,InstructedAmount,object,"Amount of money to be moved between the debtor and creditor, before deduction of charges, expressed in the currency as ordered by the initiating party."
+AccountsAPI,OBError1,ErrorCode,OBExternalStatusReason1Code,
+AccountsAPI,OBError1,Message,string,"A description of the error that occurred. e.g., 'A mandatory field isn't supplied' or 'RequestedExecutionDateTime must be in future'
+OBL doesn't standardise this field"
+AccountsAPI,OBError1,Path,string,"Recommended but optional reference to the JSON Path of the field with error, e.g., Data.Initiation.InstructedAmount.Currency"
+AccountsAPI,OBError1,Url,string,"URL to help remediate the problem, or provide more information, or to API Reference, or help etc"
+AccountsAPI,OBErrorResponse1,Id,string,"A unique reference for the error instance, for audit purposes, in case of unknown/unclassified errors."
+AccountsAPI,OBErrorResponse1,Code,string,"Deprecated <br />High level textual error code, to help categorise the errors."
+AccountsAPI,OBErrorResponse1,Message,string,Deprecated <br />Brief Error message
+AccountsAPI,OBErrorResponse1,Errors,array,
+AccountsAPI,OBMandateRelatedInformation1,MandateIdentification,string,"Unique identification, as assigned by the creditor, to unambiguously identify the mandate."
+AccountsAPI,OBMandateRelatedInformation1,Classification,OBExternalMandateClassification1Code,
+AccountsAPI,OBMandateRelatedInformation1,CategoryPurposeCode,ExternalCategoryPurpose1Code,
+AccountsAPI,OBMandateRelatedInformation1,FirstPaymentDateTime,string,The date on which the first payment for a recurrent credit transfer will be made.
+AccountsAPI,OBMandateRelatedInformation1,RecurringPaymentDateTime,string,"The date on which the first recurring payment for a Standing Order schedule will be made. 
+Usage: This must be populated only if the first recurring date is different to the first payment date. All dates in the JSON payloads are represented in ISO 8601 date-time format. 
+All date-time fields in responses must include the timezone. An example is below:
+2017-04-05T10:43:07+00:00"
+AccountsAPI,OBMandateRelatedInformation1,FinalPaymentDateTime,string,The date on which the final payment for a recurrent credit transfer will be made.
+AccountsAPI,OBMandateRelatedInformation1,Frequency,OBFrequency6,
+AccountsAPI,OBMandateRelatedInformation1,Reason,string,Reason for the setup of the credit transfer mandate.
+AccountsAPI,OBMerchantDetails1,MerchantName,string,Name by which the merchant is known.
+AccountsAPI,OBMerchantDetails1,MerchantCategoryCode,string,"Category code conform to ISO 18245, related to the type of services or goods the merchant provides for the transaction."
+AccountsAPI,OBPCAData1,ProductDetails,object,
+AccountsAPI,OBPCAData1,CreditInterest,object,Details about the interest that may be payable to the PCA account holders
+AccountsAPI,OBPCAData1,Overdraft,object,"Details about Overdraft rates, fees & charges"
+AccountsAPI,OBPCAData1,OtherFeesCharges,object,Contains details of fees and charges which are not associated with either borrowing or features/benefits
+AccountsAPI,OBParty2,PartyId,PartyId,
+AccountsAPI,OBParty2,PartyNumber,PartyNumber,
+AccountsAPI,OBParty2,PartyType,OBInternalPartyType1Code,
+AccountsAPI,OBParty2,Name,Name_3,
+AccountsAPI,OBParty2,FullLegalName,FullLegalName,
+AccountsAPI,OBParty2,LegalStructure,OBInternalLegalStructureType1Code,
+AccountsAPI,OBParty2,LEI,LEI,
+AccountsAPI,OBParty2,BeneficialOwnership,boolean,A flag to indicate a party's beneficial ownership of the related account
+AccountsAPI,OBParty2,AccountRole,OBInternalAccountRole1Code,
+AccountsAPI,OBParty2,EmailAddress,EmailAddress,
+AccountsAPI,OBParty2,Phone,PhoneNumber_0,
+AccountsAPI,OBParty2,Mobile,PhoneNumber_1,
+AccountsAPI,OBParty2,Relationships,OBPartyRelationships1,
+AccountsAPI,OBParty2,Address,array,
+AccountsAPI,OBPartyRelationships1,Account,object,Relationship to the Account resource.
+AccountsAPI,OBPostalAddress7,AddressType,OBAddressType2Code,
+AccountsAPI,OBPostalAddress7,Department,string,Identification of a division of a large organisation or building.
+AccountsAPI,OBPostalAddress7,SubDepartment,string,Identification of a sub-division of a large organisation or building.
+AccountsAPI,OBPostalAddress7,StreetName,StreetName,
+AccountsAPI,OBPostalAddress7,BuildingNumber,BuildingNumber,
+AccountsAPI,OBPostalAddress7,BuildingName,BuildingName,
+AccountsAPI,OBPostalAddress7,Floor,Floor,
+AccountsAPI,OBPostalAddress7,UnitNumber,UnitNumber,
+AccountsAPI,OBPostalAddress7,Room,Room,
+AccountsAPI,OBPostalAddress7,PostBox,PostBox,
+AccountsAPI,OBPostalAddress7,TownLocationName,TownName,
+AccountsAPI,OBPostalAddress7,DistrictName,DistrictName,
+AccountsAPI,OBPostalAddress7,CareOf,CareOf,
+AccountsAPI,OBPostalAddress7,PostCode,PostCode,
+AccountsAPI,OBPostalAddress7,TownName,TownName,
+AccountsAPI,OBPostalAddress7,CountrySubDivision,string,"Identifies a subdivision of a country such as state, region, county."
+AccountsAPI,OBPostalAddress7,Country,string,Nation with its own government.
+AccountsAPI,OBPostalAddress7,AddressLine,array,
+AccountsAPI,OBReadAccount6,Data,object,
+AccountsAPI,OBReadAccount6,Links,Links,
+AccountsAPI,OBReadAccount6,Meta,Meta,
+AccountsAPI,OBReadBalance1,Data,object,
+AccountsAPI,OBReadBalance1,Links,Links,
+AccountsAPI,OBReadBalance1,Meta,Meta,
+AccountsAPI,OBReadBeneficiary5,Data,object,
+AccountsAPI,OBReadBeneficiary5,Links,Links,
+AccountsAPI,OBReadBeneficiary5,Meta,Meta,
+AccountsAPI,OBReadConsent1,Data,object,
+AccountsAPI,OBReadConsent1,Risk,OBRisk2,
+AccountsAPI,OBReadConsentResponse1,Data,object,
+AccountsAPI,OBReadConsentResponse1,Risk,OBRisk2,
+AccountsAPI,OBReadConsentResponse1,Links,Links,
+AccountsAPI,OBReadConsentResponse1,Meta,Meta,
+AccountsAPI,OBReadDataStatement2,Statement,array,
+AccountsAPI,OBReadDataTransaction6,Transaction,array,
+AccountsAPI,OBReadDirectDebit2,Data,object,
+AccountsAPI,OBReadDirectDebit2,Links,Links,
+AccountsAPI,OBReadDirectDebit2,Meta,Meta,
+AccountsAPI,OBReadOffer1,Data,object,
+AccountsAPI,OBReadOffer1,Links,Links,
+AccountsAPI,OBReadOffer1,Meta,Meta,
+AccountsAPI,OBReadParty2,Data,object,
+AccountsAPI,OBReadParty2,Links,Links,
+AccountsAPI,OBReadParty2,Meta,Meta,
+AccountsAPI,OBReadParty3,Data,object,
+AccountsAPI,OBReadParty3,Links,Links,
+AccountsAPI,OBReadParty3,Meta,Meta,
+AccountsAPI,OBReadProduct2,Data,object,Aligning with the read write specs structure.
+AccountsAPI,OBReadProduct2,Links,Links,
+AccountsAPI,OBReadProduct2,Meta,Meta,
+AccountsAPI,OBReadScheduledPayment3,Data,object,
+AccountsAPI,OBReadScheduledPayment3,Links,Links,
+AccountsAPI,OBReadScheduledPayment3,Meta,Meta,
+AccountsAPI,OBReadStandingOrder6,Data,object,
+AccountsAPI,OBReadStandingOrder6,Links,Links,
+AccountsAPI,OBReadStandingOrder6,Meta,Meta,
+AccountsAPI,OBReadStatement2,Data,OBReadDataStatement2,
+AccountsAPI,OBReadStatement2,Links,Links,
+AccountsAPI,OBReadStatement2,Meta,Meta,
+AccountsAPI,OBReadTransaction6,Data,OBReadDataTransaction6,
+AccountsAPI,OBReadTransaction6,Links,Links,
+AccountsAPI,OBReadTransaction6,Meta,Meta,
+AccountsAPI,OBScheduledPayment3,AccountId,AccountId,
+AccountsAPI,OBScheduledPayment3,ScheduledPaymentId,ScheduledPaymentId,
+AccountsAPI,OBScheduledPayment3,ScheduledPaymentDateTime,ScheduledPaymentDateTime,
+AccountsAPI,OBScheduledPayment3,ScheduledType,OBInternalScheduleType1Code,
+AccountsAPI,OBScheduledPayment3,Reference,Reference,
+AccountsAPI,OBScheduledPayment3,DebtorReference,DebtorReference,
+AccountsAPI,OBScheduledPayment3,InstructedAmount,OBActiveOrHistoricCurrencyAndAmount_1,
+AccountsAPI,OBScheduledPayment3,CreditorAgent,OBBranchAndFinancialInstitutionIdentification5_1,
+AccountsAPI,OBScheduledPayment3,CreditorAccount,OBCashAccount5_1,
+AccountsAPI,OBScheduledPayment3Basic,AccountId,AccountId,
+AccountsAPI,OBScheduledPayment3Basic,ScheduledPaymentId,ScheduledPaymentId,
+AccountsAPI,OBScheduledPayment3Basic,ScheduledPaymentDateTime,ScheduledPaymentDateTime,
+AccountsAPI,OBScheduledPayment3Basic,ScheduledType,OBInternalScheduleType1Code,
+AccountsAPI,OBScheduledPayment3Basic,Reference,Reference,
+AccountsAPI,OBScheduledPayment3Basic,DebtorReference,DebtorReference,
+AccountsAPI,OBScheduledPayment3Basic,InstructedAmount,OBActiveOrHistoricCurrencyAndAmount_1,
+AccountsAPI,OBScheduledPayment3Detail,AccountId,AccountId,
+AccountsAPI,OBScheduledPayment3Detail,ScheduledPaymentId,ScheduledPaymentId,
+AccountsAPI,OBScheduledPayment3Detail,ScheduledPaymentDateTime,ScheduledPaymentDateTime,
+AccountsAPI,OBScheduledPayment3Detail,ScheduledType,OBInternalScheduleType1Code,
+AccountsAPI,OBScheduledPayment3Detail,Reference,Reference,
+AccountsAPI,OBScheduledPayment3Detail,DebtorReference,DebtorReference,
+AccountsAPI,OBScheduledPayment3Detail,InstructedAmount,OBActiveOrHistoricCurrencyAndAmount_1,
+AccountsAPI,OBScheduledPayment3Detail,CreditorAgent,OBBranchAndFinancialInstitutionIdentification5_1,
+AccountsAPI,OBScheduledPayment3Detail,CreditorAccount,OBCashAccount5_1,
+AccountsAPI,OBStandingOrder6,AccountId,AccountId,
+AccountsAPI,OBStandingOrder6,StandingOrderId,StandingOrderId,
+AccountsAPI,OBStandingOrder6,NextPaymentDateTime,NextPaymentDateTime,
+AccountsAPI,OBStandingOrder6,LastPaymentDateTime,LastPaymentDateTime,
+AccountsAPI,OBStandingOrder6,NumberOfPayments,NumberOfPayments,
+AccountsAPI,OBStandingOrder6,StandingOrderStatusCode,ExternalMandateStatus1Code,
+AccountsAPI,OBStandingOrder6,FirstPaymentAmount,OBActiveOrHistoricCurrencyAndAmount_2,
+AccountsAPI,OBStandingOrder6,NextPaymentAmount,OBActiveOrHistoricCurrencyAndAmount_3,
+AccountsAPI,OBStandingOrder6,LastPaymentAmount,OBActiveOrHistoricCurrencyAndAmount_11,
+AccountsAPI,OBStandingOrder6,FinalPaymentAmount,OBActiveOrHistoricCurrencyAndAmount_4,
+AccountsAPI,OBStandingOrder6,CreditorAgent,OBBranchAndFinancialInstitutionIdentification5_1,
+AccountsAPI,OBStandingOrder6,CreditorAccount,OBCashAccount5_1,
+AccountsAPI,OBStandingOrder6,SupplementaryData,OBSupplementaryData1,
+AccountsAPI,OBStandingOrder6,MandateRelatedInformation,OBMandateRelatedInformation1,
+AccountsAPI,OBStandingOrder6,RemittanceInformation,OBRemittanceInformation2,
+AccountsAPI,OBStandingOrder6Basic,AccountId,AccountId,
+AccountsAPI,OBStandingOrder6Basic,StandingOrderId,StandingOrderId,
+AccountsAPI,OBStandingOrder6Basic,NextPaymentDateTime,NextPaymentDateTime,
+AccountsAPI,OBStandingOrder6Basic,LastPaymentDateTime,LastPaymentDateTime,
+AccountsAPI,OBStandingOrder6Basic,NumberOfPayments,NumberOfPayments,
+AccountsAPI,OBStandingOrder6Basic,StandingOrderStatusCode,ExternalMandateStatus1Code,
+AccountsAPI,OBStandingOrder6Basic,FirstPaymentAmount,OBActiveOrHistoricCurrencyAndAmount_2,
+AccountsAPI,OBStandingOrder6Basic,NextPaymentAmount,OBActiveOrHistoricCurrencyAndAmount_3,
+AccountsAPI,OBStandingOrder6Basic,LastPaymentAmount,OBActiveOrHistoricCurrencyAndAmount_11,
+AccountsAPI,OBStandingOrder6Basic,FinalPaymentAmount,OBActiveOrHistoricCurrencyAndAmount_4,
+AccountsAPI,OBStandingOrder6Basic,SupplementaryData,OBSupplementaryData1,
+AccountsAPI,OBStandingOrder6Basic,MandateRelatedInformation,OBMandateRelatedInformation1,
+AccountsAPI,OBStandingOrder6Basic,RemittanceInformation,OBRemittanceInformation2,
+AccountsAPI,OBStandingOrder6Detail,AccountId,AccountId,
+AccountsAPI,OBStandingOrder6Detail,StandingOrderId,StandingOrderId,
+AccountsAPI,OBStandingOrder6Detail,NextPaymentDateTime,NextPaymentDateTime,
+AccountsAPI,OBStandingOrder6Detail,LastPaymentDateTime,LastPaymentDateTime,
+AccountsAPI,OBStandingOrder6Detail,NumberOfPayments,NumberOfPayments,
+AccountsAPI,OBStandingOrder6Detail,StandingOrderStatusCode,ExternalMandateStatus1Code,
+AccountsAPI,OBStandingOrder6Detail,FirstPaymentAmount,OBActiveOrHistoricCurrencyAndAmount_2,
+AccountsAPI,OBStandingOrder6Detail,NextPaymentAmount,OBActiveOrHistoricCurrencyAndAmount_3,
+AccountsAPI,OBStandingOrder6Detail,LastPaymentAmount,OBActiveOrHistoricCurrencyAndAmount_11,
+AccountsAPI,OBStandingOrder6Detail,FinalPaymentAmount,OBActiveOrHistoricCurrencyAndAmount_4,
+AccountsAPI,OBStandingOrder6Detail,CreditorAgent,OBBranchAndFinancialInstitutionIdentification5_1,
+AccountsAPI,OBStandingOrder6Detail,CreditorAccount,OBCashAccount5_1,
+AccountsAPI,OBStandingOrder6Detail,SupplementaryData,OBSupplementaryData1,
+AccountsAPI,OBStandingOrder6Detail,MandateRelatedInformation,OBMandateRelatedInformation1,
+AccountsAPI,OBStandingOrder6Detail,RemittanceInformation,OBRemittanceInformation2,
+AccountsAPI,OBStatement2,AccountId,AccountId,
+AccountsAPI,OBStatement2,StatementId,StatementId,
+AccountsAPI,OBStatement2,StatementReference,StatementReference,
+AccountsAPI,OBStatement2,Type,OBInternalStatementType1Code,
+AccountsAPI,OBStatement2,StartDateTime,StartDateTime,
+AccountsAPI,OBStatement2,EndDateTime,EndDateTime,
+AccountsAPI,OBStatement2,CreationDateTime,CreationDateTime,
+AccountsAPI,OBStatement2,StatementDescription,array,
+AccountsAPI,OBStatement2,StatementBenefit,array,
+AccountsAPI,OBStatement2,StatementFee,array,
+AccountsAPI,OBStatement2,StatementInterest,array,
+AccountsAPI,OBStatement2,StatementAmount,array,
+AccountsAPI,OBStatement2,StatementDateTime,array,
+AccountsAPI,OBStatement2,StatementRate,array,
+AccountsAPI,OBStatement2,StatementValue,array,
+AccountsAPI,OBStatement2,TotalValue,object,Combined sum of all Amounts in the accounts base currency
+AccountsAPI,OBStatement2Basic,AccountId,AccountId,
+AccountsAPI,OBStatement2Basic,StatementId,StatementId,
+AccountsAPI,OBStatement2Basic,StatementReference,StatementReference,
+AccountsAPI,OBStatement2Basic,Type,OBInternalStatementType1Code,
+AccountsAPI,OBStatement2Basic,StartDateTime,StartDateTime,
+AccountsAPI,OBStatement2Basic,EndDateTime,EndDateTime,
+AccountsAPI,OBStatement2Basic,CreationDateTime,CreationDateTime,
+AccountsAPI,OBStatement2Basic,StatementDescription,array,
+AccountsAPI,OBStatement2Basic,StatementBenefit,array,
+AccountsAPI,OBStatement2Basic,StatementFee,array,
+AccountsAPI,OBStatement2Basic,StatementInterest,array,
+AccountsAPI,OBStatement2Basic,StatementDateTime,array,
+AccountsAPI,OBStatement2Basic,StatementRate,array,
+AccountsAPI,OBStatement2Basic,StatementValue,array,
+AccountsAPI,OBStatement2Basic,TotalValue,object,Combined sum of all Amounts in the accounts base currency
+AccountsAPI,OBStatement2Detail,AccountId,AccountId,
+AccountsAPI,OBStatement2Detail,StatementId,StatementId,
+AccountsAPI,OBStatement2Detail,StatementReference,StatementReference,
+AccountsAPI,OBStatement2Detail,Type,OBInternalStatementType1Code,
+AccountsAPI,OBStatement2Detail,StartDateTime,StartDateTime,
+AccountsAPI,OBStatement2Detail,EndDateTime,EndDateTime,
+AccountsAPI,OBStatement2Detail,CreationDateTime,CreationDateTime,
+AccountsAPI,OBStatement2Detail,StatementDescription,array,
+AccountsAPI,OBStatement2Detail,StatementBenefit,array,
+AccountsAPI,OBStatement2Detail,StatementFee,array,
+AccountsAPI,OBStatement2Detail,StatementInterest,array,
+AccountsAPI,OBStatement2Detail,StatementAmount,array,
+AccountsAPI,OBStatement2Detail,StatementDateTime,array,
+AccountsAPI,OBStatement2Detail,StatementRate,array,
+AccountsAPI,OBStatement2Detail,StatementValue,array,
+AccountsAPI,OBStatement2Detail,TotalValue,object,Combined sum of all Amounts in the accounts base currency
+AccountsAPI,OBStatusReason,StatusReasonCode,string,"Specifies the status reason in a code form. 
+ For a full description see `OBExternalStatusReason1Code` [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)"
+AccountsAPI,OBStatusReason,StatusReasonDescription,string,Description supporting the StatusReasonCode.
+AccountsAPI,OBStatusReason,Path,string,Recommended but optional reference to JSON path if relevant to the StatusReasonCode.
+AccountsAPI,OBTransaction6,AccountId,AccountId,
+AccountsAPI,OBTransaction6,TransactionId,TransactionId,
+AccountsAPI,OBTransaction6,TransactionReference,TransactionReference,
+AccountsAPI,OBTransaction6,StatementReference,array,
+AccountsAPI,OBTransaction6,CreditDebitIndicator,OBCreditDebitCode_1,
+AccountsAPI,OBTransaction6,Status,ExternalEntryStatus1Code,
+AccountsAPI,OBTransaction6,TransactionMutability,OBInternalTransactionMutability1Code,
+AccountsAPI,OBTransaction6,BookingDateTime,BookingDateTime,
+AccountsAPI,OBTransaction6,ValueDateTime,ValueDateTime,
+AccountsAPI,OBTransaction6,TransactionInformation,TransactionInformation,
+AccountsAPI,OBTransaction6,AddressLine,AddressLine,
+AccountsAPI,OBTransaction6,Amount,OBActiveOrHistoricCurrencyAndAmount_9,
+AccountsAPI,OBTransaction6,ChargeAmount,OBActiveOrHistoricCurrencyAndAmount_10,
+AccountsAPI,OBTransaction6,CurrencyExchange,OBCurrencyExchange5,
+AccountsAPI,OBTransaction6,BankTransactionCode,OBBankTransactionCodeStructure1,
+AccountsAPI,OBTransaction6,ProprietaryBankTransactionCode,ProprietaryBankTransactionCodeStructure1,
+AccountsAPI,OBTransaction6,ExtendedProprietaryBankTransactionCodes,array,
+AccountsAPI,OBTransaction6,Balance,OBTransactionCashBalance,
+AccountsAPI,OBTransaction6,MerchantDetails,OBMerchantDetails1,
+AccountsAPI,OBTransaction6,CreditorAgent,OBBranchAndFinancialInstitutionIdentification6_1,
+AccountsAPI,OBTransaction6,CreditorAccount,OBCashAccount6_0,
+AccountsAPI,OBTransaction6,DebtorAgent,OBBranchAndFinancialInstitutionIdentification6_2,
+AccountsAPI,OBTransaction6,DebtorAccount,OBCashAccount6_1,
+AccountsAPI,OBTransaction6,CardInstrument,OBTransactionCardInstrument1,
+AccountsAPI,OBTransaction6,SupplementaryData,OBSupplementaryData1,
+AccountsAPI,OBTransaction6,CategoryPurposeCode,ExternalCategoryPurpose1Code,
+AccountsAPI,OBTransaction6,PaymentPurposeCode,OBExternalPurpose1Code,
+AccountsAPI,OBTransaction6,UltimateCreditor,OBUltimateCreditor1,
+AccountsAPI,OBTransaction6,UltimateDebtor,OBUltimateDebtor1,
+AccountsAPI,OBTransaction6Basic,AccountId,AccountId,
+AccountsAPI,OBTransaction6Basic,TransactionId,TransactionId,
+AccountsAPI,OBTransaction6Basic,TransactionReference,TransactionReference,
+AccountsAPI,OBTransaction6Basic,StatementReference,array,
+AccountsAPI,OBTransaction6Basic,CreditDebitIndicator,OBCreditDebitCode_1,
+AccountsAPI,OBTransaction6Basic,Status,ExternalEntryStatus1Code,
+AccountsAPI,OBTransaction6Basic,TransactionMutability,OBInternalTransactionMutability1Code,
+AccountsAPI,OBTransaction6Basic,BookingDateTime,BookingDateTime,
+AccountsAPI,OBTransaction6Basic,ValueDateTime,ValueDateTime,
+AccountsAPI,OBTransaction6Basic,AddressLine,AddressLine,
+AccountsAPI,OBTransaction6Basic,Amount,OBActiveOrHistoricCurrencyAndAmount_9,
+AccountsAPI,OBTransaction6Basic,ChargeAmount,OBActiveOrHistoricCurrencyAndAmount_10,
+AccountsAPI,OBTransaction6Basic,CurrencyExchange,OBCurrencyExchange5,
+AccountsAPI,OBTransaction6Basic,BankTransactionCode,OBBankTransactionCodeStructure1,
+AccountsAPI,OBTransaction6Basic,ProprietaryBankTransactionCode,ProprietaryBankTransactionCodeStructure1,
+AccountsAPI,OBTransaction6Basic,ExtendedProprietaryBankTransactionCodes,array,
+AccountsAPI,OBTransaction6Basic,CardInstrument,OBTransactionCardInstrument1,
+AccountsAPI,OBTransaction6Basic,SupplementaryData,OBSupplementaryData1,
+AccountsAPI,OBTransaction6Basic,CategoryPurposeCode,ExternalCategoryPurpose1Code,
+AccountsAPI,OBTransaction6Basic,PaymentPurposeCode,OBExternalPurpose1Code,
+AccountsAPI,OBTransaction6Detail,AccountId,AccountId,
+AccountsAPI,OBTransaction6Detail,TransactionId,TransactionId,
+AccountsAPI,OBTransaction6Detail,TransactionReference,TransactionReference,
+AccountsAPI,OBTransaction6Detail,StatementReference,array,
+AccountsAPI,OBTransaction6Detail,CreditDebitIndicator,OBCreditDebitCode_1,
+AccountsAPI,OBTransaction6Detail,Status,ExternalEntryStatus1Code,
+AccountsAPI,OBTransaction6Detail,TransactionMutability,OBInternalTransactionMutability1Code,
+AccountsAPI,OBTransaction6Detail,BookingDateTime,BookingDateTime,
+AccountsAPI,OBTransaction6Detail,ValueDateTime,ValueDateTime,
+AccountsAPI,OBTransaction6Detail,TransactionInformation,TransactionInformation,
+AccountsAPI,OBTransaction6Detail,AddressLine,AddressLine,
+AccountsAPI,OBTransaction6Detail,Amount,OBActiveOrHistoricCurrencyAndAmount_9,
+AccountsAPI,OBTransaction6Detail,ChargeAmount,OBActiveOrHistoricCurrencyAndAmount_10,
+AccountsAPI,OBTransaction6Detail,CurrencyExchange,OBCurrencyExchange5,
+AccountsAPI,OBTransaction6Detail,BankTransactionCode,OBBankTransactionCodeStructure1,
+AccountsAPI,OBTransaction6Detail,ProprietaryBankTransactionCode,ProprietaryBankTransactionCodeStructure1,
+AccountsAPI,OBTransaction6Detail,ExtendedProprietaryBankTransactionCodes,array,
+AccountsAPI,OBTransaction6Detail,Balance,OBTransactionCashBalance,
+AccountsAPI,OBTransaction6Detail,MerchantDetails,OBMerchantDetails1,
+AccountsAPI,OBTransaction6Detail,CreditorAgent,OBBranchAndFinancialInstitutionIdentification6_1,
+AccountsAPI,OBTransaction6Detail,CreditorAccount,OBCashAccount6_0,
+AccountsAPI,OBTransaction6Detail,DebtorAgent,OBBranchAndFinancialInstitutionIdentification6_2,
+AccountsAPI,OBTransaction6Detail,DebtorAccount,OBCashAccount6_1,
+AccountsAPI,OBTransaction6Detail,CardInstrument,OBTransactionCardInstrument1,
+AccountsAPI,OBTransaction6Detail,SupplementaryData,OBSupplementaryData1,
+AccountsAPI,OBTransaction6Detail,CategoryPurposeCode,ExternalCategoryPurpose1Code,
+AccountsAPI,OBTransaction6Detail,PaymentPurposeCode,OBExternalPurpose1Code,
+AccountsAPI,OBTransaction6Detail,UltimateCreditor,OBUltimateCreditor1,
+AccountsAPI,OBTransaction6Detail,UltimateDebtor,OBUltimateDebtor1,
+AccountsAPI,OBTransactionCardInstrument1,CardSchemeName,string,"Name of the card scheme. <br />
+For a full list of enumeration values refer to `OBInternalCardSchemeType1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)"
+AccountsAPI,OBTransactionCardInstrument1,AuthorisationType,string,"The card authorisation type. <br />
+For a full list of enumeration values refer to `OBInternalCardAuthorisationType1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)"
+AccountsAPI,OBTransactionCardInstrument1,Name,string,Name of the cardholder using the card instrument.
+AccountsAPI,OBTransactionCardInstrument1,Identification,string,"Identification assigned by an institution to identify the card instrument used in the transaction. This identification is known by the account owner, and may be masked."
+AccountsAPI,OBTransactionCashBalance,CreditDebitIndicator,OBCreditDebitCode_2,
+AccountsAPI,OBTransactionCashBalance,Type,OBBalanceType1Code,
+AccountsAPI,OBTransactionCashBalance,Amount,object,Amount of money of the cash balance after a transaction entry is applied to the account..
+AccountsAPI,OB_OtherCodeType1_0,Code,OB_CodeMnemonic,
+AccountsAPI,OB_OtherCodeType1_0,Name,Name_4,
+AccountsAPI,OB_OtherCodeType1_0,Description,Description_3,
+AccountsAPI,OB_OtherCodeType1_1,Code,OB_CodeMnemonic,
+AccountsAPI,OB_OtherCodeType1_1,Name,Name_4,
+AccountsAPI,OB_OtherCodeType1_1,Description,Description_3,
+AccountsAPI,OB_OtherCodeType1_2,Code,OB_CodeMnemonic,
+AccountsAPI,OB_OtherCodeType1_2,Name,Name_4,
+AccountsAPI,OB_OtherCodeType1_2,Description,Description_3,
+AccountsAPI,OB_OtherCodeType1_3,Code,OB_CodeMnemonic,
+AccountsAPI,OB_OtherCodeType1_3,Name,Name_4,
+AccountsAPI,OB_OtherCodeType1_3,Description,Description_3,
+AccountsAPI,OB_OtherCodeType1_4,Code,OB_CodeMnemonic,
+AccountsAPI,OB_OtherCodeType1_4,Name,Name_4,
+AccountsAPI,OB_OtherCodeType1_4,Description,Description_3,
+AccountsAPI,OB_OtherCodeType1_5,Code,OB_CodeMnemonic,
+AccountsAPI,OB_OtherCodeType1_5,Name,Name_4,
+AccountsAPI,OB_OtherCodeType1_5,Description,Description_3,
+AccountsAPI,OB_OtherCodeType1_6,Code,OB_CodeMnemonic,
+AccountsAPI,OB_OtherCodeType1_6,Name,Name_4,
+AccountsAPI,OB_OtherCodeType1_6,Description,Description_3,
+AccountsAPI,OB_OtherCodeType1_7,Code,OB_CodeMnemonic,
+AccountsAPI,OB_OtherCodeType1_7,Name,Name_4,
+AccountsAPI,OB_OtherCodeType1_7,Description,Description_3,
+AccountsAPI,OB_OtherCodeType1_8,Code,OB_CodeMnemonic,
+AccountsAPI,OB_OtherCodeType1_8,Name,Name_4,
+AccountsAPI,OB_OtherCodeType1_8,Description,Description_3,
+AccountsAPI,OB_OtherFeeChargeDetailType,Code,OB_CodeMnemonic,
+AccountsAPI,OB_OtherFeeChargeDetailType,FeeCategory,OB_FeeCategory1Code,
+AccountsAPI,OB_OtherFeeChargeDetailType,Name,Name_4,
+AccountsAPI,OB_OtherFeeChargeDetailType,Description,Description_3,
+AccountsAPI,ProprietaryBankTransactionCodeStructure1,Code,string,Proprietary bank transaction code to identify the underlying transaction.
+AccountsAPI,ProprietaryBankTransactionCodeStructure1,Issuer,string,Identification of the issuer of the proprietary bank transaction code.
+AccountsAPI,OBExtendedProprietaryBankTransactionCode,Code,string,Proprietary bank transaction code to identify the underlying transaction.
+AccountsAPI,OBExtendedProprietaryBankTransactionCode,Issuer,string,Identification of the issuer of the proprietary bank transaction code.
+AccountsAPI,OBExtendedProprietaryBankTransactionCode,Description,string,Description of the code and its usage on the ASPSP channel
+AccountsAPI,Model,id,integer,
+PaymentsAPI,OBUltimateCreditor1,Name,string,Name by which a party is known and which is usually used to identify that party.
+PaymentsAPI,OBUltimateCreditor1,Identification,string,Identification assigned by an institution.
+PaymentsAPI,OBUltimateCreditor1,LEI,LEI,
+PaymentsAPI,OBUltimateCreditor1,SchemeName,OBInternalAccountIdentification4Code,
+PaymentsAPI,OBUltimateCreditor1,PostalAddress,OBPostalAddress7,
+PaymentsAPI,OBUltimateDebtor1,Name,string,Name by which a party is known and which is usually used to identify that party.
+PaymentsAPI,OBUltimateDebtor1,Identification,string,Identification assigned by an institution.
+PaymentsAPI,OBUltimateDebtor1,LEI,LEI,
+PaymentsAPI,OBUltimateDebtor1,SchemeName,OBInternalAccountIdentification4Code,
+PaymentsAPI,OBUltimateDebtor1,PostalAddress,OBPostalAddress7,
+PaymentsAPI,OBFrequency6,Type,,
+PaymentsAPI,OBFrequency6,CountPerPeriod,integer,Number of instructions to be created and processed during the specified period .Specifies a frequency in terms of a count per period within a specified frequency type. Note: should not be used alongside `PointInTime`
+PaymentsAPI,OBFrequency6,PointInTime,PointInTime,
+PaymentsAPI,Links,Self,string,
+PaymentsAPI,Links,First,string,
+PaymentsAPI,Links,Prev,string,
+PaymentsAPI,Links,Next,string,
+PaymentsAPI,Links,Last,string,
+PaymentsAPI,Meta,TotalPages,integer,
+PaymentsAPI,Meta,FirstAvailableDateTime,ISODateTime,
+PaymentsAPI,Meta,LastAvailableDateTime,ISODateTime,
+PaymentsAPI,OBActiveOrHistoricCurrencyAndAmount,Amount,OBActiveCurrencyAndAmount_SimpleType,
+PaymentsAPI,OBActiveOrHistoricCurrencyAndAmount,Currency,ActiveOrHistoricCurrencyCode,
+PaymentsAPI,OBBranchAndFinancialInstitutionIdentification6_0,SchemeName,OBInternalFinancialInstitutionIdentification4Code,
+PaymentsAPI,OBBranchAndFinancialInstitutionIdentification6_0,Identification,Identification_1,
+PaymentsAPI,OBBranchAndFinancialInstitutionIdentification6_0,Name,Name,
+PaymentsAPI,OBBranchAndFinancialInstitutionIdentification6_0,PostalAddress,OBPostalAddress7,
+PaymentsAPI,OBBranchAndFinancialInstitutionIdentification6_0,LEI,LEI,
+PaymentsAPI,OBCashAccountCreditor3,SchemeName,OBInternalAccountIdentification4Code,
+PaymentsAPI,OBCashAccountCreditor3,Identification,string,Identification assigned by an institution to identify an account. This identification is known by the account owner.
+PaymentsAPI,OBCashAccountCreditor3,Name,string,"Name of the account, as assigned by the account servicing institution.  Usage The account name is the name or names of the account owner(s) represented at an account level. The account name is not the product name or the nickname of the account."
+PaymentsAPI,OBCashAccountCreditor3,SecondaryIdentification,string,"Secondary identification of the account, as assigned by the account servicing institution. This can be used by building societies to additionally identify accounts with a roll number (in addition to a sort code and account number combination)."
+PaymentsAPI,OBCashAccountCreditor3,LEI,LEI,
+PaymentsAPI,OBCashAccountCreditor3,Proxy,OBProxy1,
+PaymentsAPI,OBCashAccountDebtor4,SchemeName,string,"^ Name of the identification scheme, in a coded form as published in an external list. | Namespaced Enumeration OBInternalAccountIdentification4Code"
+PaymentsAPI,OBCashAccountDebtor4,Identification,string,^ Identification assigned by an institution to identify an account. This identification is known by the account owner. | Max256Text
+PaymentsAPI,OBCashAccountDebtor4,Name,string,"^ Name of the account, as assigned by the account servicing institution.  Usage The account name is the name or names of the account owner(s) represented at an account level. The account name is not the product name or the nickname of the account."
+PaymentsAPI,OBCashAccountDebtor4,SecondaryIdentification,string,"^ This is secondary identification of the account, as assigned by the account servicing institution.  This can be used by building societies to additionally identify accounts with a roll number (in addition to a sort code and account number combination) | Max34Text"
+PaymentsAPI,OBCashAccountDebtor4,LEI,LEI,
+PaymentsAPI,OBError1,ErrorCode,OBInternalErrorResponseError1Code,
+PaymentsAPI,OBError1,Message,string,"A description of the error that occurred. e.g., 'A mandatory field isn't supplied' or 'RequestedExecutionDateTime must be in future'
+OBL doesn't standardise this field"
+PaymentsAPI,OBError1,Path,string,"Recommended but optional reference to the JSON Path of the field with error, e.g., Data.Initiation.InstructedAmount.Currency"
+PaymentsAPI,OBError1,Url,string,"URL to help remediate the problem, or provide more information, or to API Reference, or help etc"
+PaymentsAPI,OBErrorResponse1,Id,string,"A unique reference for the error instance, for audit purposes, in case of unknown/unclassified errors."
+PaymentsAPI,OBErrorResponse1,Code,string,"Deprecated <br>High level textual error code, to help categorise the errors."
+PaymentsAPI,OBErrorResponse1,Message,string,Deprecated <br>Brief Error message
+PaymentsAPI,OBErrorResponse1,Errors,array,
+PaymentsAPI,OBMandateRelatedInformation1,MandateIdentification,Identification_1,
+PaymentsAPI,OBMandateRelatedInformation1,Classification,OBExternalMandateClassification1Code,
+PaymentsAPI,OBMandateRelatedInformation1,CategoryPurposeCode,ExternalCategoryPurpose1Code,
+PaymentsAPI,OBMandateRelatedInformation1,FirstPaymentDateTime,string,
+PaymentsAPI,OBMandateRelatedInformation1,RecurringPaymentDateTime,string,"The date on which the first recurring payment for a Standing Order schedule will be made. 
+Usage: This must be populated only if the first recurring date is different to the first payment date. All dates in the JSON payloads are represented in ISO 8601 date-time format. 
+All date-time fields in responses must include the timezone. An example is below:
+2017-04-05T10:43:07+00:00"
+PaymentsAPI,OBMandateRelatedInformation1,FinalPaymentDateTime,string,
+PaymentsAPI,OBMandateRelatedInformation1,Frequency,OBFrequency6,
+PaymentsAPI,OBMandateRelatedInformation1,Reason,string,Reason for the direct debit mandate to allow the user to distinguish between different mandates for the same creditor.
+PaymentsAPI,OBPaymentStatusReason,StatusReasonCode,string,"Specifies the status reason in a code form 
+ For more information and enum values see `OBExternalStatusReason1Code [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)"
+PaymentsAPI,OBPaymentStatusReason,StatusReasonDescription,string,Description supporting the StatusReasonCode.
+PaymentsAPI,OBPaymentStatusReason,Path,string,"Recommended but optional reference to the JSON Path of the field with error, e.g., Data.Initiation.InstructedAmount.Currency"
+PaymentsAPI,OBProxy1,Identification,string,Identification used to indicate the account identification under another specified name.
+PaymentsAPI,OBProxy1,Code,ExternalProxyAccountType1Code,
+PaymentsAPI,OBProxy1,Type,string,Type of the proxy identification.
+PaymentsAPI,OBPostalAddress7,AddressType,OBAddressType2Code,
+PaymentsAPI,OBPostalAddress7,Department,Department,
+PaymentsAPI,OBPostalAddress7,SubDepartment,SubDepartment,
+PaymentsAPI,OBPostalAddress7,StreetName,StreetName,
+PaymentsAPI,OBPostalAddress7,BuildingNumber,BuildingNumber,
+PaymentsAPI,OBPostalAddress7,BuildingName,BuildingName,
+PaymentsAPI,OBPostalAddress7,Floor,Floor,
+PaymentsAPI,OBPostalAddress7,UnitNumber,UnitNumber,
+PaymentsAPI,OBPostalAddress7,Room,Room,
+PaymentsAPI,OBPostalAddress7,PostBox,PostBox,
+PaymentsAPI,OBPostalAddress7,TownLocationName,TownName,
+PaymentsAPI,OBPostalAddress7,DistrictName,DistrictName,
+PaymentsAPI,OBPostalAddress7,CareOf,CareOf,
+PaymentsAPI,OBPostalAddress7,PostCode,PostCode,
+PaymentsAPI,OBPostalAddress7,TownName,TownName,
+PaymentsAPI,OBPostalAddress7,CountrySubDivision,CountrySubDivision,
+PaymentsAPI,OBPostalAddress7,Country,CountryCode,
+PaymentsAPI,OBPostalAddress7,AddressLine,array,
+PaymentsAPI,OBReferredDocumentInformation,Code,ExternalDocumentType1Code,
+PaymentsAPI,OBReferredDocumentInformation,Issuer,string,Identification of the issuer of the reference document type.
+PaymentsAPI,OBReferredDocumentInformation,Number,string,Identification of the type specified for the referred document line.
+PaymentsAPI,OBReferredDocumentInformation,RelatedDate,string,Date associated with the referred document line.
+PaymentsAPI,OBReferredDocumentInformation,LineDetails,array,Set of elements used to provide the content of the referred document line.
+PaymentsAPI,OBRemittanceInformation2,Structured,array,
+PaymentsAPI,OBRemittanceInformation2,Unstructured,array,"Information supplied to enable the matching/reconciliation of an entry with the items that the payment is intended to settle, such as commercial invoices in an accounts' receivable system, in an unstructured form."
+PaymentsAPI,OBRemittanceInformationStructured,ReferredDocumentInformation,array,
+PaymentsAPI,OBRemittanceInformationStructured,ReferredDocumentAmount,integer,Provides details on the amounts of the referred document.
+PaymentsAPI,OBRemittanceInformationStructured,CreditorReferenceInformation,object,Reference information provided by the creditor to allow the identification of the underlying documents.
+PaymentsAPI,OBRemittanceInformationStructured,Invoicer,Identification_3,
+PaymentsAPI,OBRemittanceInformationStructured,Invoicee,Identification_4,
+PaymentsAPI,OBRemittanceInformationStructured,TaxRemittance,string,Provides remittance information about a payment made for tax-related purposes.
+PaymentsAPI,OBRemittanceInformationStructured,AdditionalRemittanceInformation,array,"Additional information, in free text form, to complement the structured remittance information."
+PaymentsAPI,OBRegulatoryAuthority2,Name,string,Name of the entity requiring the regulatory reporting information.
+PaymentsAPI,OBRegulatoryAuthority2,CountryCode,CountryCode,
+PaymentsAPI,OBRegulatoryReporting1,DebitCreditReportingIndicator,string,"Identifies whether the regulatory reporting information applies to the debit side, to the credit side or to both debit and credit sides of the transaction.  For a full list of values reefer to `OBExternalRegulatoryReportingType1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)"
+PaymentsAPI,OBRegulatoryReporting1,Authority,OBRegulatoryAuthority2,
+PaymentsAPI,OBRegulatoryReporting1,Details,array,
+PaymentsAPI,OBRisk1,PaymentContextCode,string,"Specifies the payment context, `OBInternalPaymentContext1Code`
+"
+PaymentsAPI,OBRisk1,MerchantCategoryCode,string,"Category code conform to ISO 18245, related to the type of services or goods the merchant provides for the transaction."
+PaymentsAPI,OBRisk1,MerchantCustomerIdentification,string,The unique customer identifier of the PSU with the merchant.
+PaymentsAPI,OBRisk1,ContractPresentIndicator,boolean,Indicates if Payee has a contractual relationship with the PISP.
+PaymentsAPI,OBRisk1,BeneficiaryPrepopulatedIndicator,boolean,Indicates if PISP has immutably prepopulated payment details in for the PSU.
+PaymentsAPI,OBRisk1,PaymentPurposeCode,ExternalPurpose1Code,
+PaymentsAPI,OBRisk1,CategoryPurposeCode,ExternalCategoryPurpose1Code,
+PaymentsAPI,OBRisk1,BeneficiaryAccountType,OBInternalExtendedAccountType1Code,
+PaymentsAPI,OBRisk1,DeliveryAddress,OBPostalAddress7,
+PaymentsAPI,OBSCASupportData1,RequestedSCAExemptionType,string,This field allows a PISP to request specific SCA Exemption for a Payment Initiation. For a full list of values reefer to `OBInternalSCAExemptionType1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)
+PaymentsAPI,OBSCASupportData1,AppliedAuthenticationApproach,string,"Specifies a character string with a maximum length of 40 characters.
+Usage: This field indicates whether the PSU was subject to SCA performed by the TPP
+For a full list of values refer to `OBInternalAppliedAuthenticationApproach1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)"
+PaymentsAPI,OBSCASupportData1,ReferencePaymentOrderId,string,"If the payment is recurring, then this field is populated with the transaction identifier of the previous payment occurrence so that the ASPSP can verify that the PISP, amount and the payee are the same as the previous occurrence. The value here refers to the payment id e.g. DomesticPaymentId  "
+PaymentsAPI,OBStatusReason,StatusReasonCode,string,"Specifies the status reason in a code form. 
+For a full list of values refer to `OBExternalStatusReason1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)"
+PaymentsAPI,OBStatusReason,StatusReasonDescription,string,Description supporting the StatusReasonCode.
+PaymentsAPI,OBStatusReason,Path,string,Path is optional but relevant when the status reason refers to an object/field and hence conditional to provide JSON path.
+PaymentsAPI,OBStructuredRegulatoryReporting3,Type,string,Specifies the type of the information supplied in the regulatory reporting details
+PaymentsAPI,OBStructuredRegulatoryReporting3,Date,ISODateTime,
+PaymentsAPI,OBStructuredRegulatoryReporting3,Country,CountryCode,
+PaymentsAPI,OBStructuredRegulatoryReporting3,Amount,OBActiveOrHistoricCurrencyAndAmount,
+PaymentsAPI,OBStructuredRegulatoryReporting3,Information,array,Additional details that cater for specific domestic regulatory requirements. 
+PaymentsAPI,OBWriteDomestic2,Data,object,
+PaymentsAPI,OBWriteDomestic2,Risk,OBRisk1,
+PaymentsAPI,OBWriteDomesticConsent4,Data,object,
+PaymentsAPI,OBWriteDomesticConsent4,Risk,OBRisk1,
+PaymentsAPI,OBWriteDomesticConsentResponse5,Data,object,
+PaymentsAPI,OBWriteDomesticConsentResponse5,Risk,OBRisk1,
+PaymentsAPI,OBWriteDomesticConsentResponse5,Links,Links,
+PaymentsAPI,OBWriteDomesticConsentResponse5,Meta,Meta,
+PaymentsAPI,OBWriteDomesticResponse5,Data,object,
+PaymentsAPI,OBWriteDomesticResponse5,Links,Links,
+PaymentsAPI,OBWriteDomesticResponse5,Meta,Meta,
+PaymentsAPI,OBWriteDomesticScheduled2,Data,object,
+PaymentsAPI,OBWriteDomesticScheduled2,Risk,OBRisk1,
+PaymentsAPI,OBWriteDomesticScheduledConsent4,Data,object,
+PaymentsAPI,OBWriteDomesticScheduledConsent4,Risk,OBRisk1,
+PaymentsAPI,OBWriteDomesticScheduledConsentResponse5,Data,object,
+PaymentsAPI,OBWriteDomesticScheduledConsentResponse5,Risk,OBRisk1,
+PaymentsAPI,OBWriteDomesticScheduledConsentResponse5,Links,Links,
+PaymentsAPI,OBWriteDomesticScheduledConsentResponse5,Meta,Meta,
+PaymentsAPI,OBWriteDomesticScheduledResponse5,Data,object,
+PaymentsAPI,OBWriteDomesticScheduledResponse5,Links,Links,
+PaymentsAPI,OBWriteDomesticScheduledResponse5,Meta,Meta,
+PaymentsAPI,OBWriteDomesticStandingOrder3,Data,object,
+PaymentsAPI,OBWriteDomesticStandingOrder3,Risk,OBRisk1,
+PaymentsAPI,OBWriteDomesticStandingOrderConsent5,Data,object,
+PaymentsAPI,OBWriteDomesticStandingOrderConsent5,Risk,OBRisk1,
+PaymentsAPI,OBWriteDomesticStandingOrderConsentResponse6,Data,object,
+PaymentsAPI,OBWriteDomesticStandingOrderConsentResponse6,Risk,OBRisk1,
+PaymentsAPI,OBWriteDomesticStandingOrderConsentResponse6,Links,Links,
+PaymentsAPI,OBWriteDomesticStandingOrderConsentResponse6,Meta,Meta,
+PaymentsAPI,OBWriteDomesticStandingOrderResponse6,Data,object,
+PaymentsAPI,OBWriteDomesticStandingOrderResponse6,Links,Links,
+PaymentsAPI,OBWriteDomesticStandingOrderResponse6,Meta,Meta,
+PaymentsAPI,OBWriteFile2,Data,object,
+PaymentsAPI,OBWriteFileConsent3,Data,object,
+PaymentsAPI,OBWriteFileConsentResponse4,Data,object,
+PaymentsAPI,OBWriteFileConsentResponse4,Links,Links,
+PaymentsAPI,OBWriteFileConsentResponse4,Meta,Meta,
+PaymentsAPI,OBWriteFileResponse3,Data,object,
+PaymentsAPI,OBWriteFileResponse3,Links,Links,
+PaymentsAPI,OBWriteFileResponse3,Meta,Meta,
+PaymentsAPI,OBWriteFundsConfirmationResponse1,Data,object,
+PaymentsAPI,OBWriteFundsConfirmationResponse1,Links,Links,
+PaymentsAPI,OBWriteFundsConfirmationResponse1,Meta,Meta,
+PaymentsAPI,OBWriteInternational3,Data,object,
+PaymentsAPI,OBWriteInternational3,Risk,OBRisk1,
+PaymentsAPI,OBWriteInternationalConsent5,Data,object,
+PaymentsAPI,OBWriteInternationalConsent5,Risk,OBRisk1,
+PaymentsAPI,OBWriteInternationalConsentResponse6,Data,object,
+PaymentsAPI,OBWriteInternationalConsentResponse6,Risk,OBRisk1,
+PaymentsAPI,OBWriteInternationalConsentResponse6,Links,Links,
+PaymentsAPI,OBWriteInternationalConsentResponse6,Meta,Meta,
+PaymentsAPI,OBWriteInternationalResponse5,Data,object,
+PaymentsAPI,OBWriteInternationalResponse5,Links,Links,
+PaymentsAPI,OBWriteInternationalResponse5,Meta,Meta,
+PaymentsAPI,OBWriteInternationalScheduled3,Data,object,
+PaymentsAPI,OBWriteInternationalScheduled3,Risk,OBRisk1,
+PaymentsAPI,OBWriteInternationalScheduledConsent5,Data,object,
+PaymentsAPI,OBWriteInternationalScheduledConsent5,Risk,OBRisk1,
+PaymentsAPI,OBWriteInternationalScheduledConsentResponse6,Data,object,
+PaymentsAPI,OBWriteInternationalScheduledConsentResponse6,Risk,OBRisk1,
+PaymentsAPI,OBWriteInternationalScheduledConsentResponse6,Links,Links,
+PaymentsAPI,OBWriteInternationalScheduledConsentResponse6,Meta,Meta,
+PaymentsAPI,OBWriteInternationalScheduledResponse6,Data,object,
+PaymentsAPI,OBWriteInternationalScheduledResponse6,Links,Links,
+PaymentsAPI,OBWriteInternationalScheduledResponse6,Meta,Meta,
+PaymentsAPI,OBWriteInternationalStandingOrder4,Data,object,
+PaymentsAPI,OBWriteInternationalStandingOrder4,Risk,OBRisk1,
+PaymentsAPI,OBWriteInternationalStandingOrderConsent6,Data,object,
+PaymentsAPI,OBWriteInternationalStandingOrderConsent6,Risk,OBRisk1,
+PaymentsAPI,OBWriteInternationalStandingOrderConsentResponse7,Data,object,
+PaymentsAPI,OBWriteInternationalStandingOrderConsentResponse7,Risk,OBRisk1,
+PaymentsAPI,OBWriteInternationalStandingOrderConsentResponse7,Links,Links,
+PaymentsAPI,OBWriteInternationalStandingOrderConsentResponse7,Meta,Meta,
+PaymentsAPI,OBWriteInternationalStandingOrderResponse7,Data,object,
+PaymentsAPI,OBWriteInternationalStandingOrderResponse7,Links,Links,
+PaymentsAPI,OBWriteInternationalStandingOrderResponse7,Meta,Meta,
+PaymentsAPI,OBWritePaymentDetailsResponse1,Data,object,
+PaymentsAPI,OBWritePaymentDetailsResponse1,Links,Links,
+PaymentsAPI,OBWritePaymentDetailsResponse1,Meta,Meta,
+PaymentsAPI,OBWritePaymentDetails1,PaymentTransactionId,string,Unique identifier for the transaction within an servicing institution. This identifier is both unique and immutable.
+PaymentsAPI,OBWritePaymentDetails1,Status,string,"Status of a transfer, as assigned by the transaction administrator. For a full list of values see `ExternalPaymentTransactionStatus1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)"
+PaymentsAPI,OBWritePaymentDetails1,StatusUpdateDateTime,string,"Date and time at which the status was assigned to the transfer.
+"
+PaymentsAPI,OBWritePaymentDetails1,StatusDetail,object,Payment status details as per underlying Payment Rail.
+FundsConfirmationAPI,OBProxy1,Identification,string,Identification used to indicate the account identification under another specified name.
+FundsConfirmationAPI,OBProxy1,Code,ExternalProxyAccountType1Code,
+FundsConfirmationAPI,OBProxy1,Type,string,Type of the proxy identification.
+FundsConfirmationAPI,Links,Self,string,
+FundsConfirmationAPI,Links,First,string,
+FundsConfirmationAPI,Links,Prev,string,
+FundsConfirmationAPI,Links,Next,string,
+FundsConfirmationAPI,Links,Last,string,
+FundsConfirmationAPI,Meta,TotalPages,integer,
+FundsConfirmationAPI,Meta,FirstAvailableDateTime,ISODateTime,
+FundsConfirmationAPI,Meta,LastAvailableDateTime,ISODateTime,
+FundsConfirmationAPI,OBError1,ErrorCode,OBExternalStatusReason1Code,
+FundsConfirmationAPI,OBError1,Message,string,"A description of the error that occurred. e.g., 'A mandatory field isn't supplied' or 'RequestedExecutionDateTime must be in future'
+OBL doesn't standardise this field"
+FundsConfirmationAPI,OBError1,Path,string,"Recommended but optional reference to the JSON Path of the field with error, e.g., Data.Initiation.InstructedAmount.Currency"
+FundsConfirmationAPI,OBError1,Url,string,"URL to help remediate the problem, or provide more information, or to API Reference, or help etc"
+FundsConfirmationAPI,OBErrorResponse1,Id,string,"A unique reference for the error instance, for audit purposes, in case of unknown/unclassified errors."
+FundsConfirmationAPI,OBErrorResponse1,Code,string,"Deprecated <br>High level textual error code, to help categorise the errors."
+FundsConfirmationAPI,OBErrorResponse1,Message,string,Deprecated <br>Brief Error message
+FundsConfirmationAPI,OBErrorResponse1,Errors,array,
+FundsConfirmationAPI,OBFundsConfirmation1,Data,object,
+FundsConfirmationAPI,OBFundsConfirmationConsent1,Data,object,
+FundsConfirmationAPI,OBFundsConfirmationConsentResponse1,Data,object,
+FundsConfirmationAPI,OBFundsConfirmationConsentResponse1,Links,Links,
+FundsConfirmationAPI,OBFundsConfirmationConsentResponse1,Meta,Meta,
+FundsConfirmationAPI,OBFundsConfirmationResponse1,Data,object,
+FundsConfirmationAPI,OBFundsConfirmationResponse1,Links,Links,
+FundsConfirmationAPI,OBFundsConfirmationResponse1,Meta,Meta,
+FundsConfirmationAPI,OBStatusReason,StatusReasonCode,string,"Specifies the status reason in a code form. 
+ For a full list of values see `OBExternalStatusReason1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)"
+FundsConfirmationAPI,OBStatusReason,StatusReasonDescription,string,Description supporting the StatusReasonCode.
+FundsConfirmationAPI,OBStatusReason,Path,string,"Optional reference to the JSON Path of the field when status reason refers to an object/field, e.g., Data.DebtorAccount.SchemeName"
+VRPAPI,OBUltimateCreditor1,Name,string,Name by which a party is known and which is usually used to identify that party.
+VRPAPI,OBUltimateCreditor1,Identification,string,Identification assigned by an institution.
+VRPAPI,OBUltimateCreditor1,LEI,LEI,
+VRPAPI,OBUltimateCreditor1,SchemeName,OBInternalAccountIdentification4Code,
+VRPAPI,OBUltimateCreditor1,PostalAddress,OBPostalAddress7,
+VRPAPI,OBUltimateDebtor1,Name,string,Name by which a party is known and which is usually used to identify that party.
+VRPAPI,OBUltimateDebtor1,Identification,string,Identification assigned by an institution.
+VRPAPI,OBUltimateDebtor1,LEI,LEI,
+VRPAPI,OBUltimateDebtor1,SchemeName,OBInternalAccountIdentification4Code,
+VRPAPI,OBUltimateDebtor1,PostalAddress,OBPostalAddress7,
+VRPAPI,OBBranchAndFinancialInstitutionIdentification6_0,SchemeName,OBInternalFinancialInstitutionIdentification4Code,
+VRPAPI,OBBranchAndFinancialInstitutionIdentification6_0,Identification,Identification_1,
+VRPAPI,OBBranchAndFinancialInstitutionIdentification6_0,Name,Name_1,
+VRPAPI,OBBranchAndFinancialInstitutionIdentification6_0,PostalAddress,OBPostalAddress7,
+VRPAPI,OBBranchAndFinancialInstitutionIdentification6_0,LEI,LEI,
+VRPAPI,OBProxy1,Identification,string,Identification used to indicate the account identification under another specified name.
+VRPAPI,OBProxy1,Code,ExternalProxyAccountType1Code,
+VRPAPI,OBProxy1,Type,string,Type of the proxy identification.
+VRPAPI,OBError1,ErrorCode,OBExternalStatusReason1Code,
+VRPAPI,OBError1,Message,string,"A description of the error that occurred. e.g., 'A mandatory field isn't supplied' or 'RequestedExecutionDateTime must be in future'
+OBL doesn't standardise this field"
+VRPAPI,OBError1,Path,string,"Recommended but optional reference to the JSON Path of the field with error, e.g., Data.Initiation.InstructedAmount.Currency"
+VRPAPI,OBError1,Url,string,"URL to help remediate the problem, or provide more information, or to API Reference, or help etc"
+VRPAPI,OBErrorResponse1,Id,string,"A unique reference for the error instance, for audit purposes, in case of unknown/unclassified errors."
+VRPAPI,OBErrorResponse1,Code,string,"Deprecated <br>High level textual error code, to help categorise the errors."
+VRPAPI,OBErrorResponse1,Message,string,Deprecated <br>Brief Error message
+VRPAPI,OBErrorResponse1,Errors,array,
+VRPAPI,OBDomesticVRPConsentResponse,Data,object,
+VRPAPI,OBDomesticVRPConsentResponse,Risk,OBRisk1,
+VRPAPI,OBDomesticVRPConsentResponse,Links,Links,
+VRPAPI,OBDomesticVRPConsentResponse,Meta,Meta,
+VRPAPI,OBDomesticVRPConsentRequest,Data,object,
+VRPAPI,OBDomesticVRPConsentRequest,Risk,OBRisk1,
+VRPAPI,OBDomesticVRPControlParameters,ValidFromDateTime,string,^ Start date time for which the consent remains valid.
+VRPAPI,OBDomesticVRPControlParameters,ValidToDateTime,string,^ End date time for which the consent remains valid.
+VRPAPI,OBDomesticVRPControlParameters,MaximumIndividualAmount,OBActiveOrHistoricCurrencyAndAmount,
+VRPAPI,OBDomesticVRPControlParameters,PeriodicLimits,array,
+VRPAPI,OBDomesticVRPControlParameters,VRPType,array,^ The types of payments that can be made under this VRP consent. This can be used to indicate whether this include sweeping payment or other ecommerce payments.
+VRPAPI,OBDomesticVRPControlParameters,PSUAuthenticationMethods,array,^ Indicates that the PSU authentication methods supported.
+VRPAPI,OBDomesticVRPControlParameters,PSUInteractionTypes,array,"Indicates interaction type, currently if customer is present or not present. If not provided the default is `OffSession` (the customer is not present) when the individual VRP payment is made."
+VRPAPI,OBDomesticVRPControlParameters,SupplementaryData,object,^ Additional information that can not be captured in the structured fields and/or any other specific block
+VRPAPI,OBDomesticVRPInitiation,DebtorAccount,OBCashAccountDebtorWithName,
+VRPAPI,OBDomesticVRPInitiation,CreditorAccount,OBCashAccountCreditor3,
+VRPAPI,OBDomesticVRPInitiation,CreditorPostalAddress,OBPostalAddress7,
+VRPAPI,OBDomesticVRPInitiation,UltimateCreditor,OBUltimateCreditor1,
+VRPAPI,OBDomesticVRPInitiation,UltimateDebtor,OBUltimateDebtor1,
+VRPAPI,OBDomesticVRPInitiation,RemittanceInformation,OBRemittanceInformation2,
+VRPAPI,OBDomesticVRPInitiation,RegulatoryReporting,array,
+VRPAPI,OBCashAccountDebtorWithName,SchemeName,OBInternalAccountIdentification4Code,
+VRPAPI,OBCashAccountDebtorWithName,Identification,string,^ Identification assigned by an institution to identify an account. This identification is known by the account owner.
+VRPAPI,OBCashAccountDebtorWithName,Name,string,"^ Name of the account, as assigned by the account servicing institution.  Usage The account name is the name or names of the account owner(s) represented at an account level. The account name is not the product name or the nickname of the account."
+VRPAPI,OBCashAccountDebtorWithName,SecondaryIdentification,string,"^ This is secondary identification of the account, as assigned by the account servicing institution.  This can be used by building societies to additionally identify accounts with a roll number (in addition to a sort code and account number combination)"
+VRPAPI,OBCashAccountDebtorWithName,Proxy,OBProxy1,
+VRPAPI,OBCashAccountCreditor3,SchemeName,OBInternalAccountIdentification4Code,
+VRPAPI,OBCashAccountCreditor3,Identification,string,Identification assigned by an institution to identify an account. This identification is known by the account owner.
+VRPAPI,OBCashAccountCreditor3,Name,string,"Name of the account, as assigned by the account servicing institution.
+Usage: the account name is the name or names of the account owner(s) represented at an account level.
+The account name is not the product name or the nickname of the account."
+VRPAPI,OBCashAccountCreditor3,SecondaryIdentification,string,"This is secondary identification of the account, as assigned by the account servicing institution.
+This can be used by building societies to additionally identify accounts with a roll number (in addition to a sort code and account number combination)"
+VRPAPI,OBCashAccountCreditor3,Proxy,OBProxy1,
+VRPAPI,OBBranchAndFinancialInstitutionIdentification6,SchemeName,OBInternalFinancialInstitutionIdentification4Code,
+VRPAPI,OBBranchAndFinancialInstitutionIdentification6,Identification,string,^ Unique and unambiguous identification of a financial institution or a branch of a financial institution.
+VRPAPI,OBBranchAndFinancialInstitutionIdentification6,Name,string,^ Name by which an agent is known and which is usually used to identify that agent.
+VRPAPI,OBBranchAndFinancialInstitutionIdentification6,LEI,LEI,
+VRPAPI,OBBranchAndFinancialInstitutionIdentification6,PostalAddress,OBPostalAddress7,
+VRPAPI,OBDomesticVRPRequest,Data,object,
+VRPAPI,OBDomesticVRPRequest,Risk,OBRisk1,
+VRPAPI,OBDomesticVRPResponse,Data,object,"`Data.Refund` only included in the response if `Data.ReadRefundAccount` is set to `Yes` in the consent.
+"
+VRPAPI,OBDomesticVRPResponse,Risk,OBRisk1,
+VRPAPI,OBDomesticVRPResponse,Links,Links,
+VRPAPI,OBDomesticVRPResponse,Meta,Meta,
+VRPAPI,OBDomesticVRPDetails,Data,object,
+VRPAPI,OBVRPFundsConfirmationRequest,Data,object,
+VRPAPI,OBVRPFundsConfirmationResponse,Data,object,
+VRPAPI,OBPAFundsAvailableResult1,FundsAvailableDateTime,string,Date and time at which the funds availability check was generated.
+VRPAPI,OBPAFundsAvailableResult1,FundsAvailable,string,"Availability result, clearly indicating the availability of funds given the Amount in the request."
+VRPAPI,OBCharge2,ChargeBearer,OBInternalChargeBearerType1Code,
+VRPAPI,OBDomesticVRPInstruction,InstructionIdentification,string,"Unique identification as assigned by an instructing party for an instructed party to unambiguously identify the instruction.
+Usage: the instruction identification is a point to point reference that can be used between the instructing party and the instructed party to refer to the individual instruction.
+It can be included in several messages related to the instruction."
+VRPAPI,OBDomesticVRPInstruction,EndToEndIdentification,string,"Unique identification assigned by the initiating party to unambiguously identify the transaction.
+This identification is passed on, unchanged, throughout the entire end-to-end chain.
+Usage: The end-to-end identification can be used for reconciliation or to link tasks relating to the transaction.
+It can be included in several messages related to the transaction.
+OB: The Faster Payments Scheme can only access 31 characters for the EndToEndIdentification field"
+VRPAPI,OBDomesticVRPInstruction,RemittanceInformation,OBRemittanceInformation2,
+VRPAPI,OBDomesticVRPInstruction,LocalInstrument,OBInternalLocalInstrument1Code,
+VRPAPI,OBDomesticVRPInstruction,InstructedAmount,OBActiveOrHistoricCurrencyAndAmount,
+VRPAPI,OBDomesticVRPInstruction,CreditorPostalAddress,OBPostalAddress7,
+VRPAPI,OBDomesticVRPInstruction,CreditorAccount,OBCashAccountCreditor3,
+VRPAPI,OBDomesticVRPInstruction,UltimateCreditor,OBUltimateCreditor1,
+VRPAPI,OBDomesticVRPInstruction,SupplementaryData,object,"Additional information that can not be captured in the structured fields and/or any other specific block.
+"
+VRPAPI,OBReferredDocumentInformation,Code,ExternalDocumentType1Code,
+VRPAPI,OBReferredDocumentInformation,Issuer,string,Identification of the issuer of the reference document type.
+VRPAPI,OBReferredDocumentInformation,Number,string,Identification of the type specified for the referred document line.
+VRPAPI,OBReferredDocumentInformation,RelatedDate,ISODateTime,Date associated with the referred document line.
+VRPAPI,OBReferredDocumentInformation,LineDetails,array,Set of elements used to provide the content of the referred document line.
+VRPAPI,OBVRPRemittanceInformation,Code,ExternalDocumentType1Code,
+VRPAPI,OBVRPRemittanceInformation,Issuer,string,
+VRPAPI,OBVRPRemittanceInformation,Number,string,
+VRPAPI,OBVRPRemittanceInformation,RelatedDate,ISODateTime,
+VRPAPI,OBVRPRemittanceInformation,LineDetails,array,
+VRPAPI,OBRemittanceInformation2,Structured,array,
+VRPAPI,OBRemittanceInformation2,Unstructured,array,"Information supplied to enable the matching/reconciliation of an entry with the items that the payment is intended to settle, such as commercial invoices in an accounts' receivable system, in an unstructured form."
+VRPAPI,OBRemittanceInformationStructured,ReferredDocumentInformation,array,Provides the identification and the content of the referred document.
+VRPAPI,OBRemittanceInformationStructured,ReferredDocumentAmount,integer,
+VRPAPI,OBRemittanceInformationStructured,CreditorReferenceInformation,object,Reference information provided by the creditor to allow the identification of the underlying documents.
+VRPAPI,OBRemittanceInformationStructured,Invoicer,string,"Identification of the organisation issuing the invoice, when it is different from the creditor or ultimate creditor"
+VRPAPI,OBRemittanceInformationStructured,Invoicee,string,"Identification of the party to whom an invoice is issued, when it is different from the debtor or ultimate debtor."
+VRPAPI,OBRemittanceInformationStructured,TaxRemittance,string,
+VRPAPI,OBRemittanceInformationStructured,AdditionalRemittanceInformation,array,
+VRPAPI,OBActiveOrHistoricCurrencyAndAmount,Amount,OBActiveCurrencyAndAmount_SimpleType,
+VRPAPI,OBActiveOrHistoricCurrencyAndAmount,Currency,ActiveOrHistoricCurrencyCode,
+VRPAPI,OBPaymentStatusReason,StatusReasonCode,string,"Specifies the status reason in a code form 
+ For more information and enum values see `OBExternalStatusReason1Code [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)"
+VRPAPI,OBPaymentStatusReason,StatusReasonDescription,string,Description supporting the StatusReasonCode.
+VRPAPI,OBPostalAddress7,AddressType,OBAddressType2Code,
+VRPAPI,OBPostalAddress7,Department,Department,
+VRPAPI,OBPostalAddress7,SubDepartment,SubDepartment,
+VRPAPI,OBPostalAddress7,StreetName,StreetName,
+VRPAPI,OBPostalAddress7,BuildingNumber,BuildingNumber,
+VRPAPI,OBPostalAddress7,BuildingName,BuildingName,
+VRPAPI,OBPostalAddress7,Floor,Floor,
+VRPAPI,OBPostalAddress7,UnitNumber,UnitNumber,
+VRPAPI,OBPostalAddress7,Room,Room,
+VRPAPI,OBPostalAddress7,PostBox,PostBox,
+VRPAPI,OBPostalAddress7,TownLocationName,TownName,
+VRPAPI,OBPostalAddress7,DistrictName,DistrictName,
+VRPAPI,OBPostalAddress7,CareOf,CareOf,
+VRPAPI,OBPostalAddress7,PostCode,PostCode,
+VRPAPI,OBPostalAddress7,TownName,TownName,
+VRPAPI,OBPostalAddress7,CountrySubDivision,CountrySubDivision,
+VRPAPI,OBPostalAddress7,Country,CountryCode,
+VRPAPI,OBPostalAddress7,AddressLine,array,
+VRPAPI,OBRegulatoryAuthority2,Name,string,Name of the entity requiring the regulatory reporting information.
+VRPAPI,OBRegulatoryAuthority2,CountryCode,CountryCode,Country of the entity that requires the regulatory reporting information.
+VRPAPI,OBRegulatoryReporting1,DebitCreditReportingIndicator,string,"Identifies whether the regulatory reporting information applies to the debit side, to the credit side or to both debit and credit sides of the transaction. For a full list of values refer to `OBExternalRegulatoryReportingType1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)"
+VRPAPI,OBRegulatoryReporting1,Authority,OBRegulatoryAuthority2,
+VRPAPI,OBRegulatoryReporting1,Details,array,Set of elements used to provide details on the regulatory reporting information.
+VRPAPI,OBStatusReason,StatusReasonCode,string,"Specifies the status reason in a code form. 
+For a full list of values refer to `OBExternalStatusReason1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)"
+VRPAPI,OBStatusReason,StatusReasonDescription,string,Description supporting the StatusReasonCode.
+VRPAPI,OBStatusReason,Path,string,"Recommended but optional reference to the JSON Path of the field with error, e.g., Data.Initiation.InstructedAmount.Currency"
+VRPAPI,OBStructuredRegulatoryReporting3,Type,string,Specifies the type of the information supplied in the regulatory reporting details
+VRPAPI,OBStructuredRegulatoryReporting3,Date,ISODateTime,Date related to the specified type of regulatory reporting details.
+VRPAPI,OBStructuredRegulatoryReporting3,Country,CountryCode,Country related to the specified type of regulatory reporting details.
+VRPAPI,OBStructuredRegulatoryReporting3,Amount,OBActiveOrHistoricCurrencyAndAmount,Amount of money to be reported for regulatory and statutory requirements.
+VRPAPI,OBStructuredRegulatoryReporting3,Information,array,Additional details that cater for specific domestic regulatory requirements. 
+VRPAPI,OBRisk1,PaymentContextCode,string,"Specifies the payment context, for a full list of values refer to `OBInternalPaymentContext1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)
+"
+VRPAPI,OBRisk1,MerchantCategoryCode,string,"Category code conform to ISO 18245, related to the type of services or goods the merchant provides for the transaction."
+VRPAPI,OBRisk1,MerchantCustomerIdentification,string,The unique customer identifier of the PSU with the merchant.
+VRPAPI,OBRisk1,ContractPresentIndicator,boolean,Indicates if Payee has a contractual relationship with the PISP.
+VRPAPI,OBRisk1,BeneficiaryPrepopulatedIndicator,boolean,Indicates if PISP has immutably prepopulated payment details in for the PSU.
+VRPAPI,OBRisk1,PaymentPurposeCode,OBExternalPurpose1Code,
+VRPAPI,OBRisk1,CategoryPurposeCode,ExternalCategoryPurpose1Code,
+VRPAPI,OBRisk1,BeneficiaryAccountType,OBInternalExtendedAccountType1Code,
+VRPAPI,OBRisk1,DeliveryAddress,OBPostalAddress7,
+VRPAPI,Links,Self,string,
+VRPAPI,Links,First,string,
+VRPAPI,Links,Prev,string,
+VRPAPI,Links,Next,string,
+VRPAPI,Links,Last,string,
