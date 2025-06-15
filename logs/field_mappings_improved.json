@@ -1,23 +1,51 @@
 [
   {
-    "bank_field": "acc_no",
-    "preprocessed": "account no",
-    "mapped_to": "Data.Account",
-    "description": NaN,
-    "confidence": 0.8100000023841858
-  },
-  {
     "bank_field": "txnRef",
     "preprocessed": "transaction reference",
     "mapped_to": "TransactionReference",
-    "description": NaN,
-    "confidence": 0.8399999737739563
+    "description": "A unique reference associated with a transaction.",
+    "confidence": 0.8600000143051147
   },
   {
-    "bank_field": "debName",
-    "preprocessed": "debtor name",
-    "mapped_to": "Data.Debtor",
-    "description": NaN,
-    "confidence": 0.8899999856948853
+    "bank_field": "credAccId",
+    "preprocessed": "creditor account identifier",
+    "mapped_to": "Data.Initiation.DebtorAccount.Identification",
+    "description": "The identifier for the debtor's account (e.g., IBAN, account number).",
+    "confidence": 0.8500000238418579
+  },
+  {
+    "bank_field": "debID",
+    "preprocessed": "debtor identifier",
+    "mapped_to": "Data.Initiation.DebtorAccount.Identification",
+    "description": "The identifier for the debtor's account (e.g., IBAN, account number).",
+    "confidence": 0.8600000143051147
+  },
+  {
+    "bank_field": "mandateId",
+    "preprocessed": "mandate identifier",
+    "mapped_to": "MandateIdentification",
+    "description": "A unique identifier for a mandate.",
+    "confidence": 0.8700000047683716
+  },
+  {
+    "bank_field": "debAccID",
+    "preprocessed": "debtor account identifier",
+    "mapped_to": "Data.Initiation.DebtorAccount.Identification",
+    "description": "The identifier for the debtor's account (e.g., IBAN, account number).",
+    "confidence": 0.8700000047683716
+  },
+  {
+    "bank_field": "fileRef",
+    "preprocessed": "file reference",
+    "mapped_to": "Data.Initiation.FileReference",
+    "description": "Reference for the file.",
+    "confidence": 0.8999999761581421
+  },
+  {
+    "bank_field": "fileHash",
+    "preprocessed": "file hash",
+    "mapped_to": "Data.Initiation.FileHash",
+    "description": "A base64 encoding of a SHA256 hash of the file to be uploaded.",
+    "confidence": 0.800000011920929
   }
 ]

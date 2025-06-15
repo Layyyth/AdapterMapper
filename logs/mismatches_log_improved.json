@@ -5,18 +5,18 @@
     "top_suggestions": [
       {
         "suggestion": "Data.ConsentId",
-        "description": "Unique identification as assigned by the ASPSP to uniquely identify the consent resource.\n",
-        "confidence": 0.7599999904632568
-      },
-      {
-        "suggestion": "Data.ConsentId",
         "description": "Unique identification as assigned to identify the account access consent resource.",
-        "confidence": 0.75
+        "confidence": 0.8399999737739563
       },
       {
         "suggestion": "Data.ConsentId",
-        "description": "OB: Unique identification as assigned by the ASPSP to uniquely identify the consent resource.",
-        "confidence": 0.7300000190734863
+        "description": "Unique identification as assigned by the ASPSP to uniquely identify the consent resource.\r\n",
+        "confidence": 0.8299999833106995
+      },
+      {
+        "suggestion": "Data.ConsentId",
+        "description": "Unique identification as assigned to identify the funds confirmation consent resource.",
+        "confidence": 0.8199999928474426
       }
     ]
   },
@@ -25,19 +25,103 @@
     "preprocessed": "user name",
     "top_suggestions": [
       {
-        "suggestion": "Data.Refund.Agent.Name",
-        "description": NaN,
-        "confidence": 0.41999998688697815
+        "suggestion": "Mobile",
+        "description": "A mobile phone number.",
+        "confidence": 0.6100000143051147
       },
       {
-        "suggestion": "Data.Initiation.CreditorAgent.Name",
-        "description": NaN,
-        "confidence": 0.41999998688697815
+        "suggestion": "Data.Refund.Account.SecondaryIdentification",
+        "description": "A secondary identifier for the refund account.",
+        "confidence": 0.6100000143051147
       },
       {
         "suggestion": "Name",
-        "description": NaN,
-        "confidence": 0.41999998688697815
+        "description": "Name of the cardholder using the card instrument.",
+        "confidence": 0.6000000238418579
+      }
+    ]
+  },
+  {
+    "bank_field": "usrID",
+    "preprocessed": "user identifier",
+    "top_suggestions": [
+      {
+        "suggestion": "BeneficiaryId",
+        "description": "A unique identifier for a beneficiary.",
+        "confidence": 0.7200000286102295
+      },
+      {
+        "suggestion": "Data.Refund.Account.Identification",
+        "description": "The identifier for the refund account.",
+        "confidence": 0.7200000286102295
+      },
+      {
+        "suggestion": "MandateIdentification",
+        "description": "A unique identifier for a mandate.",
+        "confidence": 0.7200000286102295
+      }
+    ]
+  },
+  {
+    "bank_field": "acc_no",
+    "preprocessed": "account no",
+    "top_suggestions": [
+      {
+        "suggestion": "Data.Refund.Account",
+        "description": "Provides the details to identify an account.",
+        "confidence": 0.75
+      },
+      {
+        "suggestion": "Account",
+        "description": "Provides the details to identify an account.",
+        "confidence": 0.75
+      },
+      {
+        "suggestion": "Data.Account",
+        "description": "Contains core account information.",
+        "confidence": 0.75
+      }
+    ]
+  },
+  {
+    "bank_field": "accNum",
+    "preprocessed": "account number",
+    "top_suggestions": [
+      {
+        "suggestion": "Data.Refund.Account",
+        "description": "Provides the details to identify an account.",
+        "confidence": 0.7599999904632568
+      },
+      {
+        "suggestion": "Account",
+        "description": "Provides the details to identify an account.",
+        "confidence": 0.7599999904632568
+      },
+      {
+        "suggestion": "Data.Account",
+        "description": "Contains core account information.",
+        "confidence": 0.7400000095367432
+      }
+    ]
+  },
+  {
+    "bank_field": "accStat",
+    "preprocessed": "account stat",
+    "top_suggestions": [
+      {
+        "suggestion": "Data.Account",
+        "description": "Contains core account information.",
+        "confidence": 0.7599999904632568
+      },
+      {
+        "suggestion": "Data.Refund.Account",
+        "description": "Provides the details to identify an account.",
+        "confidence": 0.75
+      },
+      {
+        "suggestion": "Account",
+        "description": "Provides the details to identify an account.",
+        "confidence": 0.75
       }
     ]
   },
@@ -47,18 +131,18 @@
     "top_suggestions": [
       {
         "suggestion": "Data.Beneficiary",
-        "description": NaN,
-        "confidence": 0.7900000214576721
+        "description": "Contains details of a beneficiary.",
+        "confidence": 0.7400000095367432
       },
       {
         "suggestion": "BeneficiaryId",
-        "description": NaN,
+        "description": "A unique identifier for a beneficiary.",
         "confidence": 0.7200000286102295
       },
       {
-        "suggestion": "BeneficiaryType",
-        "description": NaN,
-        "confidence": 0.699999988079071
+        "suggestion": "BeneficiaryAccountType",
+        "description": "The type of account held by the beneficiary.",
+        "confidence": 0.6899999976158142
       }
     ]
   },
@@ -69,38 +153,101 @@
       {
         "suggestion": "Amount",
         "description": "Amount of money in the cash transaction entry.",
-        "confidence": 0.699999988079071
+        "confidence": 0.8199999928474426
       },
       {
-        "suggestion": "Transaction",
-        "description": NaN,
-        "confidence": 0.6800000071525574
+        "suggestion": "InstructedAmount.Amount",
+        "description": "The amount of the instructed payment.",
+        "confidence": 0.8100000023841858
       },
       {
         "suggestion": "Amount",
         "description": "Amount of money of the cash balance after a transaction entry is applied to the account..",
-        "confidence": 0.6600000262260437
+        "confidence": 0.800000011920929
       }
     ]
   },
   {
-    "bank_field": "credAccId",
-    "preprocessed": "creditor account identifier",
+    "bank_field": "txnStat",
+    "preprocessed": "transaction stat",
     "top_suggestions": [
       {
-        "suggestion": "Data.Initiation.CreditorAccount",
-        "description": "Identification assigned by an institution to identify an account. This identification is known by the account owner.",
+        "suggestion": "Transaction",
+        "description": "Contains information about a financial transaction.",
+        "confidence": 0.7400000095367432
+      },
+      {
+        "suggestion": "Data.Initiation.NumberOfTransactions",
+        "description": "Number of individual transactions contained in the payment information group.",
+        "confidence": 0.7300000190734863
+      },
+      {
+        "suggestion": "txn",
+        "description": "Transaction Identifier.",
+        "confidence": 0.7300000190734863
+      }
+    ]
+  },
+  {
+    "bank_field": "credNm",
+    "preprocessed": "creditor name",
+    "top_suggestions": [
+      {
+        "suggestion": "Data.Initiation.CreditorAgent.Name",
+        "description": "The name of the creditor agent (bank) in a payment initiation.",
+        "confidence": 0.8299999833106995
+      },
+      {
+        "suggestion": "Data.Debtor",
+        "description": "Details of the debtor (payer) for a payment.",
+        "confidence": 0.7900000214576721
+      },
+      {
+        "suggestion": "Data.Initiation.DebtorAccount",
+        "description": "Provides the details to identify the debtor account.",
+        "confidence": 0.7900000214576721
+      }
+    ]
+  },
+  {
+    "bank_field": "debName",
+    "preprocessed": "debtor name",
+    "top_suggestions": [
+      {
+        "suggestion": "Data.Debtor",
+        "description": "Details of the debtor (payer) for a payment.",
+        "confidence": 0.8199999928474426
+      },
+      {
+        "suggestion": "Data.Initiation.DebtorAccount",
+        "description": "Provides the details to identify the debtor account.",
+        "confidence": 0.800000011920929
+      },
+      {
+        "suggestion": "Data.Initiation.CreditorAgent.Name",
+        "description": "The name of the creditor agent (bank) in a payment initiation.",
+        "confidence": 0.7900000214576721
+      }
+    ]
+  },
+  {
+    "bank_field": "debAccType",
+    "preprocessed": "debtor account type",
+    "top_suggestions": [
+      {
+        "suggestion": "Data.Initiation.DebtorAccount",
+        "description": "Provides the details to identify the debtor account.",
+        "confidence": 0.7699999809265137
+      },
+      {
+        "suggestion": "Data.DebtorAccount",
+        "description": "Contains details of the debtor's account.",
         "confidence": 0.7599999904632568
       },
       {
-        "suggestion": "Data.Initiation.CreditorAccount",
-        "description": "Provides the details to identify the beneficiary account.",
-        "confidence": 0.699999988079071
-      },
-      {
-        "suggestion": "Data.Refund.Account",
-        "description": "Provides the details to identify an account.",
-        "confidence": 0.6700000166893005
+        "suggestion": "BeneficiaryAccountType",
+        "description": "The type of account held by the beneficiary.",
+        "confidence": 0.7400000095367432
       }
     ]
   },
@@ -109,19 +256,40 @@
     "preprocessed": "currency code",
     "top_suggestions": [
       {
-        "suggestion": "Amount.Currency",
-        "description": NaN,
-        "confidence": 0.7599999904632568
+        "suggestion": "Data.InstructedAmount.Currency",
+        "description": "A code allocated to a currency by a Maintenance Agency under an international identification scheme, as described in the latest edition of the international standard ISO 4217 \"Codes for the representation of currencies and funds\".",
+        "confidence": 0.75
+      },
+      {
+        "suggestion": "InstructedAmount.Currency",
+        "description": "The currency of the instructed payment.",
+        "confidence": 0.7400000095367432
+      },
+      {
+        "suggestion": "SourceCurrency",
+        "description": "Currency from which an amount is to be converted in a currency conversion.",
+        "confidence": 0.7300000190734863
+      }
+    ]
+  },
+  {
+    "bank_field": "currNm",
+    "preprocessed": "currency name",
+    "top_suggestions": [
+      {
+        "suggestion": "Data.TotalValue.Currency",
+        "description": "The currency of a total amount.",
+        "confidence": 0.7799999713897705
       },
       {
         "suggestion": "TotalValue.Currency",
-        "description": NaN,
-        "confidence": 0.7599999904632568
+        "description": "The currency of a total amount (duplicate from above, but common).",
+        "confidence": 0.7699999809265137
       },
       {
-        "suggestion": "Data.TotalValue.Currency",
-        "description": NaN,
-        "confidence": 0.7599999904632568
+        "suggestion": "InstructedAmount.Currency",
+        "description": "The currency of the instructed payment.",
+        "confidence": 0.7699999809265137
       }
     ]
   },
@@ -130,19 +298,61 @@
     "preprocessed": "value date",
     "top_suggestions": [
       {
-        "suggestion": "Date",
-        "description": NaN,
-        "confidence": 0.6399999856948853
-      },
-      {
         "suggestion": "ValueDateTime",
-        "description": NaN,
-        "confidence": 0.6100000143051147
+        "description": "The date and time at which a transaction amount is made available or becomes effective.",
+        "confidence": 0.6899999976158142
       },
       {
-        "suggestion": "OpeningDate",
-        "description": NaN,
-        "confidence": 0.5699999928474426
+        "suggestion": "FirstAvailableDateTime",
+        "description": "The first available date and time.",
+        "confidence": 0.6899999976158142
+      },
+      {
+        "suggestion": "Date",
+        "description": "A specific date, typically in ISO 8601 format (YYYY-MM-DD).",
+        "confidence": 0.6899999976158142
+      }
+    ]
+  },
+  {
+    "bank_field": "exeDt",
+    "preprocessed": "exe date",
+    "top_suggestions": [
+      {
+        "suggestion": "Date",
+        "description": "A specific date, typically in ISO 8601 format (YYYY-MM-DD).",
+        "confidence": 0.6600000262260437
+      },
+      {
+        "suggestion": "Data.ExpectedExecutionDateTime",
+        "description": "Expected execution date and time for the payment resource.\r\n",
+        "confidence": 0.6499999761581421
+      },
+      {
+        "suggestion": "LastAvailableDateTime",
+        "description": "The last available date and time.",
+        "confidence": 0.6399999856948853
+      }
+    ]
+  },
+  {
+    "bank_field": "bookDt",
+    "preprocessed": "book date",
+    "top_suggestions": [
+      {
+        "suggestion": "BookingDateTime",
+        "description": "Date and time when an entry is posted to an account on the account servicer's books.",
+        "confidence": 0.6800000071525574
+      },
+      {
+        "suggestion": "Date",
+        "description": "Date related to the specified type of regulatory reporting details.",
+        "confidence": 0.6600000262260437
+      },
+      {
+        "suggestion": "toe",
+        "description": "Time of Event.",
+        "confidence": 0.6499999761581421
       }
     ]
   },
@@ -151,19 +361,19 @@
     "preprocessed": "str purpose",
     "top_suggestions": [
       {
-        "suggestion": "Servicer",
-        "description": NaN,
-        "confidence": 0.3499999940395355
+        "suggestion": "CategoryPurposeCode",
+        "description": "A standardised code indicating the purpose of a payment transaction (e.g., 'CASH' for cash withdrawal, 'GDDS' for goods and services).",
+        "confidence": 0.6200000047683716
       },
       {
-        "suggestion": "Issuer",
-        "description": "The name or identifier of the organisation issuing the financial instrument or instruction.",
-        "confidence": 0.27000001072883606
+        "suggestion": "StatementReference",
+        "description": "A reference number for a statement.",
+        "confidence": 0.6100000143051147
       },
       {
-        "suggestion": "Issuer",
-        "description": "The name or identifier of the organisation issuing the financial instrument or instruction.",
-        "confidence": 0.27000001072883606
+        "suggestion": "sub",
+        "description": "Subject",
+        "confidence": 0.6000000238418579
       }
     ]
   },
@@ -173,18 +383,18 @@
     "top_suggestions": [
       {
         "suggestion": "AddressLine",
-        "description": NaN,
-        "confidence": 0.5600000023841858
+        "description": "A free-text line for address details, used when structured fields are not sufficient.",
+        "confidence": 0.699999988079071
       },
       {
-        "suggestion": "Address",
-        "description": NaN,
-        "confidence": 0.5600000023841858
+        "suggestion": "StreetName",
+        "description": "The name of the street in an address.",
+        "confidence": 0.699999988079071
       },
       {
-        "suggestion": "AddressType",
-        "description": NaN,
-        "confidence": 0.550000011920929
+        "suggestion": "DeliveryAddress",
+        "description": "The address where something is to be delivered.",
+        "confidence": 0.699999988079071
       }
     ]
   },
@@ -193,19 +403,19 @@
     "preprocessed": "multi transfer indicator",
     "top_suggestions": [
       {
-        "suggestion": "StatusDetail.StatusReasonDescription",
-        "description": "Reason provided for the status of a transfer. For a full list of values see the code name entries for `OBExternalStatusReason1Code` in *ISO_External_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets).",
-        "confidence": 0.41999998688697815
+        "suggestion": "TransactionMutability",
+        "description": "Indicates if a transaction can be changed or reversed.",
+        "confidence": 0.6800000071525574
       },
       {
-        "suggestion": "StatusDetail.StatusReason",
-        "description": "Reason Code provided for the status of a transfer. For a full list of values see code values for `OBExternalStatusReason1Code` in *ISO_External_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)",
-        "confidence": 0.4099999964237213
+        "suggestion": "SwitchStatus",
+        "description": "The current status of a bank account switch process.",
+        "confidence": 0.6700000166893005
       },
       {
-        "suggestion": "StatusDetail.Status",
-        "description": "Status of a transfer, as assigned by the transaction administrator. For a full list of values see `ExternalPaymentTransactionStatus1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)",
-        "confidence": 0.4000000059604645
+        "suggestion": "CreditDebitIndicator",
+        "description": "Indicates whether a transaction or balance is a credit or a debit.",
+        "confidence": 0.6600000262260437
       }
     ]
   },
@@ -216,17 +426,17 @@
       {
         "suggestion": "Data.Authorisation.AuthorisationType",
         "description": "Type of authorisation flow requested. For a full list of values refer to `OBInternalAuthorisation1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)",
-        "confidence": 0.6399999856948853
-      },
-      {
-        "suggestion": "Data.Authorisation.AuthorisationType",
-        "description": "Type of authorisation flow requested.",
-        "confidence": 0.6399999856948853
+        "confidence": 0.7599999904632568
       },
       {
         "suggestion": "Data.Authorisation.AuthorisationType",
         "description": "Type of authorisation flow requested. For a full set of values refer to `OBInternalAuthorisation1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)",
-        "confidence": 0.6399999856948853
+        "confidence": 0.7599999904632568
+      },
+      {
+        "suggestion": "Data.Authorisation.AuthorisationType",
+        "description": "Type of authorisation flow requested.",
+        "confidence": 0.75
       }
     ]
   },
@@ -236,18 +446,39 @@
     "top_suggestions": [
       {
         "suggestion": "Data.Product",
-        "description": NaN,
+        "description": "Contains details of a financial product.",
+        "confidence": 0.7099999785423279
+      },
+      {
+        "suggestion": "Data.Initiation.FileType",
+        "description": "Specifies the payment file type.",
         "confidence": 0.6899999976158142
       },
       {
-        "suggestion": "ProductDetails",
-        "description": NaN,
-        "confidence": 0.6200000047683716
+        "suggestion": "Type",
+        "description": "A general classification of the nature of an item, such as an account type, payment type, or address type.",
+        "confidence": 0.6800000071525574
+      }
+    ]
+  },
+  {
+    "bank_field": "prodSubType",
+    "preprocessed": "product sub type",
+    "top_suggestions": [
+      {
+        "suggestion": "SubCode",
+        "description": "Specifies the sub-product family within a specific family.",
+        "confidence": 0.7599999904632568
       },
       {
-        "suggestion": "Type",
-        "description": NaN,
-        "confidence": 0.5400000214576721
+        "suggestion": "sub",
+        "description": "Subject",
+        "confidence": 0.6800000071525574
+      },
+      {
+        "suggestion": "Data.Product",
+        "description": "Contains details of a financial product.",
+        "confidence": 0.6700000166893005
       }
     ]
   },
@@ -256,19 +487,1426 @@
     "preprocessed": "update timestamp",
     "top_suggestions": [
       {
+        "suggestion": "LastAvailableDateTime",
+        "description": "The last available date and time.",
+        "confidence": 0.699999988079071
+      },
+      {
         "suggestion": "Data.StatusUpdateDateTime",
-        "description": NaN,
+        "description": "Date and time at which the resource status was updated.\r\n",
+        "confidence": 0.6800000071525574
+      },
+      {
+        "suggestion": "StatusUpdateDateTime",
+        "description": "Date and time at which the status was assigned to the transfer.\r\n",
+        "confidence": 0.6800000071525574
+      }
+    ]
+  },
+  {
+    "bank_field": "regRepInd",
+    "preprocessed": "reg rep indicator",
+    "top_suggestions": [
+      {
+        "suggestion": "BeneficialOwnership",
+        "description": "A flag to indicate a party's beneficial ownership of the related account",
+        "confidence": 0.6499999761581421
+      },
+      {
+        "suggestion": "StandingOrderId",
+        "description": "A unique identifier for a standing order.",
+        "confidence": 0.6399999856948853
+      },
+      {
+        "suggestion": "ContractPresentIndicator",
+        "description": "Indicates if Payee has a contractual relationship with the PISP.",
+        "confidence": 0.6299999952316284
+      }
+    ]
+  },
+  {
+    "bank_field": "ultCred",
+    "preprocessed": "ult creditor",
+    "top_suggestions": [
+      {
+        "suggestion": "Data.Initiation.CreditorPostalAddress",
+        "description": "The postal address of the ultimate creditor in a payment initiation.",
+        "confidence": 0.6700000166893005
+      },
+      {
+        "suggestion": "Data.Initiation.UltimateCreditor",
+        "description": "The ultimate party to whom the funds are intended in a payment initiation.",
+        "confidence": 0.6600000262260437
+      },
+      {
+        "suggestion": "Data.Initiation.Creditor",
+        "description": "Party to which an amount of money is due.",
+        "confidence": 0.6600000262260437
+      }
+    ]
+  },
+  {
+    "bank_field": "ultDeb",
+    "preprocessed": "ult debtor",
+    "top_suggestions": [
+      {
+        "suggestion": "UltimateDebtor",
+        "description": "The ultimate source of the funds, if different from the direct debtor.",
+        "confidence": 0.6800000071525574
+      },
+      {
+        "suggestion": "Data.Initiation.CreditorPostalAddress",
+        "description": "The postal address of the ultimate creditor in a payment initiation.",
+        "confidence": 0.6700000166893005
+      },
+      {
+        "suggestion": "Data.Initiation.UltimateCreditor",
+        "description": "The ultimate party to whom the funds are intended in a payment initiation.",
+        "confidence": 0.6700000166893005
+      }
+    ]
+  },
+  {
+    "bank_field": "txChrgAmt",
+    "preprocessed": "tx chrg amount",
+    "top_suggestions": [
+      {
+        "suggestion": "Data.Initiation.FinalPaymentAmount",
+        "description": "The amount of the final Standing Order",
+        "confidence": 0.6700000166893005
+      },
+      {
+        "suggestion": "Data.Initiation.RecurringPaymentAmount",
+        "description": "The amount of the recurring Standing Order",
+        "confidence": 0.6600000262260437
+      },
+      {
+        "suggestion": "InstructedAmount.Amount",
+        "description": "The amount of the instructed payment.",
+        "confidence": 0.6600000262260437
+      }
+    ]
+  },
+  {
+    "bank_field": "chrgBr",
+    "preprocessed": "chrg br",
+    "top_suggestions": [
+      {
+        "suggestion": "Message",
+        "description": "Deprecated <br>Brief Error message",
+        "confidence": 0.6000000238418579
+      },
+      {
+        "suggestion": "Message",
+        "description": "Deprecated <br />Brief Error message",
+        "confidence": 0.5899999737739563
+      },
+      {
+        "suggestion": "sub",
+        "description": "Subject",
+        "confidence": 0.5799999833106995
+      }
+    ]
+  },
+  {
+    "bank_field": "pmtCtx",
+    "preprocessed": "payment ctx",
+    "top_suggestions": [
+      {
+        "suggestion": "Data.PaymentStatus",
+        "description": "The current status of a payment.",
+        "confidence": 0.7200000286102295
+      },
+      {
+        "suggestion": "PaymentContextCode",
+        "description": "Specifies the payment context, `OBInternalPaymentContext1Code`\r\n",
+        "confidence": 0.699999988079071
+      },
+      {
+        "suggestion": "InstructedAmount.Amount",
+        "description": "The amount of the instructed payment.",
+        "confidence": 0.6800000071525574
+      }
+    ]
+  },
+  {
+    "bank_field": "pmtType",
+    "preprocessed": "payment type",
+    "top_suggestions": [
+      {
+        "suggestion": "Data.Initiation.FileType",
+        "description": "Specifies the payment file type.",
+        "confidence": 0.800000011920929
+      },
+      {
+        "suggestion": "ScheduledType",
+        "description": "The type of scheduled payment (e.g., 'Domestic', 'International').",
+        "confidence": 0.7300000190734863
+      },
+      {
+        "suggestion": "InstructedAmount.Currency",
+        "description": "The currency of the instructed payment.",
+        "confidence": 0.7300000190734863
+      }
+    ]
+  },
+  {
+    "bank_field": "acctTyp",
+    "preprocessed": "account typ",
+    "top_suggestions": [
+      {
+        "suggestion": "Data.Account",
+        "description": "Contains core account information.",
+        "confidence": 0.7400000095367432
+      },
+      {
+        "suggestion": "Data.Refund.Account",
+        "description": "Provides the details to identify an account.",
+        "confidence": 0.7300000190734863
+      },
+      {
+        "suggestion": "Account",
+        "description": "Provides the details to identify an account.",
+        "confidence": 0.7300000190734863
+      }
+    ]
+  },
+  {
+    "bank_field": "acctCateg",
+    "preprocessed": "account categ",
+    "top_suggestions": [
+      {
+        "suggestion": "Data.Account",
+        "description": "Contains core account information.",
+        "confidence": 0.699999988079071
+      },
+      {
+        "suggestion": "Data.Refund.Account",
+        "description": "Provides the details to identify an account.",
+        "confidence": 0.6800000071525574
+      },
+      {
+        "suggestion": "Account",
+        "description": "Provides the details to identify an account.",
+        "confidence": 0.6800000071525574
+      }
+    ]
+  },
+  {
+    "bank_field": "stmtFreq",
+    "preprocessed": "stmt freq",
+    "top_suggestions": [
+      {
+        "suggestion": "Overdraft.OverdraftTierBandSet",
+        "description": "Tier band set details",
+        "confidence": 0.6200000047683716
+      },
+      {
+        "suggestion": "StatementFrequencyAndFormat",
+        "description": "Details about how often statements are issued and in what format (e.g., monthly, PDF).",
+        "confidence": 0.6200000047683716
+      },
+      {
+        "suggestion": "StatusDetail.LocalInstrument",
+        "description": "A code that identifies the local instrument relevant to a status detail.",
+        "confidence": 0.6100000143051147
+      }
+    ]
+  },
+  {
+    "bank_field": "stmtDesc",
+    "preprocessed": "stmt desc",
+    "top_suggestions": [
+      {
+        "suggestion": "sub",
+        "description": "Subject",
+        "confidence": 0.6600000262260437
+      },
+      {
+        "suggestion": "iat",
+        "description": "Issued At. ",
+        "confidence": 0.6100000143051147
+      },
+      {
+        "suggestion": "StatusDetail.LocalInstrument",
+        "description": "A code that identifies the local instrument relevant to a status detail.",
+        "confidence": 0.5799999833106995
+      }
+    ]
+  },
+  {
+    "bank_field": "stmtAmt",
+    "preprocessed": "stmt amount",
+    "top_suggestions": [
+      {
+        "suggestion": "InstructedAmount.Amount",
+        "description": "The amount of the instructed payment.",
+        "confidence": 0.6800000071525574
+      },
+      {
+        "suggestion": "Amount",
+        "description": "Amount of money in the cash transaction entry.",
+        "confidence": 0.6700000166893005
+      },
+      {
+        "suggestion": "Amount",
+        "description": "Amount of money to be reported for regulatory and statutory requirements.",
+        "confidence": 0.6600000262260437
+      }
+    ]
+  },
+  {
+    "bank_field": "stmtVal",
+    "preprocessed": "stmt value",
+    "top_suggestions": [
+      {
+        "suggestion": "TotalValue",
+        "description": "Combined sum of all Amounts in the accounts base currency",
+        "confidence": 0.6399999856948853
+      },
+      {
+        "suggestion": "Data.TotalValue",
+        "description": "Combined sum of all Amounts in the accounts base currency",
+        "confidence": 0.6399999856948853
+      },
+      {
+        "suggestion": "InstructedAmount.Currency",
+        "description": "The currency of the instructed payment.",
+        "confidence": 0.6100000143051147
+      }
+    ]
+  },
+  {
+    "bank_field": "stmtId",
+    "preprocessed": "stmt identifier",
+    "top_suggestions": [
+      {
+        "suggestion": "txn",
+        "description": "Transaction Identifier.",
+        "confidence": 0.6899999976158142
+      },
+      {
+        "suggestion": "StatementId",
+        "description": "A unique identifier for a statement.",
+        "confidence": 0.6700000166893005
+      },
+      {
+        "suggestion": "Data.Initiation.CreditorAgent.Identification",
+        "description": "Unique and unambiguous identification of the servicing institution.",
+        "confidence": 0.6499999761581421
+      }
+    ]
+  },
+  {
+    "bank_field": "stmtRef",
+    "preprocessed": "stmt reference",
+    "top_suggestions": [
+      {
+        "suggestion": "StatementReference",
+        "description": "A reference number for a statement.",
+        "confidence": 0.699999988079071
+      },
+      {
+        "suggestion": "sub",
+        "description": "Subject",
+        "confidence": 0.6499999761581421
+      },
+      {
+        "suggestion": "TransactionReference",
+        "description": "A unique reference associated with a transaction.",
+        "confidence": 0.6399999856948853
+      }
+    ]
+  },
+  {
+    "bank_field": "firstPmtDt",
+    "preprocessed": "first payment date",
+    "top_suggestions": [
+      {
+        "suggestion": "FirstPaymentDateTime",
+        "description": "The date on which the first payment for a recurrent credit transfer will be made.",
+        "confidence": 0.7799999713897705
+      },
+      {
+        "suggestion": "FirstPaymentDateTime",
+        "description": "The date and time of the first payment in a series (duplicate, but common in different contexts).",
+        "confidence": 0.7699999809265137
+      },
+      {
+        "suggestion": "FirstPaymentAmount",
+        "description": "The amount of the first payment in a series.",
+        "confidence": 0.7599999904632568
+      }
+    ]
+  },
+  {
+    "bank_field": "lastPmtDt",
+    "preprocessed": "last payment date",
+    "top_suggestions": [
+      {
+        "suggestion": "LastPaymentDateTime",
+        "description": "The date and time of the last payment made for a recurring instruction.",
+        "confidence": 0.8100000023841858
+      },
+      {
+        "suggestion": "LastPaymentAmount",
+        "description": "The amount of the last payment made in a series.",
+        "confidence": 0.7699999809265137
+      },
+      {
+        "suggestion": "Data.PaymentStatus",
+        "description": "The current status of a payment.",
+        "confidence": 0.7400000095367432
+      }
+    ]
+  },
+  {
+    "bank_field": "finalPmtDt",
+    "preprocessed": "final payment date",
+    "top_suggestions": [
+      {
+        "suggestion": "FinalPaymentDateTime",
+        "description": "The date on which the final payment for a recurrent credit transfer will be made.",
+        "confidence": 0.7799999713897705
+      },
+      {
+        "suggestion": "LastPaymentDateTime",
+        "description": "The date and time of the last payment made for a recurring instruction.",
+        "confidence": 0.7699999809265137
+      },
+      {
+        "suggestion": "FinalPaymentDateTime",
+        "description": "The date and time of the final payment in a series (duplicate, but common in different contexts).",
+        "confidence": 0.7699999809265137
+      }
+    ]
+  },
+  {
+    "bank_field": "nextPmtDt",
+    "preprocessed": "next payment date",
+    "top_suggestions": [
+      {
+        "suggestion": "NextPaymentDateTime",
+        "description": "The date and time of the next scheduled payment for a recurring instruction.",
+        "confidence": 0.7900000214576721
+      },
+      {
+        "suggestion": "NextPaymentAmount",
+        "description": "The amount of the next scheduled payment in a series.",
+        "confidence": 0.7699999809265137
+      },
+      {
+        "suggestion": "ScheduledPaymentDateTime",
+        "description": "The date and time when a scheduled payment is due to occur.",
+        "confidence": 0.7200000286102295
+      }
+    ]
+  },
+  {
+    "bank_field": "pmtFreq",
+    "preprocessed": "payment freq",
+    "top_suggestions": [
+      {
+        "suggestion": "Data.PaymentStatus",
+        "description": "The current status of a payment.",
+        "confidence": 0.6800000071525574
+      },
+      {
+        "suggestion": "Data.Initiation.FileType",
+        "description": "Specifies the payment file type.",
+        "confidence": 0.6700000166893005
+      },
+      {
+        "suggestion": "Frequency",
+        "description": "How often an event or payment occurs (e.g., 'Daily', 'Monthly', 'Annual').",
+        "confidence": 0.6700000166893005
+      }
+    ]
+  },
+  {
+    "bank_field": "numPmts",
+    "preprocessed": "number pmts",
+    "top_suggestions": [
+      {
+        "suggestion": "iat",
+        "description": "Issued At. ",
+        "confidence": 0.6000000238418579
+      },
+      {
+        "suggestion": "PostBox",
+        "description": "A post office box number.",
+        "confidence": 0.6000000238418579
+      },
+      {
+        "suggestion": "NumberOfPayments",
+        "description": "The total number of payments in a recurring series.",
+        "confidence": 0.5600000023841858
+      }
+    ]
+  },
+  {
+    "bank_field": "idempotKey",
+    "preprocessed": "idempot key",
+    "top_suggestions": [
+      {
+        "suggestion": "jti",
+        "description": "JWT ID.",
+        "confidence": 0.6100000143051147
+      },
+      {
+        "suggestion": "StatementId",
+        "description": "A unique identifier for a statement.",
+        "confidence": 0.6100000143051147
+      },
+      {
+        "suggestion": "MandateIdentification",
+        "description": "A unique identifier for a mandate.",
+        "confidence": 0.6100000143051147
+      }
+    ]
+  },
+  {
+    "bank_field": "consentStatus",
+    "preprocessed": "consent status",
+    "top_suggestions": [
+      {
+        "suggestion": "Data.Status",
+        "description": "Specifies the status of consent resource in code form.",
+        "confidence": 0.8500000238418579
+      },
+      {
+        "suggestion": "Data.Status",
+        "description": "Specifies the status of consent resource in code form. For a full list of values refer to `OBInternalConsentStatus1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)",
+        "confidence": 0.7799999713897705
+      },
+      {
+        "suggestion": "Data.Status",
+        "description": "Specifies the status of consent resource in code form. For a full list of values see `OBInternalConsentStatus1Code` in *ISO_External_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)",
+        "confidence": 0.7599999904632568
+      }
+    ]
+  },
+  {
+    "bank_field": "debProxy",
+    "preprocessed": "debtor proxy",
+    "top_suggestions": [
+      {
+        "suggestion": "Data.DebtorAccount.Proxy",
+        "description": "The proxy identifier (e.g., phone number, email) for the debtor's account.",
+        "confidence": 0.7900000214576721
+      },
+      {
+        "suggestion": "Data.Initiation.DebtorAccount.Proxy",
+        "description": "The proxy identifier (e.g., phone, email) for the debtor's account in a payment initiation.",
+        "confidence": 0.7599999904632568
+      },
+      {
+        "suggestion": "Data.Initiation.CreditorAccount.Proxy",
+        "description": "The proxy identifier (e.g., phone, email) for the creditor's account in a payment initiation.",
+        "confidence": 0.75
+      }
+    ]
+  },
+  {
+    "bank_field": "credProxy",
+    "preprocessed": "creditor proxy",
+    "top_suggestions": [
+      {
+        "suggestion": "Data.DebtorAccount.Proxy",
+        "description": "The proxy identifier (e.g., phone number, email) for the debtor's account.",
+        "confidence": 0.7799999713897705
+      },
+      {
+        "suggestion": "Data.Initiation.CreditorAccount.Proxy",
+        "description": "The proxy identifier (e.g., phone, email) for the creditor's account in a payment initiation.",
+        "confidence": 0.7699999809265137
+      },
+      {
+        "suggestion": "Data.Initiation.DebtorAccount.Proxy",
+        "description": "The proxy identifier (e.g., phone, email) for the debtor's account in a payment initiation.",
+        "confidence": 0.7599999904632568
+      }
+    ]
+  },
+  {
+    "bank_field": "credAgntID",
+    "preprocessed": "creditor agnt identifier",
+    "top_suggestions": [
+      {
+        "suggestion": "Data.Initiation.DebtorAccount.Identification",
+        "description": "The identifier for the debtor's account (e.g., IBAN, account number).",
+        "confidence": 0.7900000214576721
+      },
+      {
+        "suggestion": "Data.Initiation.DebtorAccount.SecondaryIdentification",
+        "description": "A secondary identifier for the debtor's account.",
+        "confidence": 0.7799999713897705
+      },
+      {
+        "suggestion": "Data.Initiation.CreditorAccount.SecondaryIdentification",
+        "description": "A secondary identifier for the creditor's account in a payment initiation.",
+        "confidence": 0.7799999713897705
+      }
+    ]
+  },
+  {
+    "bank_field": "debAgntID",
+    "preprocessed": "debtor agnt identifier",
+    "top_suggestions": [
+      {
+        "suggestion": "Data.Initiation.DebtorAccount.Identification",
+        "description": "The identifier for the debtor's account (e.g., IBAN, account number).",
+        "confidence": 0.800000011920929
+      },
+      {
+        "suggestion": "Data.Initiation.DebtorAccount.SecondaryIdentification",
+        "description": "A secondary identifier for the debtor's account.",
+        "confidence": 0.7799999713897705
+      },
+      {
+        "suggestion": "Data.Initiation.DebtorAccount",
+        "description": "Provides the details to identify the debtor account.",
+        "confidence": 0.7699999809265137
+      }
+    ]
+  },
+  {
+    "bank_field": "merchCode",
+    "preprocessed": "merch code",
+    "top_suggestions": [
+      {
+        "suggestion": "PostBox",
+        "description": "A post office box number.",
+        "confidence": 0.6000000238418579
+      },
+      {
+        "suggestion": "Data.Refund.Account.Identification",
+        "description": "The identifier for the refund account.",
+        "confidence": 0.5899999737739563
+      },
+      {
+        "suggestion": "CategoryPurposeCode",
+        "description": "A standardised code indicating the purpose of a payment transaction (e.g., 'CASH' for cash withdrawal, 'GDDS' for goods and services).",
+        "confidence": 0.5899999737739563
+      }
+    ]
+  },
+  {
+    "bank_field": "merchName",
+    "preprocessed": "merch name",
+    "top_suggestions": [
+      {
+        "suggestion": "Name",
+        "description": "Name of the cardholder using the card instrument.",
+        "confidence": 0.6200000047683716
+      },
+      {
+        "suggestion": "Name",
+        "description": "A person's or entity's full legal name or a commonly used name.",
+        "confidence": 0.6100000143051147
+      },
+      {
+        "suggestion": "MerchantName",
+        "description": "Name by which the merchant is known.",
+        "confidence": 0.6100000143051147
+      }
+    ]
+  },
+  {
+    "bank_field": "txDesc",
+    "preprocessed": "tx desc",
+    "top_suggestions": [
+      {
+        "suggestion": "txn",
+        "description": "Transaction Identifier.",
+        "confidence": 0.699999988079071
+      },
+      {
+        "suggestion": "Data.DirectDebit",
+        "description": "Contains details related to a direct debit.",
+        "confidence": 0.6399999856948853
+      },
+      {
+        "suggestion": "CareOf",
+        "description": "A field for 'c/o' or 'care of' in an address.",
+        "confidence": 0.6200000047683716
+      }
+    ]
+  },
+  {
+    "bank_field": "bankTxCode",
+    "preprocessed": "bank tx code",
+    "top_suggestions": [
+      {
+        "suggestion": "txn",
+        "description": "Transaction Identifier.",
+        "confidence": 0.6899999976158142
+      },
+      {
+        "suggestion": "ExtendedProprietaryBankTransactionCodes",
+        "description": "Additional proprietary codes that extend the primary proprietary code.",
+        "confidence": 0.6299999952316284
+      },
+      {
+        "suggestion": "SwitchStatus",
+        "description": "The current status of a bank account switch process.",
+        "confidence": 0.6299999952316284
+      }
+    ]
+  },
+  {
+    "bank_field": "propTxCode",
+    "preprocessed": "prop tx code",
+    "top_suggestions": [
+      {
+        "suggestion": "txn",
+        "description": "Transaction Identifier.",
+        "confidence": 0.6700000166893005
+      },
+      {
+        "suggestion": "ExtendedProprietaryBankTransactionCodes",
+        "description": "Additional proprietary codes that extend the primary proprietary code.",
+        "confidence": 0.6000000238418579
+      },
+      {
+        "suggestion": "CareOf",
+        "description": "A field for 'c/o' or 'care of' in an address.",
+        "confidence": 0.6000000238418579
+      }
+    ]
+  },
+  {
+    "bank_field": "extPropTxCodes",
+    "preprocessed": "ext prop tx codes",
+    "top_suggestions": [
+      {
+        "suggestion": "txn",
+        "description": "Transaction Identifier.",
+        "confidence": 0.6600000262260437
+      },
+      {
+        "suggestion": "PaymentContextCode",
+        "description": "Specifies the payment context, `OBInternalPaymentContext1Code`\r\n",
+        "confidence": 0.6299999952316284
+      },
+      {
+        "suggestion": "ExtendedProprietaryBankTransactionCodes",
+        "description": "Additional proprietary codes that extend the primary proprietary code.",
+        "confidence": 0.6299999952316284
+      }
+    ]
+  },
+  {
+    "bank_field": "psuIp",
+    "preprocessed": "psu ip",
+    "top_suggestions": [
+      {
+        "suggestion": "PSUAuthenticationMethods",
+        "description": "^ Indicates that the PSU authentication methods supported.",
+        "confidence": 0.7300000190734863
+      },
+      {
+        "suggestion": "Data.PSUAuthenticationMethod",
+        "description": "The method used for Payment Service User (PSU) authentication.",
+        "confidence": 0.7099999785423279
+      },
+      {
+        "suggestion": "Data.PSUInteractionType",
+        "description": "The type of interaction performed by the Payment Service User (PSU).",
+        "confidence": 0.6499999761581421
+      }
+    ]
+  },
+  {
+    "bank_field": "psuAgent",
+    "preprocessed": "psu agent",
+    "top_suggestions": [
+      {
+        "suggestion": "PSUAuthenticationMethods",
+        "description": "^ Indicates that the PSU authentication methods supported.",
+        "confidence": 0.699999988079071
+      },
+      {
+        "suggestion": "Data.PSUAuthenticationMethod",
+        "description": "The method used for Payment Service User (PSU) authentication.",
+        "confidence": 0.6899999976158142
+      },
+      {
+        "suggestion": "Data.PSUInteractionType",
+        "description": "The type of interaction performed by the Payment Service User (PSU).",
+        "confidence": 0.6800000071525574
+      }
+    ]
+  },
+  {
+    "bank_field": "custRef",
+    "preprocessed": "cust reference",
+    "top_suggestions": [
+      {
+        "suggestion": "StatementReference",
+        "description": "A reference number for a statement.",
+        "confidence": 0.699999988079071
+      },
+      {
+        "suggestion": "sub",
+        "description": "Subject",
+        "confidence": 0.6600000262260437
+      },
+      {
+        "suggestion": "Data.Initiation.FileReference",
+        "description": "Reference for the file.",
+        "confidence": 0.6600000262260437
+      }
+    ]
+  },
+  {
+    "bank_field": "custSeg",
+    "preprocessed": "cust seg",
+    "top_suggestions": [
+      {
+        "suggestion": "sub",
+        "description": "Subject",
+        "confidence": 0.6399999856948853
+      },
+      {
+        "suggestion": "toe",
+        "description": "Time of Event.",
+        "confidence": 0.6100000143051147
+      },
+      {
+        "suggestion": "StandingOrderId",
+        "description": "A unique identifier for a standing order.",
+        "confidence": 0.6100000143051147
+      }
+    ]
+  },
+  {
+    "bank_field": "psuLoginDt",
+    "preprocessed": "psu login date",
+    "top_suggestions": [
+      {
+        "suggestion": "PSUAuthenticationMethods",
+        "description": "^ Indicates that the PSU authentication methods supported.",
+        "confidence": 0.699999988079071
+      },
+      {
+        "suggestion": "Data.PSUAuthenticationMethod",
+        "description": "The method used for Payment Service User (PSU) authentication.",
+        "confidence": 0.6899999976158142
+      },
+      {
+        "suggestion": "Data.PSUInteractionType",
+        "description": "The type of interaction performed by the Payment Service User (PSU).",
+        "confidence": 0.6000000238418579
+      }
+    ]
+  },
+  {
+    "bank_field": "riskScore",
+    "preprocessed": "risk score",
+    "top_suggestions": [
+      {
+        "suggestion": "StatusDetail.LocalInstrument",
+        "description": "A code that identifies the local instrument relevant to a status detail.",
+        "confidence": 0.5899999737739563
+      },
+      {
+        "suggestion": "Risk",
+        "description": "The Risk payload is a risk assessment that the TPP performs on the payment initiation.",
+        "confidence": 0.5899999737739563
+      },
+      {
+        "suggestion": "FundsAvailableResult",
+        "description": "The result of a funds availability check.",
+        "confidence": 0.5899999737739563
+      }
+    ]
+  },
+  {
+    "bank_field": "riskClass",
+    "preprocessed": "risk class",
+    "top_suggestions": [
+      {
+        "suggestion": "FeeCategory",
+        "description": "A classification of the type of fee.",
+        "confidence": 0.6200000047683716
+      },
+      {
+        "suggestion": "Risk",
+        "description": "The Risk payload is a risk assessment that the TPP performs on the payment initiation.",
+        "confidence": 0.6100000143051147
+      },
+      {
+        "suggestion": "FundsAvailableResult",
+        "description": "The result of a funds availability check.",
+        "confidence": 0.6000000238418579
+      }
+    ]
+  },
+  {
+    "bank_field": "riskNotes",
+    "preprocessed": "risk notes",
+    "top_suggestions": [
+      {
+        "suggestion": "Overdraft.Notes",
+        "description": "Associated Notes about the overdraft rates",
+        "confidence": 0.75
+      },
+      {
+        "suggestion": "ProductDetails.Notes",
+        "description": "Optional additional notes to supplement the Core product details",
+        "confidence": 0.7099999785423279
+      },
+      {
+        "suggestion": "StatementFee",
+        "description": "Details related to a fee appearing on a statement.",
+        "confidence": 0.6299999952316284
+      }
+    ]
+  },
+  {
+    "bank_field": "riskLevel",
+    "preprocessed": "risk level",
+    "top_suggestions": [
+      {
+        "suggestion": "SwitchStatus",
+        "description": "The current status of a bank account switch process.",
+        "confidence": 0.5899999737739563
+      },
+      {
+        "suggestion": "Risk",
+        "description": "The Risk payload is a risk assessment that the TPP performs on the payment initiation.",
+        "confidence": 0.5899999737739563
+      },
+      {
+        "suggestion": "FundsAvailableResult",
+        "description": "The result of a funds availability check.",
+        "confidence": 0.5799999833106995
+      }
+    ]
+  },
+  {
+    "bank_field": "addrLine1",
+    "preprocessed": "address line1",
+    "top_suggestions": [
+      {
+        "suggestion": "AddressLine",
+        "description": "A free-text line for address details, used when structured fields are not sufficient.",
+        "confidence": 0.7599999904632568
+      },
+      {
+        "suggestion": "DeliveryAddress",
+        "description": "The address where something is to be delivered.",
+        "confidence": 0.7200000286102295
+      },
+      {
+        "suggestion": "CreditorPostalAddress",
+        "description": "The postal address of the creditor.",
+        "confidence": 0.6899999976158142
+      }
+    ]
+  },
+  {
+    "bank_field": "addrLine2",
+    "preprocessed": "address line2",
+    "top_suggestions": [
+      {
+        "suggestion": "AddressLine",
+        "description": "A free-text line for address details, used when structured fields are not sufficient.",
+        "confidence": 0.7599999904632568
+      },
+      {
+        "suggestion": "DeliveryAddress",
+        "description": "The address where something is to be delivered.",
+        "confidence": 0.699999988079071
+      },
+      {
+        "suggestion": "CreditorPostalAddress",
+        "description": "The postal address of the creditor.",
+        "confidence": 0.6800000071525574
+      }
+    ]
+  },
+  {
+    "bank_field": "townNm",
+    "preprocessed": "town name",
+    "top_suggestions": [
+      {
+        "suggestion": "TownLocationName",
+        "description": "The name of a town, city, or locality.",
+        "confidence": 0.7799999713897705
+      },
+      {
+        "suggestion": "TownName",
+        "description": "The name of the town or city (redundant with TownLocationName, but often kept for consistency).",
+        "confidence": 0.7599999904632568
+      },
+      {
+        "suggestion": "StreetName",
+        "description": "The name of the street in an address.",
+        "confidence": 0.6600000262260437
+      }
+    ]
+  },
+  {
+    "bank_field": "postCd",
+    "preprocessed": "postal cd",
+    "top_suggestions": [
+      {
+        "suggestion": "CreditorPostalAddress",
+        "description": "The postal address of the creditor.",
+        "confidence": 0.6700000166893005
+      },
+      {
+        "suggestion": "PostBox",
+        "description": "A post office box number.",
+        "confidence": 0.6700000166893005
+      },
+      {
+        "suggestion": "Data.Initiation.CreditorAgent.PostalAddress",
+        "description": "The postal address of the creditor agent.",
+        "confidence": 0.6499999761581421
+      }
+    ]
+  },
+  {
+    "bank_field": "countryCd",
+    "preprocessed": "country cd",
+    "top_suggestions": [
+      {
+        "suggestion": "CountrySubDivision",
+        "description": "Identifies a subdivision of a country such as state, region, county.",
         "confidence": 0.5799999833106995
       },
       {
-        "suggestion": "Data.MultiAuthorisation.LastUpdateDateTime",
-        "description": "Last date and time at the authorisation flow was updated. All dates in the JSON payloads are represented in ISO 8601 date-time format. \nAll date-time fields in responses must include the timezone. An example is below:\n2017-04-05T10:43:07+00:00",
-        "confidence": 0.5
+        "suggestion": "Country",
+        "description": "Nation with its own government.",
+        "confidence": 0.550000011920929
       },
       {
-        "suggestion": "Data.StatusUpdateDateTime",
-        "description": "Date and time at which the resource status was updated. All dates in the JSON payloads are represented in ISO 8601 date-time format. \nAll date-time fields in responses must include the timezone. An example is below:\n2017-04-05T10:43:07+00:00",
-        "confidence": 0.5
+        "suggestion": "sub",
+        "description": "Subject",
+        "confidence": 0.550000011920929
+      }
+    ]
+  },
+  {
+    "bank_field": "dob",
+    "preprocessed": "dob",
+    "top_suggestions": [
+      {
+        "suggestion": "sub",
+        "description": "Subject",
+        "confidence": 0.6000000238418579
+      },
+      {
+        "suggestion": "Data.DirectDebit",
+        "description": "Contains details related to a direct debit.",
+        "confidence": 0.5699999928474426
+      },
+      {
+        "suggestion": "MandateRelatedInformation",
+        "description": "Details related to a direct debit or standing order mandate.",
+        "confidence": 0.550000011920929
+      }
+    ]
+  },
+  {
+    "bank_field": "gender",
+    "preprocessed": "gender",
+    "top_suggestions": [
+      {
+        "suggestion": "sub",
+        "description": "Subject",
+        "confidence": 0.6600000262260437
+      },
+      {
+        "suggestion": "Number",
+        "description": "A generic numerical value or identifier.",
+        "confidence": 0.5899999737739563
+      },
+      {
+        "suggestion": "BeneficiaryType",
+        "description": "Categorisation of the beneficiary (e.g., 'Individual', 'Organisation').",
+        "confidence": 0.5899999737739563
+      }
+    ]
+  },
+  {
+    "bank_field": "email",
+    "preprocessed": "email",
+    "top_suggestions": [
+      {
+        "suggestion": "EmailAddress",
+        "description": "The electronic mail address of a party.",
+        "confidence": 0.6700000166893005
+      },
+      {
+        "suggestion": "Data.EventSubscription",
+        "description": "Details about a subscription to receive event notifications.",
+        "confidence": 0.6200000047683716
+      },
+      {
+        "suggestion": "sub",
+        "description": "Subject",
+        "confidence": 0.6200000047683716
+      }
+    ]
+  },
+  {
+    "bank_field": "mobNum",
+    "preprocessed": "mob number",
+    "top_suggestions": [
+      {
+        "suggestion": "Mobile",
+        "description": "A mobile phone number.",
+        "confidence": 0.699999988079071
+      },
+      {
+        "suggestion": "Phone",
+        "description": "A contact telephone number.",
+        "confidence": 0.6700000166893005
+      },
+      {
+        "suggestion": "PostBox",
+        "description": "A post office box number.",
+        "confidence": 0.6100000143051147
+      }
+    ]
+  },
+  {
+    "bank_field": "landline",
+    "preprocessed": "landline",
+    "top_suggestions": [
+      {
+        "suggestion": "Phone",
+        "description": "A contact telephone number.",
+        "confidence": 0.7200000286102295
+      },
+      {
+        "suggestion": "Mobile",
+        "description": "A mobile phone number.",
+        "confidence": 0.699999988079071
+      },
+      {
+        "suggestion": "AddressLine",
+        "description": "A free-text line for address details, used when structured fields are not sufficient.",
+        "confidence": 0.6200000047683716
+      }
+    ]
+  },
+  {
+    "bank_field": "orgUnit",
+    "preprocessed": "org unit",
+    "top_suggestions": [
+      {
+        "suggestion": "Department",
+        "description": "Identification of a division of a large organisation or building.",
+        "confidence": 0.6499999761581421
+      },
+      {
+        "suggestion": "Department",
+        "description": "A department within an organisation.",
+        "confidence": 0.6399999856948853
+      },
+      {
+        "suggestion": "SubDepartment",
+        "description": "Identification of a sub-division of a large organisation or building.",
+        "confidence": 0.6399999856948853
+      }
+    ]
+  },
+  {
+    "bank_field": "empStatus",
+    "preprocessed": "emp status",
+    "top_suggestions": [
+      {
+        "suggestion": "Data.PaymentStatus",
+        "description": "The current status of a payment.",
+        "confidence": 0.6499999761581421
+      },
+      {
+        "suggestion": "Data.Status",
+        "description": "Specifies the status of the payment information group.",
+        "confidence": 0.6299999952316284
+      },
+      {
+        "suggestion": "iat",
+        "description": "Issued At. ",
+        "confidence": 0.6299999952316284
+      }
+    ]
+  },
+  {
+    "bank_field": "txMode",
+    "preprocessed": "tx mode",
+    "top_suggestions": [
+      {
+        "suggestion": "txn",
+        "description": "Transaction Identifier.",
+        "confidence": 0.75
+      },
+      {
+        "suggestion": "InstructedAmount.Currency",
+        "description": "The currency of the instructed payment.",
+        "confidence": 0.6600000262260437
+      },
+      {
+        "suggestion": "TransactionMutability",
+        "description": "Indicates if a transaction can be changed or reversed.",
+        "confidence": 0.6499999761581421
+      }
+    ]
+  },
+  {
+    "bank_field": "refCode",
+    "preprocessed": "reference code",
+    "top_suggestions": [
+      {
+        "suggestion": "StatementReference",
+        "description": "A reference number for a statement.",
+        "confidence": 0.7699999809265137
+      },
+      {
+        "suggestion": "CreditorReferenceInformation.Code",
+        "description": "A code used to uniquely identify the creditor, often used in payment references.",
+        "confidence": 0.7200000286102295
+      },
+      {
+        "suggestion": "Number",
+        "description": "Identification of the type specified for the referred document line.",
+        "confidence": 0.699999988079071
+      }
+    ]
+  },
+  {
+    "bank_field": "secID",
+    "preprocessed": "sec identifier",
+    "top_suggestions": [
+      {
+        "suggestion": "txn",
+        "description": "Transaction Identifier.",
+        "confidence": 0.7300000190734863
+      },
+      {
+        "suggestion": "StandingOrderId",
+        "description": "A unique identifier for a standing order.",
+        "confidence": 0.699999988079071
+      },
+      {
+        "suggestion": "Data.Initiation.CreditorAgent.Identification",
+        "description": "The identifier for the creditor agent (bank) in a payment initiation (e.g., BIC).",
+        "confidence": 0.699999988079071
+      }
+    ]
+  },
+  {
+    "bank_field": "psuAuthMeth",
+    "preprocessed": "psu authorisation meth",
+    "top_suggestions": [
+      {
+        "suggestion": "PSUAuthenticationMethods",
+        "description": "^ Indicates that the PSU authentication methods supported.",
+        "confidence": 0.7400000095367432
+      },
+      {
+        "suggestion": "Data.PSUAuthenticationMethod",
+        "description": "The method used for Payment Service User (PSU) authentication.",
+        "confidence": 0.7200000286102295
+      },
+      {
+        "suggestion": "BeneficiaryPrepopulatedIndicator",
+        "description": "Indicates if PISP has immutably prepopulated payment details in for the PSU.",
+        "confidence": 0.6499999761581421
+      }
+    ]
+  },
+  {
+    "bank_field": "psuInteractType",
+    "preprocessed": "psu interact type",
+    "top_suggestions": [
+      {
+        "suggestion": "Data.PSUInteractionType",
+        "description": "The type of interaction performed by the Payment Service User (PSU).",
+        "confidence": 0.7799999713897705
+      },
+      {
+        "suggestion": "PSUAuthenticationMethods",
+        "description": "^ Indicates that the PSU authentication methods supported.",
+        "confidence": 0.7200000286102295
+      },
+      {
+        "suggestion": "Data.PSUAuthenticationMethod",
+        "description": "The method used for Payment Service User (PSU) authentication.",
+        "confidence": 0.6899999976158142
+      }
+    ]
+  },
+  {
+    "bank_field": "vrpType",
+    "preprocessed": "vrp type",
+    "top_suggestions": [
+      {
+        "suggestion": "Data.VRPType",
+        "description": "The type of Variable Recurring Payment (VRP) being initiated.",
+        "confidence": 0.8100000023841858
+      },
+      {
+        "suggestion": "VRPType",
+        "description": "^ The types of payments that can be made under this VRP consent. This can be used to indicate whether this include sweeping payment or other ecommerce payments.",
+        "confidence": 0.7699999809265137
+      },
+      {
+        "suggestion": "PSUInteractionTypes",
+        "description": "Indicates interaction type, currently if customer is present or not present. If not provided the default is `OffSession` (the customer is not present) when the individual VRP payment is made.",
+        "confidence": 0.6600000262260437
+      }
+    ]
+  },
+  {
+    "bank_field": "instScheme",
+    "preprocessed": "inst scheme",
+    "top_suggestions": [
+      {
+        "suggestion": "iat",
+        "description": "Issued At. ",
+        "confidence": 0.6499999761581421
+      },
+      {
+        "suggestion": "Data.DebtorAccount.SchemeName",
+        "description": "Name of the identification scheme, in a coded form as published in an external list. For a full list of values refer to `OBInternalAccountIdentification4Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)",
+        "confidence": 0.6200000047683716
+      },
+      {
+        "suggestion": "Data.DebtorAccount.SchemeName",
+        "description": "Name of the identification scheme, in a coded form as published in an external list. For a full list of values see `OBInternalAccountIdentification4Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)",
+        "confidence": 0.6200000047683716
+      }
+    ]
+  },
+  {
+    "bank_field": "instCurrency",
+    "preprocessed": "inst currency",
+    "top_suggestions": [
+      {
+        "suggestion": "InstructedAmount.Currency",
+        "description": "The currency of the instructed payment.",
+        "confidence": 0.7300000190734863
+      },
+      {
+        "suggestion": "Data.TotalValue.Currency",
+        "description": "The currency of a total amount.",
+        "confidence": 0.7200000286102295
+      },
+      {
+        "suggestion": "Data.Initiation.InstructedAmount.Currency",
+        "description": "The currency of the amount instructed for payment initiation.",
+        "confidence": 0.7200000286102295
+      }
+    ]
+  },
+  {
+    "bank_field": "instAmt",
+    "preprocessed": "inst amount",
+    "top_suggestions": [
+      {
+        "suggestion": "InstructedAmount.Amount",
+        "description": "The amount of the instructed payment.",
+        "confidence": 0.7699999809265137
+      },
+      {
+        "suggestion": "Amount",
+        "description": "Amount of money in the cash transaction entry.",
+        "confidence": 0.7400000095367432
+      },
+      {
+        "suggestion": "Amount",
+        "description": "Amount of money to be reported for regulatory and statutory requirements.",
+        "confidence": 0.7400000095367432
+      }
+    ]
+  },
+  {
+    "bank_field": "instLEI",
+    "preprocessed": "inst lei",
+    "top_suggestions": [
+      {
+        "suggestion": "Data.Initiation.CreditorAgent.LEI",
+        "description": "The Legal Entity Identifier (LEI) of the creditor agent.",
+        "confidence": 0.6700000166893005
+      },
+      {
+        "suggestion": "Data.Initiation.Creditor.LEI",
+        "description": "The Legal Entity Identifier (LEI) of the creditor in a payment initiation.",
+        "confidence": 0.6700000166893005
+      },
+      {
+        "suggestion": "LEI",
+        "description": "Legal Entity Identifier, a 20-character code that uniquely identifies legally distinct entities.",
+        "confidence": 0.6499999761581421
+      }
+    ]
+  },
+  {
+    "bank_field": "suppData",
+    "preprocessed": "supp data",
+    "top_suggestions": [
+      {
+        "suggestion": "Data",
+        "description": "The data payload of the response.",
+        "confidence": 0.699999988079071
+      },
+      {
+        "suggestion": "Data.Initiation.SupplementaryData",
+        "description": "Additional unstructured data for a payment initiation.",
+        "confidence": 0.6700000166893005
+      },
+      {
+        "suggestion": "Data.SupplementaryData",
+        "description": "Additional unstructured data.",
+        "confidence": 0.6700000166893005
+      }
+    ]
+  },
+  {
+    "bank_field": "issuerID",
+    "preprocessed": "issuer identifier",
+    "top_suggestions": [
+      {
+        "suggestion": "CreditorReferenceInformation.Issuer",
+        "description": "Entity that assigns the identification.",
+        "confidence": 0.8299999833106995
+      },
+      {
+        "suggestion": "Issuer",
+        "description": "The name or identifier of the organisation issuing the financial instrument or instruction.",
+        "confidence": 0.7900000214576721
+      },
+      {
+        "suggestion": "Issuer",
+        "description": "The name or identifier of the organisation issuing the financial instrument or instruction.",
+        "confidence": 0.7900000214576721
+      }
+    ]
+  },
+  {
+    "bank_field": "extRef",
+    "preprocessed": "ext reference",
+    "top_suggestions": [
+      {
+        "suggestion": "Data.Initiation.FileReference",
+        "description": "Reference for the file.",
+        "confidence": 0.699999988079071
+      },
+      {
+        "suggestion": "StatementReference",
+        "description": "A reference number for a statement.",
+        "confidence": 0.6399999856948853
+      },
+      {
+        "suggestion": "Self",
+        "description": "The URI of the resource.",
+        "confidence": 0.5899999737739563
       }
     ]
   }

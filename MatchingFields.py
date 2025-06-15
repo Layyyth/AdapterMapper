@@ -40,14 +40,15 @@ ob_texts = (
 ).tolist()
 
 
-model = SentenceTransformer('all-MiniLM-L12-v2')
+#model = SentenceTransformer('all-MiniLM-L12-v2')
+model = SentenceTransformer('BAAI/bge-large-en-v1.5')
 ob_embeddings = model.encode(ob_texts, convert_to_numpy=True)
 embedding_dim = ob_embeddings.shape[1]
 index = faiss.IndexFlatL2(embedding_dim)
 index.add(ob_embeddings)
 
 
-with open("data/bank_sample.json", "r", encoding="utf-8") as file:
+with open("data/sample_bank_transactions.json", "r", encoding="utf-8") as file:
     bank_field_names = json.load(file)
 
 
