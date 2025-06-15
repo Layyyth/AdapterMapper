@@ -1,0 +1,275 @@
+[
+  {
+    "bank_field": "cnstID",
+    "preprocessed": "consent identifier",
+    "top_suggestions": [
+      {
+        "suggestion": "Data.ConsentId",
+        "description": "Unique identification as assigned by the ASPSP to uniquely identify the consent resource.\n",
+        "confidence": 0.75
+      },
+      {
+        "suggestion": "Data.ConsentId",
+        "description": "OB: Unique identification as assigned by the ASPSP to uniquely identify the consent resource.",
+        "confidence": 0.7300000190734863
+      },
+      {
+        "suggestion": "Data.ConsentId",
+        "description": "Unique identification as assigned to identify the account access consent resource.",
+        "confidence": 0.699999988079071
+      }
+    ]
+  },
+  {
+    "bank_field": "usrNm",
+    "preprocessed": "user name",
+    "top_suggestions": [
+      {
+        "suggestion": "Data.Account",
+        "description": NaN,
+        "confidence": 0.5400000214576721
+      },
+      {
+        "suggestion": "Data.Refund.Agent.Name",
+        "description": NaN,
+        "confidence": 0.5099999904632568
+      },
+      {
+        "suggestion": "Data.Initiation.CreditorAgent.Name",
+        "description": NaN,
+        "confidence": 0.5099999904632568
+      }
+    ]
+  },
+  {
+    "bank_field": "benIBAN",
+    "preprocessed": "beneficiary iban",
+    "top_suggestions": [
+      {
+        "suggestion": "Data.Beneficiary",
+        "description": NaN,
+        "confidence": 0.7599999904632568
+      },
+      {
+        "suggestion": "BeneficiaryId",
+        "description": NaN,
+        "confidence": 0.7300000190734863
+      },
+      {
+        "suggestion": "BeneficiaryType",
+        "description": NaN,
+        "confidence": 0.6600000262260437
+      }
+    ]
+  },
+  {
+    "bank_field": "txnAmt",
+    "preprocessed": "transaction amount",
+    "top_suggestions": [
+      {
+        "suggestion": "Amount",
+        "description": "Amount of money in the cash transaction entry.",
+        "confidence": 0.75
+      },
+      {
+        "suggestion": "Transaction",
+        "description": NaN,
+        "confidence": 0.6800000071525574
+      },
+      {
+        "suggestion": "Amount",
+        "description": "Amount of money of the cash balance after a transaction entry is applied to the account..",
+        "confidence": 0.6700000166893005
+      }
+    ]
+  },
+  {
+    "bank_field": "credAccId",
+    "preprocessed": "creditor account identifier",
+    "top_suggestions": [
+      {
+        "suggestion": "Data.Initiation.CreditorAccount",
+        "description": "Identification assigned by an institution to identify an account. This identification is known by the account owner.",
+        "confidence": 0.7400000095367432
+      },
+      {
+        "suggestion": "Data.Refund.Creditor",
+        "description": "Set of elements used to identify a person or an organisation.",
+        "confidence": 0.7200000286102295
+      },
+      {
+        "suggestion": "Data.DebtorAccount.Identification",
+        "description": "Identification assigned by an institution to identify an account. This identification is known by the account owner.",
+        "confidence": 0.6800000071525574
+      }
+    ]
+  },
+  {
+    "bank_field": "currCode",
+    "preprocessed": "currency code",
+    "top_suggestions": [
+      {
+        "suggestion": "Data.InstructedAmount.Currency",
+        "description": "A code allocated to a currency by a Maintenance Agency under an international identification scheme, as described in the latest edition of the international standard ISO 4217 \"Codes for the representation of currencies and funds\".",
+        "confidence": 0.75
+      },
+      {
+        "suggestion": "TotalValue.Currency",
+        "description": NaN,
+        "confidence": 0.75
+      },
+      {
+        "suggestion": "Data.TotalValue.Currency",
+        "description": NaN,
+        "confidence": 0.75
+      }
+    ]
+  },
+  {
+    "bank_field": "valDt",
+    "preprocessed": "value date",
+    "top_suggestions": [
+      {
+        "suggestion": "StatementDateTime",
+        "description": NaN,
+        "confidence": 0.5899999737739563
+      },
+      {
+        "suggestion": "Date",
+        "description": NaN,
+        "confidence": 0.5799999833106995
+      },
+      {
+        "suggestion": "EndDateTime",
+        "description": NaN,
+        "confidence": 0.550000011920929
+      }
+    ]
+  },
+  {
+    "bank_field": "strPurpose",
+    "preprocessed": "str purpose",
+    "top_suggestions": [
+      {
+        "suggestion": "Issuer",
+        "description": "The name or identifier of the organisation issuing the financial instrument or instruction.",
+        "confidence": 0.3199999928474426
+      },
+      {
+        "suggestion": "Issuer",
+        "description": "The name or identifier of the organisation issuing the financial instrument or instruction.",
+        "confidence": 0.3199999928474426
+      },
+      {
+        "suggestion": "Issuer",
+        "description": "The name or identifier of the organisation issuing the financial instrument or instruction.",
+        "confidence": 0.3199999928474426
+      }
+    ]
+  },
+  {
+    "bank_field": "strAddr",
+    "preprocessed": "str address",
+    "top_suggestions": [
+      {
+        "suggestion": "Data.Refund.Agent.PostalAddress",
+        "description": NaN,
+        "confidence": 0.5699999928474426
+      },
+      {
+        "suggestion": "Data.Refund.Creditor.PostalAddress",
+        "description": NaN,
+        "confidence": 0.5699999928474426
+      },
+      {
+        "suggestion": "Data.Initiation.Creditor.PostalAddress",
+        "description": NaN,
+        "confidence": 0.5699999928474426
+      }
+    ]
+  },
+  {
+    "bank_field": "multiTrfInd",
+    "preprocessed": "multi transfer indicator",
+    "top_suggestions": [
+      {
+        "suggestion": "StatusDetail.StatusReason",
+        "description": "Reason Code provided for the status of a transfer. For a full list of values see code values for `OBExternalStatusReason1Code` in *ISO_External_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)",
+        "confidence": 0.41999998688697815
+      },
+      {
+        "suggestion": "StatusUpdateDateTime",
+        "description": "Date and time at which the status was assigned to the transfer.\n",
+        "confidence": 0.38999998569488525
+      },
+      {
+        "suggestion": "StatusDetail.Status",
+        "description": "Status of a transfer, as assigned by the transaction administrator. For a full list of values see `ExternalPaymentTransactionStatus1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)",
+        "confidence": 0.3799999952316284
+      }
+    ]
+  },
+  {
+    "bank_field": "authCode",
+    "preprocessed": "authorisation code",
+    "top_suggestions": [
+      {
+        "suggestion": "Data.Authorisation.AuthorisationType",
+        "description": "Type of authorisation flow requested.",
+        "confidence": 0.699999988079071
+      },
+      {
+        "suggestion": "Data.Authorisation.AuthorisationType",
+        "description": "Type of authorisation flow requested. For a full set of values refer to `OBInternalAuthorisation1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)",
+        "confidence": 0.6899999976158142
+      },
+      {
+        "suggestion": "Data.Authorisation.AuthorisationType",
+        "description": "Type of authorisation flow requested. For a full list of values refer to `OBInternalAuthorisation1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)",
+        "confidence": 0.6800000071525574
+      }
+    ]
+  },
+  {
+    "bank_field": "prodType",
+    "preprocessed": "product type",
+    "top_suggestions": [
+      {
+        "suggestion": "ProductDetails",
+        "description": NaN,
+        "confidence": 0.6200000047683716
+      },
+      {
+        "suggestion": "Data.Product",
+        "description": NaN,
+        "confidence": 0.5600000023841858
+      },
+      {
+        "suggestion": "Type",
+        "description": NaN,
+        "confidence": 0.5199999809265137
+      }
+    ]
+  },
+  {
+    "bank_field": "updTimestamp",
+    "preprocessed": "update timestamp",
+    "top_suggestions": [
+      {
+        "suggestion": "Data.StatusUpdateDateTime",
+        "description": NaN,
+        "confidence": 0.5899999737739563
+      },
+      {
+        "suggestion": "StatementDateTime",
+        "description": NaN,
+        "confidence": 0.5099999904632568
+      },
+      {
+        "suggestion": "Data.CreationDateTime",
+        "description": NaN,
+        "confidence": 0.5
+      }
+    ]
+  }
+]

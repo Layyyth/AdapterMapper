@@ -1,0 +1,9 @@
+[
+  {
+    "bank_field": "txnRef",
+    "preprocessed": "transaction reference",
+    "mapped_to": "TransactionReference",
+    "description": "A unique reference associated with a transaction.",
+    "confidence": 0.8299999833106995
+  }
+]

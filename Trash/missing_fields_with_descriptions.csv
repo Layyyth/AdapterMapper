@@ -1,0 +1,206 @@
+Field Name,Description
+Structured,"This typically indicates that related data is provided in a structured, machine-readable format, as opposed to unstructured text. It often refers to how payment or remittance information is organised."
+CreditorReferenceInformation.Code,"A code used to uniquely identify the creditor, often used in payment references."
+Invoicer,The party that issues the invoice.
+Invoicee,The party to whom the invoice is issued and who is expected to pay.
+Type,"A general classification of the nature of an item, such as an account type, payment type, or address type."
+PointInTime,"Specifies a particular moment in time, often used for data snapshots or event timestamps."
+Currency,"The currency in which an amount is expressed, typically in ISO 4217 format (e.g., 'GBP', 'EUR')."
+AccountCategory,"A high-level grouping of an account, such as 'personal', 'business', or 'joint'."
+AccountTypeCode,"A specific code identifying the type of an account, e.g., 'CACC' for Current Account, 'SVGS' for Savings Account."
+Description,"A free-text field providing additional details or an explanation about an item, transaction, or event."
+Nickname,"A user-defined, informal name for an account or beneficiary, often for easier recognition."
+OpeningDate,The date on which an account or facility was opened.
+MaturityDate,The date on which a financial instrument or account reaches its maturity.
+SwitchStatus,The current status of a bank account switch process.
+StatementFrequencyAndFormat,"Details about how often statements are issued and in what format (e.g., monthly, PDF)."
+Servicer,The financial institution or entity that provides services related to an account or product.
+SubType,"A more granular classification within a broader 'Type', providing further specificity (e.g., 'CurrentAccount' as a subtype of 'Account')."
+ProductDetails,Comprehensive information describing a specific financial product offered by the bank.
+BeneficiaryId,A unique identifier for a beneficiary.
+BeneficiaryType,"Categorisation of the beneficiary (e.g., 'Individual', 'Organisation')."
+SupplementaryData,"Additional, unstructured data that may be provided for informational purposes."
+Name,A person's or entity's full legal name or a commonly used name.
+SecondaryIdentification,"An additional, often optional, identifier used in conjunction with a primary identification."
+Proxy,"An alias or alternative representation of an account identifier, such as an email address or phone number used for payments (e.g., Paym in UK)."
+ErrorCode,A code indicating the specific type of error that occurred during a process.
+Errors,A collection of error details encountered during processing.
+Classification,A categorisation or grouping of an item based on predefined criteria.
+CategoryPurposeCode,"A standardised code indicating the purpose of a payment transaction (e.g., 'CASH' for cash withdrawal, 'GDDS' for goods and services)."
+Frequency,"How often an event or payment occurs (e.g., 'Daily', 'Monthly', 'Annual')."
+PartyId,"A unique identifier for a party (e.g., an individual or organisation)."
+PartyNumber,A reference number associated with a party.
+PartyType,"The nature of the party involved (e.g., 'Individual', 'Organisation', 'Proprietary')."
+FullLegalName,The complete and official legal name of an individual or organisation.
+LegalStructure,"The legal organisational form of a business entity (e.g., 'Limited Company', 'Sole Trader')."
+AccountRole,"The role of a party in relation to an account (e.g., 'AccountHolder', 'Signatory')."
+EmailAddress,The electronic mail address of a party.
+Phone,A contact telephone number.
+Mobile,A mobile phone number.
+Relationships,Details describing the connections or affiliations between different parties.
+Address,Full postal address details.
+AddressType,"Classification of the address (e.g., 'Residential', 'Business', 'Postal')."
+StreetName,The name of the street in an address.
+BuildingNumber,The number of the building in an address.
+BuildingName,The name of the building in an address.
+Floor,The floor level within a building.
+UnitNumber,The number or identifier of a specific unit or apartment.
+Room,A specific room number within a building.
+PostBox,A post office box number.
+TownLocationName,"The name of a town, city, or locality."
+DistrictName,"The name of a district, county, or administrative subdivision."
+CareOf,A field for 'c/o' or 'care of' in an address.
+PostCode,The postal code or ZIP code.
+TownName,"The name of the town or city (redundant with TownLocationName, but often kept for consistency)."
+AddressLine,"A free-text line for address details, used when structured fields are not sufficient."
+Data.Account,Contains core account information.
+Data.Balance,Contains information about the account balance.
+Data.TotalValue.Amount,The numerical value of a total amount.
+Data.TotalValue.Currency,The currency of a total amount.
+Data.Beneficiary,Contains details of a beneficiary.
+Data.Permissions,"Information regarding permissions granted, typically for data access."
+Data.CreationDateTime,The date and time when a resource or record was created.
+Data.StatusUpdateDateTime,The date and time when the status of a resource or record was last updated.
+Statement,Contains details pertaining to a financial statement.
+Transaction,Contains information about a financial transaction.
+Data.DirectDebit,Contains details related to a direct debit.
+Data.Offer,Contains information about a financial offer or product offer.
+Data.Party,Contains details of a party involved in a transaction or account.
+Data.Product,Contains details of a financial product.
+Data.ScheduledPayment,Contains details about a scheduled payment.
+Data.StandingOrder,Contains details about a standing order.
+ScheduledPaymentId,A unique identifier for a scheduled payment.
+ScheduledPaymentDateTime,The date and time when a scheduled payment is due to occur.
+ScheduledType,"The type of scheduled payment (e.g., 'Domestic', 'International')."
+DebtorReference,A reference provided by the debtor for a payment.
+StandingOrderId,A unique identifier for a standing order.
+NextPaymentDateTime,The date and time of the next scheduled payment for a recurring instruction.
+LastPaymentDateTime,The date and time of the last payment made for a recurring instruction.
+NumberOfPayments,The total number of payments in a recurring series.
+StandingOrderStatusCode,"The current status of a standing order (e.g., 'Active', 'Cancelled')."
+FirstPaymentAmount,The amount of the first payment in a series.
+NextPaymentAmount,The amount of the next scheduled payment in a series.
+LastPaymentAmount,The amount of the last payment made in a series.
+FinalPaymentAmount,The amount of the final payment in a series.
+MandateRelatedInformation,Details related to a direct debit or standing order mandate.
+StatementId,A unique identifier for a statement.
+StatementReference,A reference number for a statement.
+StartDateTime,"The start date and time of a period, often for a statement or reporting."
+EndDateTime,"The end date and time of a period, often for a statement or reporting."
+StatementDescription,A free-text description of the statement content.
+StatementBenefit,Details related to a benefit appearing on a statement.
+StatementFee,Details related to a fee appearing on a statement.
+StatementInterest,Details related to interest appearing on a statement.
+StatementAmount,The total amount recorded on a statement line item.
+StatementDateTime,The date and time associated with a specific entry on a statement.
+StatementRate,"A rate (e.g., interest rate) applicable to a statement entry."
+StatementValue,The value associated with a statement entry.
+TotalValue.Amount,"The numerical value of a total amount (duplicate from above, but common)."
+TotalValue.Currency,"The currency of a total amount (duplicate from above, but common)."
+TransactionReference,A unique reference associated with a transaction.
+TransactionMutability,Indicates if a transaction can be changed or reversed.
+ValueDateTime,The date and time at which a transaction amount is made available or becomes effective.
+TransactionInformation,General free-text information about a transaction.
+ChargeAmount,The amount of any charge or fee applied.
+CurrencyExchange,Details about the currency exchange rate and related information for a transaction.
+BankTransactionCode,"A standardised code used to classify bank transactions (e.g., CAMT.054 codes)."
+ProprietaryBankTransactionCode,"A bank-specific or proprietary code for classifying transactions, not part of a global standard."
+ExtendedProprietaryBankTransactionCodes,Additional proprietary codes that extend the primary proprietary code.
+MerchantDetails,Information about the merchant involved in a transaction.
+DebtorAgent,The financial institution of the debtor (payer).
+CardInstrument,Details about the card used for a transaction.
+PaymentPurposeCode,"A code indicating the specific purpose of a payment (e.g., 'SALA' for salary)."
+UltimateCreditor,"The final beneficiary of the funds, if different from the direct creditor."
+UltimateDebtor,"The ultimate source of the funds, if different from the direct debtor."
+Amount.Amount,The numerical value of a monetary amount.
+Amount.Currency,The currency of a monetary amount.
+FeeCategory,A classification of the type of fee.
+id,A generic unique identifier for a resource or object.
+Data.DebtorAccount.Proxy,"The proxy identifier (e.g., phone number, email) for the debtor's account."
+Data.StatusReason,The reason provided for a particular status.
+urn:uk:org:openbanking:events:resource-update,A Uniform Resource Name (URN) indicating an event type for a resource update within the Open Banking standard.
+subject,"The subject of an event or message, often indicating the resource that was updated."
+Data.Version,The version number of an API or data model.
+Data.EventTypes,A list of types of events an event subscription is interested in.
+Data.EventSubscription,Details about a subscription to receive event notifications.
+ack,An acknowledgement of receipt for a message or event.
+MandateIdentification,A unique identifier for a mandate.
+FirstPaymentDateTime,"The date and time of the first payment in a series (duplicate, but common in different contexts)."
+FinalPaymentDateTime,"The date and time of the final payment in a series (duplicate, but common in different contexts)."
+Department,A department within an organisation.
+SubDepartment,A sub-division within a department.
+CountrySubDivision,"An administrative subdivision within a country (e.g., state, province)."
+Country,"The country, typically in ISO 3166-1 alpha-2 format (e.g., 'GB', 'US')."
+CountryCode,The two-letter ISO 3166-1 alpha-2 code for a country.
+Authority,The governing body or entity with jurisdiction.
+Details,General descriptive information or specific details.
+BeneficiaryAccountType,The type of account held by the beneficiary.
+DeliveryAddress,The address where something is to be delivered.
+Date,"A specific date, typically in ISO 8601 format (YYYY-MM-DD)."
+Data.Initiation.LocalInstrument,"A code that identifies the local instrument (e.g., scheme-specific code) used for a payment initiation."
+Data.Initiation.InstructedAmount.Amount,The numerical value of the amount instructed for payment initiation.
+Data.Initiation.InstructedAmount.Currency,The currency of the amount instructed for payment initiation.
+Data.Initiation.DebtorAccount.SchemeName,"The name of the identification scheme for the debtor's account (e.g., 'IBAN', 'SortCodeAccountNumber')."
+Data.Initiation.DebtorAccount.Identification,"The identifier for the debtor's account (e.g., IBAN, account number)."
+Data.Initiation.DebtorAccount.SecondaryIdentification,A secondary identifier for the debtor's account.
+Data.Initiation.DebtorAccount.Proxy,"The proxy identifier (e.g., phone, email) for the debtor's account in a payment initiation."
+Data.Initiation.CreditorAgent.SchemeName,The name of the identification scheme for the creditor agent (bank) in a payment initiation.
+Data.Initiation.CreditorAgent.Identification,"The identifier for the creditor agent (bank) in a payment initiation (e.g., BIC)."
+Data.Initiation.CreditorAgent.Name,The name of the creditor agent (bank) in a payment initiation.
+Data.Initiation.CreditorAgent.LEI,The Legal Entity Identifier (LEI) of the creditor agent.
+Data.Initiation.CreditorAgent.PostalAddress,The postal address of the creditor agent.
+Data.Initiation.CreditorAccount.SchemeName,The name of the identification scheme for the creditor's account in a payment initiation.
+Data.Initiation.CreditorAccount.Identification,"The identifier for the creditor's account (e.g., IBAN, account number) in a payment initiation."
+Data.Initiation.CreditorAccount.SecondaryIdentification,A secondary identifier for the creditor's account in a payment initiation.
+Data.Initiation.CreditorAccount.Proxy,"The proxy identifier (e.g., phone, email) for the creditor's account in a payment initiation."
+Data.Initiation.CreditorPostalAddress,The postal address of the ultimate creditor in a payment initiation.
+Data.Initiation.UltimateCreditor,The ultimate party to whom the funds are intended in a payment initiation.
+Data.Initiation.UltimateDebtor,The ultimate party from whom the funds originate in a payment initiation.
+Data.Initiation.RegulatoryReporting,Information required for regulatory reporting of the payment initiation.
+Data.Initiation.RemittanceInformation,Information related to the remittance advice for the payment initiation.
+Data.Initiation.SupplementaryData,Additional unstructured data for a payment initiation.
+Data.SCASupportData,Data required to support Strong Customer Authentication (SCA) processes.
+Data.Charges,Information about charges or fees applied to a payment.
+Data.Debtor,Details of the debtor (payer) for a payment.
+Data.Refund.Account.SchemeName,The identification scheme name for the refund account.
+Data.Refund.Account.Identification,The identifier for the refund account.
+Data.Refund.Account.SecondaryIdentification,A secondary identifier for the refund account.
+Data.Initiation.NumberOfPayments,The total number of payments in a series for a payment initiation.
+Data.Initiation.FirstPaymentAmount.Amount,The numerical value of the first payment amount in a payment initiation.
+Data.Initiation.FirstPaymentAmount.Currency,The currency of the first payment amount in a payment initiation.
+Data.Initiation.RecurringPaymentAmount.Amount,The numerical value of a recurring payment amount in a payment initiation.
+Data.Initiation.RecurringPaymentAmount.Currency,The currency of a recurring payment amount in a payment initiation.
+Data.Initiation.FinalPaymentAmount.Amount,The numerical value of the final payment amount in a payment initiation.
+Data.Initiation.FinalPaymentAmount.Currency,The currency of the final payment amount in a payment initiation.
+Data.Initiation.MandateRelatedInformation,Information related to the mandate for a recurring payment initiation.
+Data.SupplementaryData,Additional unstructured data.
+Data.Initiation.ChargeBearer,"Specifies who bears the charges for a payment initiation (e.g., 'Debtor', 'Creditor', 'Shared')."
+Data.Initiation.Creditor.LEI,The Legal Entity Identifier (LEI) of the creditor in a payment initiation.
+Data.Initiation.Creditor.PostalAddress,The postal address of the creditor in a payment initiation.
+Data.Refund,Contains information about a refund.
+Data.Refund.Creditor.LEI,The Legal Entity Identifier (LEI) of the creditor associated with a refund.
+Data.Refund.Creditor.PostalAddress,The postal address of the creditor associated with a refund.
+Data.Refund.Agent.SchemeName,The identification scheme name for the refund agent (bank).
+Data.Refund.Agent.Identification,The identifier for the refund agent (bank).
+Data.Refund.Agent.Name,The name of the refund agent (bank).
+Data.Refund.Agent.PostalAddress,The postal address of the refund agent (bank).
+Data.Refund.Account.Proxy,The proxy identifier for the refund account.
+Data.PaymentStatus,The current status of a payment.
+StatusDetail.LocalInstrument,A code that identifies the local instrument relevant to a status detail.
+Data.ControlParameters,Parameters used to control or govern a process.
+Data.Initiation,Contains all data related to the initiation of a payment or instruction.
+Data.DebtorAccount,Contains details of the debtor's account.
+PeriodicLimits,Defines the limits applicable over specific periods.
+CreditorPostalAddress,The postal address of the creditor.
+RegulatoryReporting,Information required for compliance with regulatory reporting.
+Data.PSUAuthenticationMethod,The method used for Payment Service User (PSU) authentication.
+Data.PSUInteractionType,The type of interaction performed by the Payment Service User (PSU).
+Data.VRPType,The type of Variable Recurring Payment (VRP) being initiated.
+Data.Instruction,"Contains details of an instruction, typically for a payment."
+Data.InstructedAmount,The amount that has been instructed for a payment.
+FundsAvailableResult,The result of a funds availability check.
+Number,A generic numerical value or identifier.
+RelatedDate,A date that is related to another piece of information.
+ReferredDocumentAmount,"The amount specified in a referred document (e.g., an invoice)."
+TaxRemittance,Information related to tax payments or remittances.
+AdditionalRemittanceInformation,Any additional details or free text for remittance information.

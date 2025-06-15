@@ -1,0 +1,648 @@
+field_name,description
+Code,"Standard code value identifying a type or status, often from an Open Banking approved code list."
+Issuer,The name or identifier of the organisation issuing the financial instrument or instruction.
+Number,Identification of the type specified for the referred document line.
+RelatedDate,Date associated with the referred document line.
+LineDetails,Detailed descriptive lines of narrative for the payment reference or remittance information.
+Structured,
+Unstructured,"Information supplied to enable the matching/reconciliation of an entry with the items that the payment is intended to settle, such as commercial invoices in an accounts' receivable system, in an unstructured form."
+ReferredDocumentInformation,"References to related documents including document type, number, and issuer."
+ReferredDocumentAmount,Provides details on the amounts of the referred document.
+CreditorReferenceInformation,Reference information provided by the creditor to allow the identification of the underlying documents.
+CreditorReferenceInformation.Code,
+CreditorReferenceInformation.Issuer,Entity that assigns the identification.
+CreditorReferenceInformation.Reference,"Unique reference, as assigned by the creditor, to unambiguously refer to the payment transaction."
+Invoicer,
+Invoicee,
+TaxRemittance,Provides remittance information about a payment made for tax-related purposes.
+AdditionalRemittanceInformation,"Additional information, in free text form, to complement the structured remittance information."
+Name,Name by which a party is known and which is usually used to identify that party.
+Identification,"Unique identifier used to indicate an account, entity, or transaction reference."
+LEI,"Legal Entity Identifier, a 20-character code that uniquely identifies legally distinct entities."
+SchemeName,"Name of the identification scheme in use, such as 'UK.OBIE.SortCodeAccountNumber'."
+PostalAddress,The full structured postal address of the account holder or related party.
+Type,
+CountPerPeriod,Number of instructions to be created and processed during the specified period. Specifies a frequency in terms of a count per period within a specified frequency type. Note: should not be used alongside `PointInTime`
+PointInTime,
+Identification,"Unique identifier used to indicate an account, entity, or transaction reference."
+Type,Type of the proxy identification.
+Self,The URI of the resource.
+First,Link to the first page of the results.
+Prev,Link to the previous page of the results.
+Next,Link to the next page of the results.
+Last,Link to the last page of the results.
+TotalPages,The total number of pages.
+FirstAvailableDateTime,The first available date and time.
+LastAvailableDateTime,The last available date and time.
+AccountId,A unique and immutable identifier used to identify the account resource. This identifier has no meaning to the account owner.
+Status,Specifies the status of resource in code form. For a list of values see `ExternalPaymentTransactionStatus1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)
+StatusUpdateDateTime,"Date and time at which the resource status was updated. All dates in the JSON payloads are represented in ISO 8601 date-time format. 
+All date-time fields in responses must include the timezone. An example is below:
+2017-04-05T10:43:07+00:00"
+Currency,
+AccountCategory,
+AccountTypeCode,
+Description,
+Nickname,
+OpeningDate,
+MaturityDate,
+SwitchStatus,
+Account,Provides the details to identify an account.
+StatementFrequencyAndFormat,
+Servicer,
+Amount,Amount of money in the cash transaction entry.
+SubType,
+ProductDetails,
+ProductDetails.Segment,"Market segmentation is a marketing term referring to the aggregating of prospective buyers into groups, or segments, that have common needs and respond similarly to a marketing action. Market segmentation enables companies to target different categories of consumers who perceive the full value of certain products and services differently from one another.
+Read more: Market Segmentation http://www.investopedia.com/terms/m/marketsegmentation.asp#ixzz4gfEEalTd 
+With respect to BCA products, they are segmented in relation to different markets that they wish to focus on. "
+ProductDetails.FeeFreeLength,The length/duration of the fee free period
+ProductDetails.FeeFreeLengthPeriod,"The unit of period (days, weeks, months etc.) of the promotional length"
+ProductDetails.Notes,Optional additional notes to supplement the Core product details
+CreditInterest,Details about the interest that may be payable to the BCA account holders
+CreditInterest.TierBandSet,The group of tiers or bands for which credit interest can be applied.
+Overdraft,Borrowing details
+Overdraft.Notes,Associated Notes about the overdraft rates
+Overdraft.OverdraftTierBandSet,Tier band set details
+OtherFeesCharges,Contains details of fees and charges which are not associated with either Overdraft or features/benefits
+Code,"Standard code value identifying a type or status, often from an Open Banking approved code list."
+SubCode,Specifies the sub-product family within a specific family.
+BeneficiaryId,
+BeneficiaryType,
+Reference,"Unique reference, as assigned by the creditor, to unambiguously refer to the payment transaction.
+Usage: If available, this reference is sent by the creditor to the debtor.
+Usage: This reference should be included in structured remittance information, case unstructured remittance information is not used."
+SupplementaryData,
+CreditorAgent,Financial institution servicing an account for the creditor.
+CreditorAccount,Unambiguous identification of the account of the creditor to which a credit entry will be posted as a result of the payment transaction.
+Identification,"Unique identifier used to indicate an account, entity, or transaction reference."
+Name,
+SecondaryIdentification,
+Proxy,
+Identification,"Unique identifier used to indicate an account, entity, or transaction reference."
+SourceCurrency,Currency from which an amount is to be converted in a currency conversion.
+TargetCurrency,Currency into which an amount is to be converted in a currency conversion.
+UnitCurrency,"Currency in which the rate of exchange is expressed in a currency exchange. In the example 1GBP = xxxCUR, the unit currency is GBP."
+ExchangeRate,"Factor used to convert an amount from one currency into another. This reflects the price at which one currency was bought with another currency.
+Usage: ExchangeRate expresses the ratio between UnitCurrency and QuotedCurrency (ExchangeRate = UnitCurrency/QuotedCurrency)."
+ContractIdentification,Unique identification to unambiguously identify the foreign exchange contract.
+QuotationDate,"Date and time at which an exchange rate is quoted. All dates in the JSON payloads are represented in ISO 8601 date-time format. 
+All date-time fields in responses must include the timezone. An example is below:
+2017-04-05T10:43:07+00:00"
+InstructedAmount,"Amount of money to be moved between the debtor and creditor, before deduction of charges, expressed in the currency as ordered by the initiating party."
+InstructedAmount.Amount,The amount of the instructed payment.
+InstructedAmount.Currency,The currency of the instructed payment.
+ErrorCode,
+Message,"A description of the error that occurred. e.g., 'A mandatory field isn't supplied' or 'RequestedExecutionDateTime must be in future'
+OBL doesn't standardise this field"
+Path,"Recommended but optional reference to the JSON Path of the field with error, e.g., Data.Initiation.InstructedAmount.Currency"
+Url,"URL to help remediate the problem, or provide more information, or to API Reference, or help etc"
+Id,"A unique reference for the error instance, for audit purposes, in case of unknown/unclassified errors."
+Code,"Standard code value identifying a type or status, often from an Open Banking approved code list."
+Message,Deprecated <br />Brief Error message
+Errors,
+MandateIdentification,"Unique identification, as assigned by the creditor, to unambiguously identify the mandate."
+Classification,
+CategoryPurposeCode,
+FirstPaymentDateTime,The date on which the first payment for a recurrent credit transfer will be made.
+RecurringPaymentDateTime,"The date on which the first recurring payment for a Standing Order schedule will be made. 
+Usage: This must be populated only if the first recurring date is different to the first payment date. All dates in the JSON payloads are represented in ISO 8601 date-time format. 
+All date-time fields in responses must include the timezone. An example is below:
+2017-04-05T10:43:07+00:00"
+FinalPaymentDateTime,The date on which the final payment for a recurrent credit transfer will be made.
+Frequency,
+Reason,Reason for the setup of the credit transfer mandate.
+MerchantName,Name by which the merchant is known.
+MerchantCategoryCode,"Category code conform to ISO 18245, related to the type of services or goods the merchant provides for the transaction."
+ProductDetails.Segment,"Market segmentation is a marketing term referring to the aggregating of prospective buyers into groups, or segments, that have common needs and respond similarly to a marketing action. Market segmentation enables companies to target different categories of consumers who perceive the full value of certain products and services differently from one another.
+Read more: Market Segmentation http://www.investopedia.com/terms/m/marketsegmentation.asp#ixzz4gfEEalTd 
+With respect to PCA products, they are segmented in relation to different markets that they wish to focus on. "
+ProductDetails.MonthlyMaximumCharge,The maximum relevant charges that could accrue as defined fully in Part 7 of the CMA order
+CreditInterest,Details about the interest that may be payable to the PCA account holders
+Overdraft,"Details about Overdraft rates, fees & charges"
+OtherFeesCharges,Contains details of fees and charges which are not associated with either borrowing or features/benefits
+OtherFeesCharges.FeeChargeDetail,Other fees/charges details
+OtherFeesCharges.FeeChargeCap,Details about any caps (maximum charges) that apply to a particular fee/charge
+PartyId,
+PartyNumber,
+PartyType,
+FullLegalName,
+LegalStructure,
+BeneficialOwnership,A flag to indicate a party's beneficial ownership of the related account
+AccountRole,
+EmailAddress,
+Phone,
+Mobile,
+Relationships,
+Address,
+Account,Relationship to the Account resource.
+Account.Related,Absolute URI to the related resource.
+Account.Id,Unique identification as assigned by the ASPSP to uniquely identify the related resource.
+AddressType,
+Department,Identification of a division of a large organisation or building.
+SubDepartment,Identification of a sub-division of a large organisation or building.
+StreetName,
+BuildingNumber,
+BuildingName,
+Floor,
+UnitNumber,
+Room,
+PostBox,
+TownLocationName,
+DistrictName,
+CareOf,
+PostCode,
+TownName,
+CountrySubDivision,"Identifies a subdivision of a country such as state, region, county."
+Country,Nation with its own government.
+AddressLine,
+Data,The data payload of the response.
+Data.Account,
+Links,Links relevant to the payload
+Meta,Meta Data relevant to the payload
+Data.Balance,
+Data.TotalValue,Combined sum of all Amounts in the accounts base currency
+Data.TotalValue.Amount,
+Data.TotalValue.Currency,
+Data.Beneficiary,
+Data.Permissions,
+Data.ExpirationDateTime,"Specified date and time the permissions will expire.
+If this is not populated, the permissions will be open ended. All dates in the JSON payloads are represented in ISO 8601 date-time format. 
+All date-time fields in responses must include the timezone. An example is below:
+2017-04-05T10:43:07+00:00"
+Data.TransactionFromDateTime,"Specified start date and time for the transaction query period.
+If this is not populated, the start date will be open ended, and data will be returned from the earliest available transaction. All dates in the JSON payloads are represented in ISO 8601 date-time format. 
+All date-time fields in responses must include the timezone. An example is below:
+2017-04-05T10:43:07+00:00"
+Data.TransactionToDateTime,"Specified end date and time for the transaction query period.
+If this is not populated, the end date will be open ended, and data will be returned to the latest available transaction. All dates in the JSON payloads are represented in ISO 8601 date-time format. 
+All date-time fields in responses must include the timezone. An example is below:
+2017-04-05T10:43:07+00:00"
+Risk,The Risk payload is a risk assessment that the TPP performs on the payment initiation.
+Data.ConsentId,Unique identification as assigned to identify the account access consent resource.
+Data.CreationDateTime,
+Data.Status,Specifies the status of consent resource in code form.
+Data.StatusReason,Specifies the status reason.
+Data.StatusUpdateDateTime,
+Statement,
+Transaction,
+Data.DirectDebit,
+Data.Offer,
+Data.Party,
+Data,Aligning with the read write specs structure.
+Data.Product,
+Data.ScheduledPayment,
+Data.StandingOrder,
+ScheduledPaymentId,
+ScheduledPaymentDateTime,
+ScheduledType,
+DebtorReference,
+InstructedAmount,"Amount of money to be moved between the debtor and creditor, before deduction of charges, expressed in the currency as ordered by the initiating party.
+Usage: This amount has to be transported unchanged through the transaction chain."
+StandingOrderId,
+NextPaymentDateTime,
+LastPaymentDateTime,
+NumberOfPayments,
+StandingOrderStatusCode,
+FirstPaymentAmount,
+NextPaymentAmount,
+LastPaymentAmount,
+FinalPaymentAmount,
+MandateRelatedInformation,
+RemittanceInformation,"Information supplied to enable the matching of an entry with the items that the transfer is intended to settle, such as commercial invoices in an accounts' receivable system."
+StatementId,
+StatementReference,
+StartDateTime,
+EndDateTime,
+CreationDateTime,"Date and time at which the resource was created. All dates in the JSON payloads are represented in ISO 8601 date-time format. 
+All date-time fields in responses must include the timezone. An example is below:
+2017-04-05T10:43:07+00:00"
+StatementDescription,
+StatementBenefit,
+StatementFee,
+StatementInterest,
+StatementAmount,
+StatementDateTime,
+StatementRate,
+StatementValue,
+TotalValue,Combined sum of all Amounts in the accounts base currency
+TotalValue.Amount,
+TotalValue.Currency,
+StatusReasonCode,"Specifies the status reason in a code form. 
+ For a full description see `OBExternalStatusReason1Code` [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)"
+StatusReasonDescription,Description supporting the StatusReasonCode.
+Path,Recommended but optional reference to JSON path if relevant to the StatusReasonCode.
+TransactionId,Unique identifier for the transaction within an servicing institution. This identifier is both unique and immutable.
+TransactionReference,
+CreditDebitIndicator,Indicates whether a transaction or balance is a credit or a debit.
+TransactionMutability,
+BookingDateTime,Date and time when an entry is posted to an account on the account servicer's books.
+ValueDateTime,
+TransactionInformation,
+ChargeAmount,
+CurrencyExchange,
+BankTransactionCode,
+ProprietaryBankTransactionCode,
+ExtendedProprietaryBankTransactionCodes,
+Balance,Set of elements used to define the balance details.
+MerchantDetails,
+DebtorAgent,
+DebtorAccount,Unambiguous identification of the account of the debtor to which a debit entry will be made as a result of the transaction.
+CardInstrument,
+PaymentPurposeCode,
+UltimateCreditor,
+UltimateDebtor,
+CardSchemeName,"Name of the card scheme. <br />
+For a full list of enumeration values refer to `OBInternalCardSchemeType1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)"
+AuthorisationType,"The card authorisation type. <br />
+For a full list of enumeration values refer to `OBInternalCardAuthorisationType1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)"
+Name,Name of the cardholder using the card instrument.
+Identification,"Unique identifier used to indicate an account, entity, or transaction reference."
+Amount,Amount of money of the cash balance after a transaction entry is applied to the account..
+Amount.Amount,
+Amount.Currency,
+FeeCategory,
+Code,"Standard code value identifying a type or status, often from an Open Banking approved code list."
+Issuer,The name or identifier of the organisation issuing the financial instrument or instruction.
+Description,Description of the code and its usage on the ASPSP channel
+id,
+Code,"Standard code value identifying a type or status, often from an Open Banking approved code list."
+Message,Deprecated <br>Brief Error message
+Data.ConsentId,Unique identification as assigned by the ASPSP to uniquely identify the funds confirmation consent resource.
+Data.Reference,"Unique reference, as assigned by the CBPII, to unambiguously refer to the request related to the payment transaction."
+Data.InstructedAmount,Amount of money to be confirmed as available funds in the debtor account. Contains an Amount and a Currency.
+Data.InstructedAmount.Amount,A number of monetary units specified in an active currency where the unit of currency is explicit and compliant with ISO 4217.
+Data.InstructedAmount.Currency,"A code allocated to a currency by a Maintenance Agency under an international identification scheme, as described in the latest edition of the international standard ISO 4217 ""Codes for the representation of currencies and funds""."
+Data.ExpirationDateTime,"Specified date and time the funds confirmation authorisation will expire.
+ If this is not populated, the authorisation will be open ended. All dates in the JSON payloads are represented in ISO 8601 date-time format. 
+All date-time fields in responses must include the timezone. An example is below:
+2017-04-05T10:43:07+00:00"
+Data.DebtorAccount,Unambiguous identification of the account of the debtor to which a confirmation of funds consent will be applied.
+Data.DebtorAccount.SchemeName,"Name of the identification scheme, in a coded form as published in an external list. For a full list of values see `OBInternalAccountIdentification4Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)"
+Data.DebtorAccount.Identification,Identification assigned by an institution to identify an account. This identification is known by the account owner.
+Data.DebtorAccount.Name,"Name of the account, as assigned by the account servicing institution.
+Usage: The account name is the name or names of the account owner(s) represented at an account level. The account name is not the product name or the nickname of the account."
+Data.DebtorAccount.SecondaryIdentification,"This is secondary identification of the account, as assigned by the account servicing institution. 
+This can be used by building societies to additionally identify accounts with a roll number (in addition to a sort code and account number combination)."
+Data.DebtorAccount.Proxy,
+Data.ConsentId,Unique identification as assigned to identify the funds confirmation consent resource.
+Data.CreationDateTime,"Date and time at which the resource was created. All dates in the JSON payloads are represented in ISO 8601 date-time format. 
+All date-time fields in responses must include the timezone. An example is below:
+2017-04-05T10:43:07+00:00"
+Data.Status,Specifies the status of consent resource in code form. For a full list of values refer to `OBInternalConsentStatus1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)
+Data.StatusReason,
+Data.StatusUpdateDateTime,"Date and time at which the resource status was updated. All dates in the JSON payloads are represented in ISO 8601 date-time format. 
+All date-time fields in responses must include the timezone. An example is below:
+2017-04-05T10:43:07+00:00"
+Data.ExpirationDateTime,"Specified date and time the funds confirmation authorisation will expire.
+If this is not populated, the authorisation will be open ended. All dates in the JSON payloads are represented in ISO 8601 date-time format. 
+All date-time fields in responses must include the timezone. An example is below:
+2017-04-05T10:43:07+00:00"
+Data.DebtorAccount.SchemeName,"Name of the identification scheme, in a coded form as published in an external list. For a full list of values refer to `OBInternalAccountIdentification4Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)"
+Data.FundsConfirmationId,Unique identification as assigned by the ASPSP to uniquely identify the funds confirmation resource.
+Data.FundsAvailable,Flag to indicate the result of a confirmation of funds check.
+StatusReasonCode,"Specifies the status reason in a code form. 
+ For a full list of values see `OBExternalStatusReason1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)"
+Path,"Optional reference to the JSON Path of the field when status reason refers to an object/field, e.g., Data.DebtorAccount.SchemeName"
+urn:uk:org:openbanking:events:resource-update,
+version,Resource version.
+link,Resource link.
+iss,Issuer.
+iat,Issued At. 
+jti,JWT ID.
+aud,Audience.
+sub,Subject
+txn,Transaction Identifier.
+toe,Time of Event.
+events,The events that have occurred.
+subject,
+subject_type,Subject type for the updated resource. 
+http://openbanking.org.uk/rid,Resource Id for the updated resource.
+http://openbanking.org.uk/rty,Resource Type for the updated resource.
+http://openbanking.org.uk/rlk,Resource links to other available versions of the resource.
+Message,"A description of the error that occurred. e.g., 'A mandatory field isn't supplied' or 'RequestedExecutionDateTime must be in future'
+OBIE doesn't standardise this field"
+Data.CallbackUrl,"Callback URL for a TPP hosted service. Will be used by ASPSPs, in conjunction with the resource name, to construct a URL to send event notifications to."
+Data.Version,
+Data.EventTypes,
+Data.EventSubscriptionId,Unique identification as assigned by the ASPSP to uniquely identify the callback URL resource.
+Data.EventSubscription,
+maxEvents,Maximum number of events to be returned. A value of zero indicates the ASPSP should not return events even if available
+returnImmediately,Indicates whether an ASPSP should return a response immediately or provide a long poll
+ack,
+setErrs,An object that encapsulates all negative acknowledgements transmitted by the TPP
+moreAvailable,A JSON boolean value that indicates if more unacknowledged event notifications are available to be returned.
+sets,"A JSON object that contains zero or more nested JSON attributes. If there are no outstanding event notifications to be transmitted, the JSON object SHALL be empty."
+CountPerPeriod,Number of instructions to be created and processed during the specified period .Specifies a frequency in terms of a count per period within a specified frequency type. Note: should not be used alongside `PointInTime`
+Identification,"Unique identifier used to indicate an account, entity, or transaction reference."
+Name,"Name of the account, as assigned by the account servicing institution.  Usage The account name is the name or names of the account owner(s) represented at an account level. The account name is not the product name or the nickname of the account."
+SecondaryIdentification,"Secondary identification of the account, as assigned by the account servicing institution. This can be used by building societies to additionally identify accounts with a roll number (in addition to a sort code and account number combination)."
+SchemeName,"Name of the identification scheme in use, such as 'UK.OBIE.SortCodeAccountNumber'."
+Identification,"Unique identifier used to indicate an account, entity, or transaction reference."
+Name,"^ Name of the account, as assigned by the account servicing institution.  Usage The account name is the name or names of the account owner(s) represented at an account level. The account name is not the product name or the nickname of the account."
+SecondaryIdentification,"^ This is secondary identification of the account, as assigned by the account servicing institution.  This can be used by building societies to additionally identify accounts with a roll number (in addition to a sort code and account number combination) | Max34Text"
+MandateIdentification,
+FirstPaymentDateTime,
+FinalPaymentDateTime,
+Reason,Reason for the direct debit mandate to allow the user to distinguish between different mandates for the same creditor.
+StatusReasonCode,"Specifies the status reason in a code form 
+ For more information and enum values see `OBExternalStatusReason1Code [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)"
+Department,
+SubDepartment,
+CountrySubDivision,
+Country,
+Issuer,The name or identifier of the organisation issuing the financial instrument or instruction.
+Name,Name of the entity requiring the regulatory reporting information.
+CountryCode,
+DebitCreditReportingIndicator,"Identifies whether the regulatory reporting information applies to the debit side, to the credit side or to both debit and credit sides of the transaction.  For a full list of values reefer to `OBExternalRegulatoryReportingType1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)"
+Authority,
+Details,
+PaymentContextCode,"Specifies the payment context, `OBInternalPaymentContext1Code`
+"
+MerchantCustomerIdentification,The unique customer identifier of the PSU with the merchant.
+ContractPresentIndicator,Indicates if Payee has a contractual relationship with the PISP.
+BeneficiaryPrepopulatedIndicator,Indicates if PISP has immutably prepopulated payment details in for the PSU.
+BeneficiaryAccountType,
+DeliveryAddress,
+RequestedSCAExemptionType,This field allows a PISP to request specific SCA Exemption for a Payment Initiation. For a full list of values reefer to `OBInternalSCAExemptionType1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)
+AppliedAuthenticationApproach,"Specifies a character string with a maximum length of 40 characters.
+Usage: This field indicates whether the PSU was subject to SCA performed by the TPP
+For a full list of values refer to `OBInternalAppliedAuthenticationApproach1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)"
+ReferencePaymentOrderId,"If the payment is recurring, then this field is populated with the transaction identifier of the previous payment occurrence so that the ASPSP can verify that the PISP, amount and the payee are the same as the previous occurrence. The value here refers to the payment id e.g. DomesticPaymentId  "
+StatusReasonCode,"Specifies the status reason in a code form. 
+For a full list of values refer to `OBExternalStatusReason1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)"
+Path,Path is optional but relevant when the status reason refers to an object/field and hence conditional to provide JSON path.
+Type,Specifies the type of the information supplied in the regulatory reporting details
+Date,
+Information,Additional details that cater for specific domestic regulatory requirements. 
+Data.ConsentId,OB: Unique identification as assigned by the ASPSP to uniquely identify the consent resource.
+Data.Initiation,The Initiation payload is sent by the initiating party to the ASPSP. It is used to request movement of funds from the debtor account to a creditor for a single domestic payment.
+Data.Initiation.InstructionIdentification,"Unique identification as assigned by an instructing party for an instructed party to unambiguously identify the instruction.
+Usage: the  instruction identification is a point to point reference that can be used between the instructing party and the instructed party to refer to the individual instruction. It can be included in several messages related to the instruction."
+Data.Initiation.EndToEndIdentification,"Unique identification assigned by the initiating party to unambiguously identify the transaction. This identification is passed on, unchanged, throughout the entire end-to-end chain.
+Usage: The end-to-end identification can be used for reconciliation or to link tasks relating to the transaction. It can be included in several messages related to the transaction.
+OB: The Faster Payments Scheme can only access 31 characters for the EndToEndIdentification field."
+Data.Initiation.LocalInstrument,
+Data.Initiation.InstructedAmount,"Amount of money to be moved between the debtor and creditor, before deduction of charges, expressed in the currency as ordered by the initiating party.
+Usage: This amount has to be transported unchanged through the transaction chain."
+Data.Initiation.InstructedAmount.Amount,
+Data.Initiation.InstructedAmount.Currency,
+Data.Initiation.DebtorAccount,Unambiguous identification of the account of the debtor to which a debit entry will be made as a result of the transaction.
+Data.Initiation.DebtorAccount.SchemeName,
+Data.Initiation.DebtorAccount.Identification,
+Data.Initiation.DebtorAccount.Name,"The account name is the name or names of the account owner(s) represented at an account level, as displayed by the ASPSP's online channels.
+Note, the account name is not the product name or the nickname of the account."
+Data.Initiation.DebtorAccount.SecondaryIdentification,
+Data.Initiation.DebtorAccount.Proxy,
+Data.Initiation.CreditorAgent,Financial institution servicing an account for the creditor.
+Data.Initiation.CreditorAgent.SchemeName,
+Data.Initiation.CreditorAgent.Identification,
+Data.Initiation.CreditorAgent.Name,
+Data.Initiation.CreditorAgent.LEI,
+Data.Initiation.CreditorAgent.PostalAddress,
+Data.Initiation.CreditorAccount,Unambiguous identification of the account of the creditor to which a credit entry will be posted as a result of the payment transaction.
+Data.Initiation.CreditorAccount.SchemeName,
+Data.Initiation.CreditorAccount.Identification,
+Data.Initiation.CreditorAccount.Name,"The account name is the name or names of the account owner(s) represented at an account level.
+Note, the account name is not the product name or the nickname of the account.
+OB: ASPSPs may carry out name validation for Confirmation of Payee, but it is not mandatory."
+Data.Initiation.CreditorAccount.SecondaryIdentification,
+Data.Initiation.CreditorAccount.Proxy,
+Data.Initiation.CreditorPostalAddress,
+Data.Initiation.UltimateCreditor,
+Data.Initiation.UltimateDebtor,
+Data.Initiation.RegulatoryReporting,
+Data.Initiation.RemittanceInformation,
+Data.Initiation.SupplementaryData,
+Data.ReadRefundAccount,Specifies to share the refund account details with PISP. For a full set of values refer to `OBInternalReadRefundAccount1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)
+Data.Authorisation,The authorisation type request from the TPP.
+Data.Authorisation.AuthorisationType,Type of authorisation flow requested. For a full set of values refer to `OBInternalAuthorisation1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)
+Data.Authorisation.CompletionDateTime,"Date and time at which the requested authorisation flow must be completed. All dates in the JSON payloads are represented in ISO 8601 date-time format. 
+All date-time fields in responses must include the timezone. An example is below:
+2017-04-05T10:43:07+00:00"
+Data.SCASupportData,
+Data.ReadRefundAccount,Specifies to share the refund account details with PISP. For a full list of values refer to `OBInternalReadRefundAccount1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)
+Data.CutOffDateTime,"Specified cut-off date and time for the payment consent. All dates in the JSON payloads are represented in ISO 8601 date-time format. 
+All date-time fields in responses must include the timezone. An example is below:
+2017-04-05T10:43:07+00:00"
+Data.ExpectedExecutionDateTime,"Expected execution date and time for the payment resource. All dates in the JSON payloads are represented in ISO 8601 date-time format. 
+All date-time fields in responses must include the timezone. An example is below:
+2017-04-05T10:43:07+00:00"
+Data.ExpectedSettlementDateTime,"Expected settlement date and time for the payment resource. All dates in the JSON payloads are represented in ISO 8601 date-time format. 
+All date-time fields in responses must include the timezone. An example is below:
+2017-04-05T10:43:07+00:00"
+Data.Charges,
+Data.Authorisation.AuthorisationType,Type of authorisation flow requested. For a full list of values refer to `OBInternalAuthorisation1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)
+Data.Debtor,
+Data.DomesticPaymentId,OB: Unique identification as assigned by the ASPSP to uniquely identify the domestic payment resource.
+Data.CreationDateTime,"Date and time at which the message was created. All dates in the JSON payloads are represented in ISO 8601 date-time format. 
+All date-time fields in responses must include the timezone. An example is below:
+2017-04-05T10:43:07+00:00"
+Data.Status,Specifies the status of the payment information group. For a full list of values refer to `ExternalPaymentTransactionStatus1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)
+Data.Refund,Unambiguous identification of the refund account to which a refund will be made as a result of the transaction.
+Data.Refund.Account,Provides the details to identify an account.
+Data.Refund.Account.SchemeName,
+Data.Refund.Account.Identification,
+Data.Refund.Account.Name,"Name of the account, as assigned by the account servicing institution.
+Usage: The account name is the name or names of the account owner(s) represented at an account level. The account name is not the product name or the nickname of the account.
+OB: ASPSPs may carry out name validation for Confirmation of Payee, but it is not mandatory."
+Data.Refund.Account.SecondaryIdentification,
+Data.MultiAuthorisation,The multiple authorisation flow response from the ASPSP.
+Data.MultiAuthorisation.Status,Specifies the status of the authorisation flow in code form. For a full list of values refer to `OBInternalStatus2Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)
+Data.MultiAuthorisation.NumberRequired,Number of authorisations required for payment order (total required at the start of the multi authorisation journey).
+Data.MultiAuthorisation.NumberReceived,Number of authorisations received.
+Data.MultiAuthorisation.LastUpdateDateTime,"Last date and time at the authorisation flow was updated. All dates in the JSON payloads are represented in ISO 8601 date-time format. 
+All date-time fields in responses must include the timezone. An example is below:
+2017-04-05T10:43:07+00:00"
+Data.MultiAuthorisation.ExpirationDateTime,"Date and time at which the requested authorisation flow must be completed. All dates in the JSON payloads are represented in ISO 8601 date-time format. 
+All date-time fields in responses must include the timezone. An example is below:
+2017-04-05T10:43:07+00:00"
+Data.Initiation,The Initiation payload is sent by the initiating party to the ASPSP. It is used to request movement of funds from the debtor account to a creditor for a single scheduled domestic payment.
+Data.Initiation.RequestedExecutionDateTime,"Date at which the initiating party requests the clearing agent to process the payment. 
+Usage: This is the date on which the debtor's account is to be debited. All dates in the JSON payloads are represented in ISO 8601 date-time format. 
+All date-time fields in responses must include the timezone. An example is below:
+2017-04-05T10:43:07+00:00"
+Data.Permission,Specifies the Open Banking service request types. For a full list of values see `OBInternalPermissions2Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)
+Data.ReadRefundAccount,Specifies to share the refund account details with PISP. For a full list of values see `OBInternalReadRefundAccount1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)
+Data.Status,Specifies the status of consent resource in code form. For a full list of values see `OBInternalConsentStatus1Code` in *ISO_External_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)
+Data.StatusUpdateDateTime,"Date and time at which the consent resource status was updated. All dates in the JSON payloads are represented in ISO 8601 date-time format. 
+All date-time fields in responses must include the timezone. An example is below:
+2017-04-05T10:43:07+00:00"
+Data.DomesticScheduledPaymentId,OB: Unique identification as assigned by the ASPSP to uniquely identify the domestic schedule payment resource.
+Data.Status,Specifies the status of the payment order resource. For a full list of values see `ExternalPaymentTransactionStatus1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)
+Data.MultiAuthorisation.Status,Specifies the status of the authorisation flow in code form.
+Data.Initiation,The Initiation payload is sent by the initiating party to the ASPSP. It is used to request movement of funds from the debtor account to a creditor for a domestic standing order.
+Data.Initiation.NumberOfPayments,
+Data.Initiation.FirstPaymentAmount,The amount of the first Standing Order
+Data.Initiation.FirstPaymentAmount.Amount,
+Data.Initiation.FirstPaymentAmount.Currency,
+Data.Initiation.RecurringPaymentAmount,The amount of the recurring Standing Order
+Data.Initiation.RecurringPaymentAmount.Amount,
+Data.Initiation.RecurringPaymentAmount.Currency,
+Data.Initiation.FinalPaymentAmount,The amount of the final Standing Order
+Data.Initiation.FinalPaymentAmount.Amount,
+Data.Initiation.FinalPaymentAmount.Currency,
+Data.Initiation.DebtorAccount,Provides the details to identify the debtor account.
+Data.Initiation.CreditorAccount,Identification assigned by an institution to identify an account. This identification is known by the account owner.
+Data.Initiation.MandateRelatedInformation,
+Data.ReadRefundAccount,Specifies to share the refund account details with PISP.  For a full list of values see `OBInternalReadRefundAccount1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)
+Data.Authorisation.AuthorisationType,Type of authorisation flow requested.
+Data.DomesticStandingOrderId,OB: Unique identification as assigned by the ASPSP to uniquely identify the domestic standing order resource.
+Data.Initiation,The Initiation payload is sent by the initiating party to the ASPSP. It is used to request movement of funds using a payment file.
+Data.Initiation.FileType,Specifies the payment file type.
+Data.Initiation.FileHash,A base64 encoding of a SHA256 hash of the file to be uploaded.
+Data.Initiation.FileReference,Reference for the file.
+Data.Initiation.NumberOfTransactions,Number of individual transactions contained in the payment information group.
+Data.Initiation.ControlSum,"Total of all individual amounts included in the group, irrespective of currencies."
+Data.FilePaymentId,OB: Unique identification as assigned by the ASPSP to uniquely identify the file payment resource.
+Data.Status,Specifies the status of the payment order resource. See `ExternalPaymentTransactionStatus1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets) for more information.
+Data.FundsAvailableResult,Result of a funds availability check.
+Data.FundsAvailableResult.FundsAvailableDateTime,"Date and time at which the funds availability check was generated. All dates in the JSON payloads are represented in ISO 8601 date-time format. 
+All date-time fields in responses must include the timezone. An example is below:
+2017-04-05T10:43:07+00:00"
+Data.FundsAvailableResult.FundsAvailable,Flag to indicate the availability of funds given the Amount in the consent request.
+Data.SupplementaryData,
+Data.Initiation,The Initiation payload is sent by the initiating party to the ASPSP. It is used to request movement of funds from the debtor account to a creditor for a single international payment.
+Data.Initiation.InstructionPriority,Indicator of the urgency or order of importance that the instructing party would like the instructed party to apply to the processing of the instruction.
+Data.Initiation.ExtendedPurpose,"Specifies the purpose of an international payment, when there is no corresponding 4 character code available in the ISO20022 list of Purpose Codes."
+Data.Initiation.ChargeBearer,
+Data.Initiation.CurrencyOfTransfer,"Specifies the currency of the to be transferred amount, which is different from the currency of the debtor's account."
+Data.Initiation.DestinationCountryCode,"Country in which Credit Account is domiciled. Code to identify a country, a dependency, or another area of particular geopolitical interest, on the basis of country names obtained from the United Nations (ISO 3166, Alpha-2 code)."
+Data.Initiation.ExchangeRateInformation,Provides details on the currency exchange rate and contract.
+Data.Initiation.ExchangeRateInformation.UnitCurrency,"Currency in which the rate of exchange is expressed in a currency exchange. In the example 1GBP = xxxCUR, the unit currency is GBP."
+Data.Initiation.ExchangeRateInformation.ExchangeRate,The factor used for conversion of an amount from one currency to another. This reflects the price at which one currency was bought with another currency.
+Data.Initiation.ExchangeRateInformation.RateType,Specifies the type used to complete the currency exchange.
+Data.Initiation.ExchangeRateInformation.ContractIdentification,Unique and unambiguous reference to the foreign exchange contract agreed between the initiating party/creditor and the debtor agent.
+Data.Initiation.Creditor,Party to which an amount of money is due.
+Data.Initiation.Creditor.Name,Name by which a party is known and which is usually used to identify that party.
+Data.Initiation.Creditor.LEI,
+Data.Initiation.Creditor.PostalAddress,
+Data.ReadRefundAccount,Specifies to share the refund account details with PISP
+Data.ExchangeRateInformation,Further detailed information on the exchange rate that has been used in the payment transaction.
+Data.ExchangeRateInformation.UnitCurrency,"Currency in which the rate of exchange is expressed in a currency exchange. In the example 1GBP = xxxCUR, the unit currency is GBP."
+Data.ExchangeRateInformation.ExchangeRate,The factor used for conversion of an amount from one currency to another. This reflects the price at which one currency was bought with another currency.
+Data.ExchangeRateInformation.RateType,Specifies the type used to complete the currency exchange.
+Data.ExchangeRateInformation.ContractIdentification,Unique and unambiguous reference to the foreign exchange contract agreed between the initiating party/creditor and the debtor agent.
+Data.ExchangeRateInformation.ExpirationDateTime,"Specified date and time the exchange rate agreement will expire. All dates in the JSON payloads are represented in ISO 8601 date-time format. 
+All date-time fields in responses must include the timezone. An example is below:
+2017-04-05T10:43:07+00:00"
+Data.InternationalPaymentId,OB: Unique identification as assigned by the ASPSP to uniquely identify the international payment resource.
+Data.Status,Specifies the status of the payment information group.
+Data.Refund,
+Data.Refund.Creditor,Set of elements used to identify a person or an organisation.
+Data.Refund.Creditor.Name,Name by which a party is known and which is usually used to identify that party.
+Data.Refund.Creditor.LEI,
+Data.Refund.Creditor.PostalAddress,
+Data.Refund.Agent,Set of elements used to uniquely and unambiguously identify a financial institution or a branch of a financial institution.
+Data.Refund.Agent.SchemeName,
+Data.Refund.Agent.Identification,
+Data.Refund.Agent.Name,
+Data.Refund.Agent.PostalAddress,
+Data.Refund.Account.Proxy,
+Data.Initiation,The Initiation payload is sent by the initiating party to the ASPSP. It is used to request movement of funds from the debtor account to a creditor for a single scheduled international payment.
+Data.Permission,Specifies the Open Banking service request types.
+Data.InternationalScheduledPaymentId,OB: Unique identification as assigned by the ASPSP to uniquely identify the international scheduled payment resource.
+Data.Status,Specifies the status of the payment order resource.
+Data.Initiation,The Initiation payload is sent by the initiating party to the ASPSP. It is used to request movement of funds from the debtor account to a creditor for an international standing order.
+Data.Initiation.CreditorAgent,"Party that manages the account on behalf of the account owner, that is manages the registration and booking of entries on the account, calculates balances on the account and provides information about the account.
+This is the servicer of the beneficiary account."
+Data.Initiation.CreditorAgent.Identification,Unique and unambiguous identification of the servicing institution.
+Data.Initiation.CreditorAccount,Provides the details to identify the beneficiary account.
+Data.InternationalStandingOrderId,OB: Unique identification as assigned by the ASPSP to uniquely identify the international standing order resource.
+Data.Status,Specifies the status of resource in code form. For a list of values see `ExternalPaymentTransactionStatus1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)
+Data.PaymentStatus,
+PaymentTransactionId,Unique identifier for the transaction within an servicing institution. This identifier is both unique and immutable.
+Status,"Status of a transfer, as assigned by the transaction administrator. For a full list of values see `ExternalPaymentTransactionStatus1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)"
+StatusUpdateDateTime,"Date and time at which the status was assigned to the transfer.
+"
+StatusDetail,Payment status details as per underlying Payment Rail.
+StatusDetail.LocalInstrument,
+StatusDetail.Status,"Status of a transfer, as assigned by the transaction administrator. For a full list of values see `ExternalPaymentTransactionStatus1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)"
+StatusDetail.StatusReason,Reason Code provided for the status of a transfer. For a full list of values see code values for `OBExternalStatusReason1Code` in *ISO_External_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)
+StatusDetail.StatusReasonDescription,Reason provided for the status of a transfer. For a full list of values see the code name entries for `OBExternalStatusReason1Code` in *ISO_External_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets).
+Data.ReadRefundAccount,"Indicates whether information about RefundAccount should be included in the payment response.
+"
+Data.ConsentId,"Unique identification as assigned by the ASPSP to uniquely identify the consent resource.
+"
+Data.CreationDateTime,"Date and time at which the resource was created.
+"
+Data.Status,Specifies the status of consent resource in code form. AWAU and RJCT only can returned on initial submission. For a full list of values see `OBInternalConsentStatus1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)
+Data.StatusUpdateDateTime,"Date and time at which the resource status was updated.
+"
+Data.ControlParameters,
+Data.Initiation,
+Data.DebtorAccount,
+Data.ReadRefundAccount,"Indicates whether the `RefundAccount` object should be included in the response
+"
+ValidFromDateTime,^ Start date time for which the consent remains valid.
+ValidToDateTime,^ End date time for which the consent remains valid.
+MaximumIndividualAmount,The maximum amount of a single VRP payment.
+PeriodicLimits,
+VRPType,^ The types of payments that can be made under this VRP consent. This can be used to indicate whether this include sweeping payment or other ecommerce payments.
+PSUAuthenticationMethods,^ Indicates that the PSU authentication methods supported.
+PSUInteractionTypes,"Indicates interaction type, currently if customer is present or not present. If not provided the default is `OffSession` (the customer is not present) when the individual VRP payment is made."
+SupplementaryData,^ Additional information that can not be captured in the structured fields and/or any other specific block
+CreditorPostalAddress,
+RegulatoryReporting,
+Identification,"Unique identifier used to indicate an account, entity, or transaction reference."
+SecondaryIdentification,"^ This is secondary identification of the account, as assigned by the account servicing institution.  This can be used by building societies to additionally identify accounts with a roll number (in addition to a sort code and account number combination)"
+Name,"Name of the account, as assigned by the account servicing institution.
+Usage: the account name is the name or names of the account owner(s) represented at an account level.
+The account name is not the product name or the nickname of the account."
+SecondaryIdentification,"This is secondary identification of the account, as assigned by the account servicing institution.
+This can be used by building societies to additionally identify accounts with a roll number (in addition to a sort code and account number combination)"
+Identification,"Unique identifier used to indicate an account, entity, or transaction reference."
+Name,^ Name by which an agent is known and which is usually used to identify that agent.
+Data.ConsentId,Identifier for the Domestic VRP Consent that this payment is made under.
+Data.PSUAuthenticationMethod,
+Data.PSUInteractionType,
+Data.VRPType,
+Data.Instruction,
+Data,"`Data.Refund` only included in the response if `Data.ReadRefundAccount` is set to `Yes` in the consent.
+"
+Data.DomesticVRPId,"Unique identification as assigned by the ASPSP to uniquely identify the domestic payment resource.
+"
+Data.ConsentId,"Identifier for the Domestic VRP Consent that this payment is made under.
+"
+Data.ExpectedExecutionDateTime,"Expected execution date and time for the payment resource.
+"
+Data.ExpectedSettlementDateTime,"Expected settlement date and time for the payment resource.
+"
+Data.Reference,"Unique reference, as assigned by the PISP, to unambiguously refer to the request related to the payment transaction. This must be the same value as the `Reference` field in the consent."
+Data.InstructedAmount,
+Data.CreationDateTime,Date and time at which the resource was created.
+Data.Reference,"Unique reference, as assigned by the PISP, to unambiguously refer to the request related to the payment transaction."
+Data.FundsAvailableResult,
+FundsAvailableDateTime,Date and time at which the funds availability check was generated.
+FundsAvailable,"Availability result, clearly indicating the availability of funds given the Amount in the request."
+ChargeBearer,Specifies which party/parties will bear the charges associated with the processing of the payment transaction.
+InstructionIdentification,"Unique identification as assigned by an instructing party for an instructed party to unambiguously identify the instruction.
+Usage: the instruction identification is a point to point reference that can be used between the instructing party and the instructed party to refer to the individual instruction.
+It can be included in several messages related to the instruction."
+EndToEndIdentification,"Unique identification assigned by the initiating party to unambiguously identify the transaction.
+This identification is passed on, unchanged, throughout the entire end-to-end chain.
+Usage: The end-to-end identification can be used for reconciliation or to link tasks relating to the transaction.
+It can be included in several messages related to the transaction.
+OB: The Faster Payments Scheme can only access 31 characters for the EndToEndIdentification field"
+LocalInstrument,"User community specific instrument.
+Usage: This element is used to specify a local instrument, local clearing option and/or further qualify the service or service level."
+SupplementaryData,"Additional information that can not be captured in the structured fields and/or any other specific block.
+"
+Issuer,The name or identifier of the organisation issuing the financial instrument or instruction.
+Number,
+RelatedDate,
+LineDetails,Detailed descriptive lines of narrative for the payment reference or remittance information.
+ReferredDocumentInformation,"References to related documents including document type, number, and issuer."
+ReferredDocumentAmount,
+Invoicer,"Identification of the organisation issuing the invoice, when it is different from the creditor or ultimate creditor"
+Invoicee,"Identification of the party to whom an invoice is issued, when it is different from the debtor or ultimate debtor."
+TaxRemittance,
+AdditionalRemittanceInformation,
+CountryCode,Country of the entity that requires the regulatory reporting information.
+DebitCreditReportingIndicator,"Identifies whether the regulatory reporting information applies to the debit side, to the credit side or to both debit and credit sides of the transaction. For a full list of values refer to `OBExternalRegulatoryReportingType1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)"
+Details,Set of elements used to provide details on the regulatory reporting information.
+Date,Date related to the specified type of regulatory reporting details.
+Country,Country related to the specified type of regulatory reporting details.
+Amount,Amount of money to be reported for regulatory and statutory requirements.
+PaymentContextCode,"Specifies the payment context, for a full list of values refer to `OBInternalPaymentContext1Code` in *OB_Internal_CodeSet* [here](https://github.com/OpenBankingUK/External_Internal_CodeSets)
+"

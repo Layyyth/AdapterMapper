@@ -1,0 +1,18 @@
+[
+  "cnstID",
+  "usrNm",
+  "acc_no",
+  "benIBAN",
+  "txnAmt",
+  "credAccId",
+  "txnRef",
+  "debName",
+  "currCode",
+  "valDt",
+  "strPurpose",
+  "strAddr",
+  "multiTrfInd",
+  "authCode",
+  "prodType",
+  "updTimestamp"
+]
