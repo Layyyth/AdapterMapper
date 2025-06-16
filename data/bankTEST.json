@@ -1,0 +1,78 @@
+{
+  "/bank/accounts": {
+    "method": "GET",
+    "response": {
+      "accounts": [
+        {
+          "accNo": "12345678",
+          "acctNm": "Primary Checking",
+          "acctType": "current",
+          "accCurr": "GBP",
+          "credAccId": "GB00LOYD12345678123456",
+          "status": "enabled",
+          "openDt": "2023-01-10",
+          "updTimestamp": "2024-05-02T13:00:00Z"
+        }
+      ]
+    }
+  },
+
+  "/bank/transactions": {
+    "method": "GET",
+    "response": {
+      "transactions": [
+        {
+          "txnRef": "TXN98765",
+          "txnAmt": {
+            "amt": "250.00",
+            "curr": "GBP"
+          },
+          "valDt": "2024-05-02",
+          "desc": "Uber Ride",
+          "debAccId": "12345678",
+          "credAccId": "98765432",
+          "debName": "John Doe",
+          "multTrfInd": true
+        }
+      ]
+    }
+  },
+
+  "/bank/payments/initiate": {
+    "method": "POST",
+    "request": {
+      "payer": {
+        "usrNm": "John Doe",
+        "accNo": "12345678",
+        "proxy": "john.doe@bank.com"
+      },
+      "beneficiary": {
+        "benIBAN": "GB00HSBC12345678901234",
+        "credName": "Jane Smith",
+        "strAddr": "1 High Street",
+        "postCode": "W1A 1AA"
+      },
+      "txnAmt": {
+        "amt": "1200.00",
+        "curr": "GBP"
+      },
+      "purpose": "Invoice 8833",
+      "paymentInitId": "PI123456",
+      "valDt": "2024-06-01",
+      "exchangeRate": 1.0,
+      "chargeBearer": "DEBT"
+    }
+  },
+
+  "/bank/balances": {
+    "method": "GET",
+    "response": {
+      "acctBal": {
+        "curr": "GBP",
+        "amt": "890.45"
+      },
+      "asOfDt": "2024-05-15"
+    }
+  }
+}
+
