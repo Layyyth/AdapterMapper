@@ -1,0 +1,14 @@
+{
+  "apiDataStrategySettings": [
+    {
+      "restResourceUrl": "/v1/accounts",
+      "restHttpMethod": "GET",
+      "restJsonDynamicMapping": "[\n  {\n    \"jsonPath\": \"acct_no\",\n    \"name\": \"accountId\",\n    \"targetType\": \"java.lang.String\"\n  },\n  {\n    \"jsonPath\": \"iban\",\n    \"name\": \"iban\",\n    \"targetType\": \"java.lang.String\"\n  },\n  {\n    \"jsonPath\": \"rim_no\",\n    \"name\": \"customerNo\",\n    \"targetType\": \"java.lang.String\"\n  },\n  {\n    \"jsonPath\": \"create_dt\",\n    \"name\": \"openingDate\",\n    \"targetType\": \"java.time.LocalDate\"\n  },\n  {\n    \"jsonPath\": \"acc_type\",\n    \"name\": \"accountType\",\n    \"targetType\": \"java.lang.String\"\n  },\n  {\n    \"jsonPath\": \"status\",\n    \"name\": \"accountStatus\",\n    \"targetType\": \"java.lang.String\"\n  }\n]"
+    },
+    {
+      "restResourceUrl": "/v1/transactions",
+      "restHttpMethod": "GET",
+      "restJsonDynamicMapping": "[\n  {\n    \"jsonPath\": \"txn_id\",\n    \"name\": \"transactionId\",\n    \"targetType\": \"java.lang.String\"\n  },\n  {\n    \"jsonPath\": \"txn_amt\",\n    \"name\": \"amount\",\n    \"targetType\": \"java.math.BigDecimal\"\n  },\n  {\n    \"jsonPath\": \"txn_curr\",\n    \"name\": \"currency\",\n    \"targetType\": \"java.lang.String\"\n  },\n  {\n    \"jsonPath\": \"txn_dt\",\n    \"name\": \"transactionDate\",\n    \"targetType\": \"java.time.LocalDate\"\n  },\n  {\n    \"jsonPath\": \"txn_desc\",\n    \"name\": \"description\",\n    \"targetType\": \"java.lang.String\"\n  }\n]"
+    }
+  ]
+}
